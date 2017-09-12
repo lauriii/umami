@@ -1,3 +1,18 @@
+<?php
+/**
+ * @file
+ * This file creates the HTML for the main menu.
+ */
+?>
+
+<style>
+  <?php include 'style.css'; ?>
+</style>
+
+<script>
+  <?php include 'script.js'; ?>
+</script>
+
 <nav role="navigation" id="main-menu" class="block block-menu navigation menu--main">
   <h2 class="visually-hidden" id="main-menu-menu">Main navigation</h2>
   <button class="trigger focusable visually-hidden" type="button" aria-pressed="false">Open Main navigation configuration options</button>

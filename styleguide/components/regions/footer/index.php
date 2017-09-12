@@ -8,6 +8,14 @@
  */
 ?>
 
+<style>
+  <?php include 'style.css'; ?>
+</style>
+
+<script>
+  <?php include 'script.js'; ?>
+</script>
+
 <footer class="footer">
   <!-- include the footer items here -->
 </footer>
