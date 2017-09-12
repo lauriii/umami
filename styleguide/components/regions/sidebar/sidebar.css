@@ -1,0 +1,8 @@
+/**
+ * @file
+ * This file is used to style the sidebar.
+ *
+ * It styles the sidebar as a global component; it does not style individual
+ * sidebar items, such as a featured content item, which are styled by their own
+ * CSS files.
+ */
