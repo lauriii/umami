@@ -15,7 +15,7 @@
 
 <div id="block-branding" class="clearfix site-branding block block-system block-system-branding-block">
   <a href="/" title="Home" rel="home" class="site-branding__logo">
-    <img src="/core/themes/bartik/logo.svg" alt="Home">
+    <img src="<?php print '../../assets/logo.svg'; ?>" alt="Home">
   </a>
   <div class="site-branding__text">
     <div class="site-branding__name">

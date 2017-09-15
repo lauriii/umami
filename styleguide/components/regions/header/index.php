@@ -20,6 +20,6 @@
 
 <header class="header" role="banner">
   <!-- include the header items here - search block, login, menu, logo, etc -->
-  <h1>LOGO GOES HERE</h1>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/blocks/branding/index.php'; ?>
   <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/navigation/menu--main/index.php'; ?>
 </header>
