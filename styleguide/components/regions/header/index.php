@@ -9,6 +9,7 @@
 ?>
 
 <style>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/base.css'; ?>
   <?php include 'style.css'; ?>
 </style>
 
