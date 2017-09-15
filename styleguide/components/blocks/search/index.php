@@ -16,7 +16,7 @@
 <div class="search-block-form contextual-region block block-search container-inline" data-drupal-selector="search-block-form" id="block-searchform" role="search">
   <h2>Search form</h2>
   <div class="content container-inline">
-    <form action="/search/node" method="get" id="search-block-form" accept-charset="UTF-8" class="search-form search-block-form" data-drupal-form-fields="edit-keys">
+    <form action="/pages/search-results" method="get" id="search-block-form" accept-charset="UTF-8" class="search-form search-block-form" data-drupal-form-fields="edit-keys">
       <div class="js-form-item form-item js-form-type-search form-type-search js-form-item-keys form-item-keys form-no-label">
         <label for="edit-keys" class="visually-hidden">Search</label>
         <input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" id="edit-keys" name="keys" value="" size="15" maxlength="128" class="form-search" type="search">
