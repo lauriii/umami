@@ -1,3 +1,7 @@
+<?php $title = "Base HTML Elements"; ?>
+<?php $description = "Base HTML Elements of the Umami Styleguide for Drupal 8"; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/page-top.php'; ?>
+
 <style>
   <?php include 'base.css'; ?>
 </style>
@@ -127,3 +131,4 @@
   <h3>Links in text</h3>
   <p contenteditable="true">This is a paragraph of this, and <a href="#">this is a link within it</p>
 </div>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/page-bottom.php'; ?>
