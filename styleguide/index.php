@@ -41,30 +41,30 @@
 
   <h3>Lists - Ordered List</h3>
   <ol>
-    <li>Mollis Egestas Nibh</li>
-    <li>Mollis Egestas Nibh</li>
-    <li>Mollis Egestas Nibh</li>
+    <li contenteditable="true">Mollis Egestas Nibh</li>
+    <li contenteditable="true">Mollis Egestas Nibh</li>
+    <li contenteditable="true">Mollis Egestas Nibh</li>
       <ol>
-        <li>Sub-item Mollis Egestas Nibh</li>
-        <li>Sub-item Mollis Egestas Nibh</li>
-        <li>Sub-item Mollis Egestas Nibh</li>
+        <li contenteditable="true">Sub-item Mollis Egestas Nibh</li>
+        <li contenteditable="true">Sub-item Mollis Egestas Nibh</li>
+        <li contenteditable="true">Sub-item Mollis Egestas Nibh</li>
       </ol>
-    <li>Mollis Egestas Nibh</li>
-    <li>Mollis Egestas Nibh</li>
+    <li contenteditable="true">Mollis Egestas Nibh</li>
+    <li contenteditable="true">Mollis Egestas Nibh</li>
   </ol>
 
   <h3>Lists - Unordered List</h3>
   <ul>
-    <li>Mollis Egestas Nibh</li>
-    <li>Mollis Egestas Nibh</li>
-    <li>Mollis Egestas Nibh</li>
+    <li contenteditable="true">Mollis Egestas Nibh</li>
+    <li contenteditable="true">Mollis Egestas Nibh</li>
+    <li contenteditable="true">Mollis Egestas Nibh</li>
       <ol>
-        <li>Sub-item Mollis Egestas Nibh</li>
-        <li>Sub-item Mollis Egestas Nibh</li>
-        <li>Sub-item Mollis Egestas Nibh</li>
+        <li contenteditable="true">Sub-item Mollis Egestas Nibh</li>
+        <li contenteditable="true">Sub-item Mollis Egestas Nibh</li>
+        <li contenteditable="true">Sub-item Mollis Egestas Nibh</li>
       </ol>
-    <li>Mollis Egestas Nibh</li>
-    <li>Mollis Egestas Nibh</li>
+    <li contenteditable="true">Mollis Egestas Nibh</li>
+    <li contenteditable="true">Mollis Egestas Nibh</li>
   </ul>
 
   <h3>Form Elements</h3>
@@ -77,25 +77,25 @@
   <form id="myForm" action="#" method="post">
 
     <div>
-      <label for="name">Text Input:</label>
+      <label for="name" contenteditable="true">Text Input:</label>
       <input type="text" name="name" id="name" value="" tabindex="1">
     </div>
 
     <div>
       <h4>Radio Button Choice</h4>
 
-      <label for="radio-choice-1">Choice 1</label>
+      <label for="radio-choice-1" contenteditable="true">Choice 1</label>
       <input type="radio" name="radio-choice" id="radio-choice-1" tabindex="2" value="choice-1">
 
-      <label for="radio-choice-2">Choice 2</label>
+      <label for="radio-choice-2" contenteditable="true">Choice 2</label>
       <input type="radio" name="radio-choice" id="radio-choice-2" tabindex="3" value="choice-2">
 
-      <label for="radio-choice-3">Choice 3</label>
+      <label for="radio-choice-3" contenteditable="true">Choice 3</label>
       <input type="radio" name="radio-choice" id="radio-choice-3" tabindex="4" value="choice-3">
     </div>
 
     <div>
-      <label for="select-choice">Select Dropdown Choice:</label>
+      <label for="select-choice" contenteditable="true">Select Dropdown Choice:</label>
       <select name="select-choice" id="select-choice">
         <option value="Choice 1">Choice 1</option>
         <option value="Choice 2">Choice 2</option>
@@ -109,7 +109,7 @@
     </div>
 
     <div>
-      <label for="checkbox">Checkbox:</label>
+      <label for="checkbox" contenteditable="true">Checkbox:</label>
       <input type="checkbox" name="checkbox">
     </div>
 
@@ -117,4 +117,8 @@
       <input type="submit" value="Submit">
     </div>
   </form>
+
+  <h2>Inline Level Elements</h2>
+  <h3>Links in text</h3>
+  <p contenteditable="true">This is a paragraph of this, and <a href="#">this is a link within it</p>
 </div>
