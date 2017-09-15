@@ -17,7 +17,7 @@
   <h2 class="visually-hidden" id="main-menu-menu">Main navigation</h2>
   <button class="trigger focusable visually-hidden" type="button" aria-pressed="false">Open Main navigation configuration options</button>
   <div class="content">
-    <div class="menu-toggle-target menu-toggle-target-show" id="show-block-bartik-main-menu"></div>
+    <div class="menu-toggle-target menu-toggle-target-show" id="show-main-menu"></div>
     <div class="menu-toggle-target" id="hide-main-menu"></div>
     <a class="menu-toggle" href="#show-main-menu">Show — Main navigation</a>
     <a class="menu-toggle menu-toggle--hide" href="#hide-main-menu">Hide — Main navigation</a>
