@@ -1,4 +1,9 @@
+<style>
+  <?php include 'base.css'; ?>
+</style>
+
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/regions/header/index.php'; ?>
+
 <div style="margin: auto; max-width: 90%;">
   <h1>Welcome to the Umami Styleguide</h1>
 
