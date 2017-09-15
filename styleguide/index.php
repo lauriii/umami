@@ -129,7 +129,7 @@
 
   <h2>Inline Level Elements</h2>
   <h3>Links in text</h3>
-  <p contenteditable="true">This is a paragraph of this, and <a href="#">this is a link</a> within it</p>
+  <p>This is a paragraph of this, and <a href="#">this is a link</a> within it</p>
   <h2>Text with Colours</h2>
   <p style="background: #e84265; color: #ffffff; padding: 1rem 2rem">White on Pink</p>
   <p style="background: #e84265; color: #000000; padding: 1rem 2rem">Black on Pink</p>
