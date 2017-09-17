@@ -19,7 +19,7 @@
 <h2>Individual styles are within the ./styles directory</h2>
 
 <ul>
-  <li><a href="styles/highlighted-small.php">Highlighted Small</a></li>
-  <li><a href="styles/highlighted-large.php">Highlighted Large</a></li>
-  <li><a href="styles/body-image.php">Body Field Image</a></li>
+  <li><a href="highlighted-small.php">Highlighted Small</a></li>
+  <li><a href="highlighted-large.php">Highlighted Large</a></li>
+  <li><a href="body-image.php">Body Field Image</a></li>
 </ul>
