@@ -20,6 +20,6 @@
 
 <ul>
   <li><a href="styles/highlighted-small.php">Highlighted Small</a></li>
-  <li><a href="styles/highlighted-large.php">Highlighted Small</a></li>
+  <li><a href="styles/highlighted-large.php">Highlighted Large</a></li>
   <li><a href="styles/body-image.php">Body Field Image</a></li>
 </ul>
