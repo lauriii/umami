@@ -6,4 +6,4 @@
 
 $title = "Tips for growing and storing herbs";
 
-include 'template.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-small/template.php';

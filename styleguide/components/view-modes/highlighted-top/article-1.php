@@ -6,4 +6,4 @@
 
 $title = "Meal subscriptions services: online to on your doorstep";
 
-include 'template.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-top/template.php';

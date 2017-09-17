@@ -6,4 +6,4 @@
 
 $title = "This is an article with a longer title, that might need two or more lines.";
 
-include 'template.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-bottom/template.php';

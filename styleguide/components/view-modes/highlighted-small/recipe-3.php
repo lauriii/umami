@@ -6,4 +6,4 @@
 
 $title = "Recipe Title";
 
-include 'template.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-bottom/template.php';

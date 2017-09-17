@@ -16,8 +16,6 @@
 
 <h1>Stub for listing of image styles</h1>
 
-<h2>Individual styles are within the ./styles directory</h2>
-
 <ul>
   <li><a href="highlighted-small.php">Highlighted Small</a></li>
   <li><a href="highlighted-large.php">Highlighted Large</a></li>
