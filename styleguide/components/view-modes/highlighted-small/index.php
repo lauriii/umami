@@ -18,7 +18,7 @@
   <div class="node__content">
     <div class="field field--name-field-image field--type-image field--label-hidden field__item">
       <a href="/pages/recipe" rel="bookmark">
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/image-styles/styles/highlighted-small.php'; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/image-styles/highlighted-small.php'; ?>
       </a>
     </div>
     <h2>
