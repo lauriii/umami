@@ -11,4 +11,4 @@ $width = 790;
 $height = rand(250, 600);
 $alt = 'Image size used for images uploaded via the body field';
 
-include $_SERVER['DOCUMENT_ROOT'] . '/components/image-styles/template.php';
+include 'template.php';

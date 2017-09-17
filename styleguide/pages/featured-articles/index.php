@@ -13,10 +13,10 @@
 <h1>Featured Articles Stub</h1>
 <h2>Just adding some default items here, to check the approach is working (it is!)</h2>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-top/index.php'; ?>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-bottom/index.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-bottom/article-1.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-bottom/article-2.php'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-top/index.php'; ?>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-bottom/index.php'; ?>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-small/index.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-small/recipe-5.php'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-small/index.php'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-small/index.php'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-small/index.php'; ?>

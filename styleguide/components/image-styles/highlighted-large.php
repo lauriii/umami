@@ -11,4 +11,4 @@ $width = 588;
 $height = 392;
 $alt = 'Image size used for "Featured Large" view mode';
 
-include $_SERVER['DOCUMENT_ROOT'] . '/components/image-styles/template.php';
+include 'template.php';

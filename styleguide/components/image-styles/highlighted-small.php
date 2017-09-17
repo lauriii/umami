@@ -10,4 +10,4 @@ $width = 282;
 $height = 282;
 $alt = 'Image size used for "Featured Small" view mode';
 
-include $_SERVER['DOCUMENT_ROOT'] . '/components/image-styles/template.php';
+include 'template.php';
