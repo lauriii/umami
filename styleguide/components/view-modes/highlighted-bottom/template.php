@@ -10,7 +10,7 @@
 
 <style>
   <?php include $_SERVER['DOCUMENT_ROOT'] . '/base.css'; ?>
-  <?php include 'style.css'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-bottom/style.css'; ?>
 </style>
 
 <script>
@@ -24,10 +24,12 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/image-styles/highlighted-large.php'; ?>
       </a>
     </div>
+  </div>
+  <footer class="node__footer">
     <h2>
       <a href="/pages/recipe" rel="bookmark">
         <span class="field field--name-title field--type-string field--label-hidden"><?php print $title; ?></span>
       </a>
     </h2>
-  </div>
+  </footer>
 </article>

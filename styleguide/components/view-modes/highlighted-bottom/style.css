@@ -2,3 +2,21 @@
  * @file
  * This file is used to style the 'highlighted-bottom' view mode.
  */
+
+.node--view-mode-highlighted-bottom .node__footer {
+  padding: 1rem;
+}
+
+.node--view-mode-highlighted-bottom .node__footer > h2 a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.node--view-mode-highlighted-bottom .node__footer > h2 a:focus,
+.node--view-mode-highlighted-bottom .node__footer > h2 a:hover {
+  text-decoration: underline;
+}
+
+.node--view-mode-highlighted-bottom .field--name-field-image img {
+  width: 100%;
+}

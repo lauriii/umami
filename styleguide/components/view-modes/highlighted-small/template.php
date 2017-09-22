@@ -7,7 +7,7 @@
 
 <style>
   <?php include $_SERVER['DOCUMENT_ROOT'] . '/base.css'; ?>
-  <?php include 'style.css'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-small/style.css'; ?>
 </style>
 
 <script>

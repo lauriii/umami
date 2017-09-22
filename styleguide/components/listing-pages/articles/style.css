@@ -2,3 +2,16 @@
  * @file
  * This file is used to style the articles listing page.
  */
+
+@media (min-width: 768px) {
+  .view-articles .view-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -2rem;
+  }
+
+  .view-articles .views-row {
+    flex: 0 0 calc(50% - 2rem);
+    margin: 0 1rem 1rem;
+  }
+}
