@@ -1,9 +1,11 @@
 <?php
 /**
  * @file
- * This file creates an article.
+ * This file creates a recipe for the 'Highlighted Bottom' view mode.
  */
 
-$title = "Recipe Title";
+$file = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/assets/sample-content/recipes.json');
+$articles = json_decode($file, TRUE);
+$title = $articles[0]['title'];
 
-include 'template.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-bottom/template.php';

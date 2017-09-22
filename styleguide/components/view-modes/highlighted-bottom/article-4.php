@@ -1,9 +1,11 @@
 <?php
 /**
  * @file
- * This file creates an article.
+ * This file creates a article for the 'Highlighted Bottom' view mode.
  */
 
-$title = "This is an article with a longer title, that might need two or more lines.";
+$file = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/assets/sample-content/article.json');
+$articles = json_decode($file, TRUE);
+$title = $articles[3]['title'];
 
-include 'template.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-bottom/template.php';

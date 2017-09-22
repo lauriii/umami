@@ -140,7 +140,6 @@
   <p style="background: #787C75; color: #ffffff; padding: 1rem 2rem">White on Term List Background</p>
   <p style="background: #F4F2E9; color: #464646; padding: 1rem 2rem">Black on Quotation Background</p>
   <p style="background: #F4F2E9; color: #e84265; padding: 1rem 2rem">Pink on Quotation Background</p>
-
-
 </div>
+
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/page-bottom.php'; ?>

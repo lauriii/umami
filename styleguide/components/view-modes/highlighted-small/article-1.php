@@ -1,9 +1,11 @@
 <?php
 /**
  * @file
- * This file creates an article.
+ * This file creates an article for the 'Highlighted Small' view mode.
  */
 
-$title = "Meal subscriptions services: online to on your doorstep";
+$file = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/assets/sample-content/articles.json');
+$articles = json_decode($file, TRUE);
+$title = $articles[0]['title'];
 
-include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-bottom/template.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/components/view-modes/highlighted-small/template.php';
