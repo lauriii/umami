@@ -4,6 +4,16 @@ global:
     theme:
       styleguide/base.css: {}
 
+view-mode-highlighted-bottom:
+  css:
+    theme:
+      styleguide/components/view-modes/highlighted-bottom/style.css: {}
+
+view-mode-highlighted-small:
+  css:
+    theme:
+      styleguide/components/view-modes/highlighted-small/style.css: {}
+
 view-mode-highlighted-top:
   css:
     theme:
