@@ -1,0 +1,15 @@
+global:
+  version: VERSION
+  css:
+    theme:
+      styleguide/base.css: {}
+
+view-mode-highlighted-top:
+  css:
+    theme:
+      styleguide/components/view-modes/highlighted-top/style.css: {}
+
+list-articles:
+  css:
+    theme:
+      styleguide/components/listing-pages/articles/style.css: {}
