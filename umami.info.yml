@@ -5,3 +5,4 @@ description: 'The theme used for the out of the box initiative.'
 core: 8.x
 libraries:
   - umami/global
+  - umami/header

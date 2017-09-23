@@ -4,6 +4,11 @@ global:
     theme:
       styleguide/base.css: {}
 
+header:
+  css:
+    theme:
+      styleguide/components/regions/header/style.css: {}
+
 view-mode-highlighted-bottom:
   css:
     theme:
