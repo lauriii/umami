@@ -8,10 +8,9 @@
     TODO: This is way too generic, but works for proof of concept.
           We need to come up with class names for our views.
    */
-  .view .view-content{
+  .view .view-content {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -2rem;
   }
 
   .view .views-row {
