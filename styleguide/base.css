@@ -59,3 +59,8 @@ input[type='submit'] {
   font-size: 1rem;
   padding: .5rem 1rem;
 }
+
+img {
+  height: auto;
+  max-width: 100%;
+}
