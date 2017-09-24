@@ -15,9 +15,11 @@
 </script>
 
 <section class="layout-top">
-  <div class="region region-top container">
-    <!-- include the region-top items here - search block, login, etc-->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/blocks/search/index.php'; ?>
-    <h2>Login</h2>
+  <div class="container">
+    <div class="region region-top">
+      <!-- include the region-top items here - search block, login, etc-->
+      <?php include $_SERVER['DOCUMENT_ROOT'] . '/components/blocks/search/index.php'; ?>
+      <h2>Login</h2>
+    </div>
   </div>
 </section>

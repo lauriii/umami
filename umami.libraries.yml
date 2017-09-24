@@ -3,11 +3,13 @@ global:
   css:
     theme:
       styleguide/base.css: {}
-
-header:
-  css:
-    theme:
+      styleguide/components/regions/top/style.css: {}
       styleguide/components/regions/header/style.css: {}
+      styleguide/components/regions/footer/style.css: {}
+      styleguide/components/regions/bottom/style.css: {}
+      styleguide/components/blocks/branding/style.css: {}
+      styleguide/components/blocks/search/style.css: {}
+      styleguide/components/navigation/menu--main/style.css: {}
 
 view-mode-highlighted-bottom:
   css:

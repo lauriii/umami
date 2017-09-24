@@ -46,7 +46,9 @@
 
   {% if page.top|render|striptags|trim is not empty %}
     <section class="layout-top">
-      {{ page.top }}
+      <div class="container">
+        {{ page.top }}
+      </div>
     </section>
   {% endif %}
 
