@@ -75,3 +75,9 @@ img {
   height: auto;
   max-width: 100%;
 }
+
+/* TODO: We need to move this to a layout file. */
+.container {
+  margin: auto;
+  max-width: 1200px;
+}
