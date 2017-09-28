@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.4.0",
+    "gulp-concat": "^2.6.1",
+    "kss": "^3.0.0-beta.18",
+    "path": "^0.12.7",
+    "run-sequence": "^2.2.0"
+  }
+}

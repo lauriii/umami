@@ -1,0 +1,315 @@
+/**
+ * @file
+ * This is the base CSS file, for styling elements.
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Scope+One');
+
+/* Box Sizing all the things */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1, .alpha {
+  font-family: 'Scope One';
+  line-height: 1.2;
+  margin: 0 0 0 0;
+}
+
+h2, .beta {
+  font-family: 'Scope One';
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 0 0 0 0;
+}
+
+h3, .gamma {
+  font-family: 'Scope One';
+  line-height: 1.2;
+  margin: 0 0 0 0;
+}
+
+h4, .delta {
+  font-family: 'Scope One';
+  line-height: 1.2;
+  margin: 0 0 0 0;
+}
+
+h5, .epsilon {
+  font-family: 'Scope One';
+  line-height: 1.2;
+  margin: 0 0 0 0;
+}
+
+h6, .zeta {
+  font-family: 'Scope One';
+  line-height: 1.2;
+  margin: 0 0 0 0;
+}
+
+input[type='submit'] {
+  background: #e84265;
+  border: 0;
+  border-radius: 3px;
+  color: #ffffff;
+  font-family: 'Scope One';
+  font-size: 1rem;
+  padding: .5rem 1rem;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* TODO: We need to move this to a layout file. */
+.container {
+  margin: auto;
+  max-width: 1200px;
+}
+
+/*
+Components
+
+Design components are reusable designs that can be applied using just the CSS
+class names specified in the component.
+
+Weight: 1
+
+Style guide: components
+*/
+
+/**
+ * @file
+ * This file is used to style the search block.
+ */
+
+/**
+ * @file
+ * This file is used to style the branding block.
+ */
+
+/**
+ * @file
+ * This file is used to style the article using the 'full' view mode.
+ */
+
+/**
+ * @file
+ * This file is used to style the page using the 'full' view mode.
+ */
+
+/**
+ * @file
+ * This file is used to style the recipe using the 'full' view mode.
+ */
+
+/**
+ * @file
+ * This file is used to style the 1-col layout.
+ */
+
+/**
+ * @file
+ * This file is used to style the 2-col layout.
+ */
+
+/**
+ * @file
+ * This file is used to style the articles listing page.
+ */
+
+@media (min-width: 768px) {
+  /*
+    TODO: This is way too generic, but works for proof of concept.
+          We need to come up with class names for our views.
+   */
+  .view .view-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .view .views-row {
+    flex: 0 0 calc(50% - 2rem);
+    margin: 0 1rem 1rem;
+  }
+}
+
+/**
+ * @file
+ * This file is used to style the search results page.
+ */
+
+/**
+ * @file
+ * This file is used to style the breadcrumbs.
+ */
+
+/**
+ * @file
+ * This file is used to style the main menu.
+ */
+
+/**
+ * @file
+ * This file is used to style the more link.
+ */
+
+/**
+ * @file
+ * This file is used to style the tabs.
+ */
+
+/**
+ * @file
+ * This file is used to style the footer.
+ *
+ * It styles the footer as a global component; it does not style individual
+ * footer items, such as a menu, which are styled by their own CSS files.
+ */
+
+/**
+ * @file
+ * This file is used to style the bottom region.
+ */
+
+/**
+ * @file
+ * This file is used to style the header.
+ *
+ * It styles the header as a global component; it does not style individual
+ * header items, such as a menu, which are styled by their own CSS files.
+ */
+
+/**
+ * @file
+ * This file is used to style the sidebar.
+ *
+ * It styles the sidebar as a global component; it does not style individual
+ * sidebar items, such as a featured content item, which are styled by their own
+ * CSS files.
+ */
+
+/**
+ * @file
+ * This file is used to style the top region.
+ */
+
+.layout-top {
+  border-bottom: 1px solid #F4F7F0;
+}
+
+/**
+ * @file
+ * This file is used to style the 'full' view mode.
+ */
+
+/**
+ * @file
+ * This file is used to style the 'highlighted-top' view mode.
+ */
+
+.node--view-mode-highlighted-top .node__header {
+  padding: 1rem;
+}
+
+.node--view-mode-highlighted-top .node__header > h2 a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.node--view-mode-highlighted-top .node__header > h2 a:focus,
+.node--view-mode-highlighted-top .node__header > h2 a:hover {
+  text-decoration: underline;
+}
+
+.node--view-mode-highlighted-top .field--name-field-image img {
+  width: 100%;
+}
+
+/**
+ * @file
+ * This file is used to style the 'highlighted-bottom' view mode.
+ */
+
+.node--view-mode-highlighted-bottom .node__header {
+  padding: 1rem;
+}
+
+.node--view-mode-highlighted-bottom .node__header > h2 a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.node--view-mode-highlighted-bottom .node__header > h2 a:focus,
+.node--view-mode-highlighted-bottom .node__header > h2 a:hover {
+  text-decoration: underline;
+}
+
+.node--view-mode-highlighted-bottom .field--name-field-image img {
+  width: 100%;
+}
+
+/**
+ * @file
+ * This file is used to style the 'highlighted-small' view mode.
+ */
+
+.node--view-mode-highlighted-small .node__footer {
+  padding: 1rem;
+}
+
+.node--view-mode-highlighted-small .node__footer > h2 a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.node--view-mode-highlighted-small .node__footer > h2 a:focus,
+.node--view-mode-highlighted-small .node__footer > h2 a:hover {
+  text-decoration: underline;
+}
+
+.node--view-mode-highlighted-small .field--name-field-image img {
+  width: 100%;
+}
+
+/**
+ * @file
+ * This file is used to style the 'teaser' view mode.
+ */
+
+/**
+ * @file
+ * This file is used to style the banner--right block.
+ */
+
+/*
+Banner
+
+Weight: 1
+
+Markup: banner.html.twig
+
+Style guide: components.banner
+*/
+.banner {
+    background: deeppink;
+}
+/**
+ * @file
+ * This file is used to style the banner--left block.
+ */
