@@ -1,0 +1,33 @@
+/*
+Image Field Type
+
+.field--type-image - This is used for the Image field type.
+
+Weight: 2
+
+Markup: image.html.twig
+
+Style guide: image_styles
+*/
+
+
+/*
+Highlighted Small Image
+
+Weight: 2
+
+Markup: highlighted-small.html.twig
+
+Style guide: image_styles
+*/
+
+
+/*
+Highlighted Large Image
+
+Weight: 2
+
+Markup: highlighted-large.html.twig
+
+Style guide: image_styles
+*/
