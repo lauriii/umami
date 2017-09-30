@@ -1,0 +1,14 @@
+/*
+Headings
+
+Weight: 0
+
+Markup: headings.html.twig
+
+Style guide: styleguide.typography.headings
+*/
+
+h1 {
+  font-size: 2.369rem;
+  line-height: 1.2rem;
+}

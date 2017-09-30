@@ -1,0 +1,20 @@
+/*
+Links
+
+Weight: 2
+
+Markup: links.html.twig
+
+Style guide: styleguide.typography.links
+*/
+
+a {
+  color: #00836D;
+  text-decoration: dashed underline;
+}
+
+a:hover,
+a:focus {
+  color: #CC2A00;
+  text-decoration: solid underline;
+}
