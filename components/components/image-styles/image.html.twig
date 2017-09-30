@@ -1,23 +1,12 @@
-<?php
+{#
 /**
  * @file
- * This file creates the index to list our image styles.
+ * This file creates the base image component.
+ *
+ * Image styles are created in individual files by adding a $width, $height, and
+ * $alt variable in those individual files.
  */
-?>
-
-<style>
-  <?php include $_SERVER['DOCUMENT_ROOT'] . '/base.css'; ?>
-  <?php include 'style.css'; ?>
-</style>
-
-<script>
-  <?php include 'script.js'; ?>
-</script>
-
-<h1>Stub for listing of image styles</h1>
-
-<ul>
-  <li><a href="highlighted-small.php">Highlighted Small</a></li>
-  <li><a href="highlighted-large.php">Highlighted Large</a></li>
-  <li><a href="body-image.php">Body Field Image</a></li>
-</ul>
+#}
+<div class="field field--type-image">
+  <img src="http://via.placeholder.com/{{ width }}x{{ height }}/CCCCCC/969696" alt="{{ image_alt_text }}">
+</div>

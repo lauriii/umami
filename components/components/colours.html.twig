@@ -1,0 +1,36 @@
+{#
+  /**
+   * This file is used to render the colours that are going to be used in the
+   * Umami theme.
+   */
+#}
+
+{% set colours = [
+    colour_1: "#FF6138",
+    colour_2: "#CC2A00",
+    colour_3: "#D93760",
+    colour_4: "#EEC2CB",
+    colour_5: "#00836D",
+    colour_6: "#79BD8F",
+    colour_7: "#95CBC2",
+    colour_8: "#FBF5EE",
+    colour_9: "#5F635D",
+    colour_10: "#767775",
+    colour_11: "#464646",
+    colour_12: "#000000",
+    colour_13: "#E6EEE0",
+    colour_14: "#F4F2E9",
+    colour_15: "#FCECE7",
+  ]
+%}
+
+<div class="colour-items">
+  {% for colour in colours %}
+    <div class="colour-item">
+      <div class="colour-item__swatch" style="background: {{ colour }};">
+        <p>This is some text to test colour contrast.</p>
+        <p>{{ colour }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>

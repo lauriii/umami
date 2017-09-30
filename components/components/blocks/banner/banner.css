@@ -1,0 +1,28 @@
+/*
+Banner
+
+.banner--left - This is used for placing banner on the left
+.banner--right - This is used for placing banner on the left
+:hover - Banner on hover state
+
+Weight: 1
+
+Markup: banner.html.twig
+
+Style guide: components.banner
+*/
+
+.banner {
+  background: deeppink;
+}
+.banner--left {
+  background: green;
+}
+
+.banner--right {
+  background: blue;
+}
+
+.banner:hover, .banner.pseudo-class-hover {
+  background: hotpink;
+}
