@@ -3,6 +3,18 @@
  * This file is used to style the 'highlighted-top' view mode.
  */
 
+/*
+Highlighted Top
+
+.node--view-mode-highlighted-top - This presents the 'Highlighted Top' view mode.
+
+Weight: 3
+
+Markup: node--highlighted-top.html.twig
+
+Style guide: components.view_modes
+*/
+
 .node--view-mode-highlighted-top .node__header {
   padding: 1rem;
 }
