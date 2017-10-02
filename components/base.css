@@ -3,9 +3,6 @@
  * This is the base CSS file, for styling elements.
  */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Scope+One');
-
 /* Box Sizing all the things */
 html {
   box-sizing: border-box;

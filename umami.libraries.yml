@@ -11,6 +11,11 @@ global:
       styleguide/components/blocks/search/style.css: {}
       styleguide/components/navigation/menu--main/style.css: {}
 
+webfonts:
+  css:
+    theme:
+      'https://fonts.googleapis.com/css?family=Open+Sans|Scope+One': { type: external, minified: true }
+
 view-mode-highlighted-bottom:
   css:
     theme:
