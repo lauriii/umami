@@ -2,3 +2,13 @@
  * @file
  * This file is used to style the 'teaser' view mode.
  */
+
+/*
+  Teaser
+
+  .node--view-mode-teaser - This presents the 'Teaser' view mode.
+
+  Markup: node--teaser.html.twig
+
+  Style guide: components.view_modes.teaser
+*/

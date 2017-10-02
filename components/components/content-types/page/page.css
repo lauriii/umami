@@ -2,3 +2,14 @@
  * @file
  * This file is used to style the page using the 'full' view mode.
  */
+
+
+/*
+  Page
+
+  .node--type-page - This presents the rendering of an individual (basic) page
+
+  Markup: node--page--full.html.twig
+
+  Style guide: components.content_types.page
+*/

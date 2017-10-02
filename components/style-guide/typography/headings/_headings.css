@@ -8,7 +8,40 @@ Markup: headings.html.twig
 Style guide: styleguide.typography.headings
 */
 
-h1 {
+h1, .alpha {
+  font-family: 'Scope One';
   font-size: 2.369rem;
-  line-height: 1.2rem;
+  line-height: 1.2;
+  margin: 0 0 0 0;
+}
+
+h2, .beta {
+  font-family: 'Scope One';
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 0 0 0 0;
+}
+
+h3, .gamma {
+  font-family: 'Scope One';
+  line-height: 1.2;
+  margin: 0 0 0 0;
+}
+
+h4, .delta {
+  font-family: 'Scope One';
+  line-height: 1.2;
+  margin: 0 0 0 0;
+}
+
+h5, .epsilon {
+  font-family: 'Scope One';
+  line-height: 1.2;
+  margin: 0 0 0 0;
+}
+
+h6, .zeta {
+  font-family: 'Scope One';
+  line-height: 1.2;
+  margin: 0 0 0 0;
 }

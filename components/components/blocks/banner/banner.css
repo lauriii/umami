@@ -1,15 +1,14 @@
 /*
-Banner
+  Banner
 
-.banner--left - This is used for placing banner on the left
-.banner--right - This is used for placing banner on the left
-:hover - Banner on hover state
+  .banner--left - This is used for placing banner on the left
+  .banner--right - This is used for placing banner on the left
 
-Weight: 1
+  Weight: 1
 
-Markup: banner.html.twig
+  Markup: banner.html.twig
 
-Style guide: components.banner
+  Style guide: components.blocks.banner
 */
 
 .banner {

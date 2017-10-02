@@ -4,13 +4,13 @@
  */
 
 /*
-Highlighted Bottom
+  Highlighted Bottom
 
-Weight: 3
+  .node--view-mode-highlighted-bottom - This presents the 'Highlighted Bottom' view mode.
 
-Markup: node--highlighted-bottom.html.twig
+  Markup: node--highlighted-bottom.html.twig
 
-Style guide: components.view_modes
+  Style guide: components.view_modes.highlighted_bottom
 */
 
 .node--view-mode-highlighted-bottom .node__footer {

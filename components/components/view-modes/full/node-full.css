@@ -2,3 +2,13 @@
  * @file
  * This file is used to style the 'full' view mode.
  */
+
+/*
+  Full
+
+  .node--view-mode-full - This presents the 'Full' view mode.
+
+  Markup: node--full.html.twig
+
+  Style guide: components.view_modes.full
+*/
