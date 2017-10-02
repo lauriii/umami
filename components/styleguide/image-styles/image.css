@@ -7,7 +7,7 @@ Weight: 1
 
 Markup: image.html.twig
 
-Style guide: components.image
+Style guide: styleguide.image
 */
 
 
@@ -16,7 +16,7 @@ Highlighted Small Image
 
 Markup: highlighted-small.html.twig
 
-Style guide: components.image.image-higlighted-small
+Style guide: styleguide.image.image-higlighted-small
 */
 
 
@@ -25,5 +25,5 @@ Highlighted Large Image
 
 Markup: highlighted-large.html.twig
 
-Style guide: components.image.image-higlighted-large
+Style guide: styleguide.image.image-higlighted-large
 */
