@@ -3,18 +3,14 @@
  * This file is used to style the branding block.
  */
 
- /*
- Branding Mark
+/*
+  Branding
 
- .branding - This is the default branding block from Drupal core.
+  .branding - This is the default branding block from Drupal core.
 
- Weight: 1
+  Weight: 1
 
- Markup: branding.html.twig
+  Markup: branding.html.twig
 
- Style guide: components.branding
- */
-
- .branding {
-   background: red;
- }
+  Style guide: components.blocks.branding
+*/

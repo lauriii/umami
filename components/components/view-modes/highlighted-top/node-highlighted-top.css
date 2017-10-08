@@ -4,15 +4,13 @@
  */
 
 /*
-Highlighted Top
+  Highlighted Top
 
-.node--view-mode-highlighted-top - This presents the 'Highlighted Top' view mode.
+  .node--view-mode-highlighted-top - This presents the 'Highlighted Top' view mode.
 
-Weight: 3
+  Markup: node--highlighted-top.html.twig
 
-Markup: node--highlighted-top.html.twig
-
-Style guide: components.view_modes
+  Style guide: components.view_modes.highlighted_top
 */
 
 .node--view-mode-highlighted-top .node__header {
