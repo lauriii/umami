@@ -3,6 +3,16 @@
  * This file is used to style the articles listing page.
  */
 
+/*
+  Articles Listing Page
+
+  This section presents the 'Articles Listing Page' for the website.
+
+  Markup: articles.html.twig
+
+  Style guide: components.listing_pages.articles
+*/
+
 @media (min-width: 768px) {
   /*
     TODO: This is way too generic, but works for proof of concept.
