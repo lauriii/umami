@@ -18,7 +18,7 @@ options.styleGuide = {
     namespace: 'umami',
     destination: options.rootPath.styleGuide,
     mask: /\.css/,
-    css: [options.rootPath.styleGuide + 'assets/styles.css'],
+    css: ['assets/styles.css'],
     js: [],
     homepage: 'homepage.md',
     title: 'Umami Styleguide'
