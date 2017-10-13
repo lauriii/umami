@@ -1,19 +1,20 @@
 /*
-Body
+  Body
 
-**Font**: Open Sans
-*Line height*: 1.5em (24px)
-*Font size*: 1em (16px)
-*base Colour*: Grey - Dark #464646
+  **Font**: Open Sans
+  *Line height*: 1.5em (24px)
+  *Font size*: 1em (16px)
+  *base Colour*: Grey - Dark #464646
 
-Weight: 1
+  Weight: 0
 
-Markup: body.html.twig
+  Markup: body.html.twig
 
-Style guide: styleguide.typography.body
+  Style guide: styleguide.typography.body
 */
 
 * {
+  box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -21,34 +22,11 @@ Style guide: styleguide.typography.body
   color: #464646;
 }
 
-p {
-  margin-bottom: 1.28rem;
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-ul {
-  margin-bottom: 1.28rem;
-}
-
-ol {
-  margin-bottom: 1.28rem;
-}
-
-ul ul,
-ol ol,
-ul ol,
-ol ul {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
-}
-
-blockquote {
-  background: #f4f2e9;
-  margin-bottom: 1.28rem;
-  padding: 3rem;
-}
-
-blockquote > * {
-  font-family: 'Scope One';
-  font-size: 1.266rem;
-  line-height: 1.5;
+body {
+  margin: 0;
 }

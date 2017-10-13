@@ -1,0 +1,12 @@
+/*
+  Paragraph
+
+  Weight: 0
+
+  Markup: paragraph.html.twig
+
+  Style guide: styleguide.typography.paragraph
+*/
+p {
+  margin-bottom: 1.28rem;
+}
