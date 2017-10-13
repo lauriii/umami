@@ -6,7 +6,7 @@
 /*
   Highlighted Small
 
-  .node--view-mode-highlighted-small - This presents the 'Highlighted Small' view mode.
+  This presents the 'Highlighted Small' view mode.
 
   Markup: node--highlighted-small.html.twig
 
@@ -21,32 +21,32 @@
   padding: 1.5rem;
 }
 
-.node--view-mode-highlighted-small .node__meta > h2 {
+.node--view-mode-highlighted-small .node__title {
   margin-bottom: 1rem;
 }
 
-.node--view-mode-highlighted-small .node__meta > h2 .field--name-title {
+.node--view-mode-highlighted-small .field--name-title {
   font-family: 'Scope One';
   font-size: 1.424rem;
 }
 
-.node--view-mode-highlighted-small .node__meta > h2 a {
-  color: #000000;
+.node--view-mode-highlighted-small .node__title a {
+  color: #000;
   text-decoration: none;
 }
 
-.node--view-mode-highlighted-small .node__meta > h2 a:focus,
-.node--view-mode-highlighted-small .node__meta > h2 a:hover, {
-  color: #000000;
+.node--view-mode-highlighted-small .node__title a:focus,
+.node--view-mode-highlighted-small .node__title a:hover, {
+  color: #000;
 }
 
-.node--view-mode-highlighted-small .node__meta > h2 a .field--name-title {
-  color: #000000;
+.node--view-mode-highlighted-small a .field--name-title {
+  color: #000;
   text-decoration: none;
 }
 
-.node--view-mode-highlighted-small .node__meta > h2 a:focus,
-.node--view-mode-highlighted-small .node__meta > h2 a:hover {
+.node--view-mode-highlighted-small .node__title a:focus,
+.node--view-mode-highlighted-small .node__title a:hover {
   text-decoration: underline;
 }
 
