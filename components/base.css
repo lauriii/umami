@@ -41,3 +41,8 @@ img {
   margin: auto;
   max-width: 1200px;
 }
+
+/* TODO: Meybe we should find a better place/way to fix jumping lines. */
+#kss-node .kss-title__permalink-hash {
+  line-height: 1rem;
+}
