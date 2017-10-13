@@ -1,0 +1,21 @@
+/*
+  Blockquote
+
+  Weight: 6
+
+  Markup: blockquote.html.twig
+
+  Style guide: styleguide.typography.blockquote
+*/
+
+blockquote {
+  background: #f4f2e9;
+  margin-bottom: 1.28rem;
+  padding: 3rem;
+}
+
+blockquote > * {
+  font-family: 'Scope One';
+  font-size: 1.266rem;
+  line-height: 1.5;
+}
