@@ -1,0 +1,70 @@
+/**
+ * @file
+ * This file is used to style the 'highlighted-small' view mode.
+ */
+
+/*
+  Highlighted Small
+
+  .node--view-mode-highlighted-small - This presents the 'Highlighted Small' view mode.
+
+  Markup: node--highlighted-small.html.twig
+
+  Style guide: components.view_modes.highlighted_small
+*/
+
+.node--view-mode-highlighted-small {
+  border: 1px solid #fcece7;
+}
+
+.node--view-mode-highlighted-small .node__meta {
+  padding: 1.5rem;
+}
+
+.node--view-mode-highlighted-small .node__meta > h2 {
+  margin-bottom: 1rem;
+}
+
+.node--view-mode-highlighted-small .node__meta > h2 .field--name-title {
+  font-family: 'Scope One';
+  font-size: 1.424rem;
+}
+
+.node--view-mode-highlighted-small .node__meta > h2 a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.node--view-mode-highlighted-small .node__meta > h2 a:focus,
+.node--view-mode-highlighted-small .node__meta > h2 a:hover, {
+  color: #000000;
+}
+
+.node--view-mode-highlighted-small .node__meta > h2 a .field--name-title {
+  color: #000000;
+  text-decoration: none;
+}
+
+.node--view-mode-highlighted-small .node__meta > h2 a:focus,
+.node--view-mode-highlighted-small .node__meta > h2 a:hover {
+  text-decoration: underline;
+}
+
+.node--view-mode-highlighted-small .field--name-field-image img {
+  width: 100%;
+}
+
+.node--view-mode-highlighted-small .field--name-field-difficulty {
+  color: #5f635d;
+  margin-bottom: 0.5rem;
+}
+
+.node--view-mode-highlighted-small .read-more a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.node--view-mode-highlighted-small .read-more a:after {
+  content: ">";
+  padding-left: 0.5rem;
+}
