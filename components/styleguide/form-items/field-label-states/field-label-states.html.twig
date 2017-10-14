@@ -1,0 +1,43 @@
+{#
+  /**
+   * @file
+   * This file creates replicates the states our field labels can have.
+   *
+   * It does not replicate the 'Hidden' state, because that doesn't output any
+   * .field__label div.
+   */
+#}
+
+<p>Here is an example of a field label set to be 'Above' the field.</p>
+<div class="field--label-above">
+  <div class="field__label">
+    Field Label
+  </div>
+  <div class="field__item">
+    <p>Field Label Above. This is the field content.</p>
+  </div>
+</div>
+<hr>
+
+<p>Here is an example of a field label set to be 'Inline' with the field.</p>
+<div class="field--label-inline">
+  <div class="field__label">
+    Field Label
+  </div>
+  <div class="field__item">
+    <p>Field Label Inline. This is the field content.</p>
+  </div>
+</div>
+<hr>
+
+<p>Here is an example of a field label set to be 'Visually hidden' from the
+  field. This makes it invisible to sighted users, but can be accessed by
+  screenreaders.</p>
+<div class="field--label-visually_hidden">
+  <div class="field__label visually_hidden">
+    Field Label
+  </div>
+  <div class="field__item">
+    <p>Field Label Visually Hidden (invisible to sighted users, available to screenreaders). This is the field content.</p>
+  </div>
+</div>
