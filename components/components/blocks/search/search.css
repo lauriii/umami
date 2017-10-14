@@ -21,3 +21,9 @@
   width: 1px;
   word-wrap: normal;
 }
+
+.form-search::placeholder {
+  font-size: 1rem;
+  color: #464646;
+  opacity: 1;
+}
