@@ -22,6 +22,7 @@
 }
 
 .node--view-mode-highlighted-small .node__title {
+  font-weight: normal;
   margin-bottom: 1rem;
 }
 
@@ -56,6 +57,7 @@
 
 .node--view-mode-highlighted-small .field--name-field-difficulty {
   color: #5f635d;
+  font-size: 0.889rem;
   margin-bottom: 0.5rem;
 }
 
