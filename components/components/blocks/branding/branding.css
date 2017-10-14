@@ -14,3 +14,9 @@
 
   Style guide: components.blocks.branding
 */
+
+.site-logo {
+  display: inline-block;
+  width: 100%;
+  max-width: 205px;
+}
