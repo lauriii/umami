@@ -12,3 +12,37 @@
 
   Style guide: components.navigation.main_menu
 */
+
+.menu-main {
+  display:flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  font-family: 'Scope One';
+  font-weight: normal;
+  font-size: 1.266rem;
+  line-height: 1.2;
+  color: #000;
+}
+.menu-main__item + .menu-main__item {
+  margin-left: 2.5em;
+}
+.menu-main__link {
+  display: inline-block;
+  padding-bottom: 0.15em;
+  text-decoration: none;
+  border-bottom: solid 0.15em transparent;
+  color: inherit;
+  transition: all 0.2s;
+}
+.menu-main__link:hover,
+.menu-main__link.is-active:hover,
+.menu-main__link:focus {
+  text-decoration: none;
+  border-bottom-color: rgba(255, 97, 56, 0.3);
+  color: #ff6138;
+}
+.menu-main__link:active,
+.menu-main__link.is-active {
+  text-decoration: none;
+  border-bottom-color: #ff6138;
+}
