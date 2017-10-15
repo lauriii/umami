@@ -14,9 +14,6 @@
 */
 
 .menu-main {
-  display:flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
   padding: 0;
   list-style-type: none;
   font-family: 'Scope One';
@@ -25,11 +22,11 @@
   line-height: 1.2;
   color: #000;
 }
-.menu-main__item + .menu-main__item {
-  margin-left: 2.5em;
+.menu-main__item {
+  margin-top: 0.8em;
 }
 .menu-main__link {
-  display: inline-block;
+  display: block;
   padding-bottom: 0.15em;
   text-decoration: none;
   border-bottom: solid 0.15em transparent;
@@ -47,4 +44,17 @@
 .menu-main__link.is-active {
   text-decoration: none;
   border-bottom-color: #ff6138;
+}
+
+@media screen and (min-width: 30em) {
+  .menu-main {
+    display:flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+  .menu-main__item + .menu-main__item {
+    margin-left: 2.5em;
+  }
+  .menu-main__link {
+    display: inline-block;
 }
