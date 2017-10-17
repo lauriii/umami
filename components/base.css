@@ -36,8 +36,23 @@ img {
   max-width: 100%;
 }
 
+/* Utilities TODO Move them to a separate partial */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px,1px,1px,1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
 /* TODO: We need to move this to a layout file. */
 .container {
   margin: auto;
   max-width: 1200px;
+}
+
+/* TODO: Meybe we should find a better place/way to fix jumping lines. */
+#kss-node .kss-title__permalink-hash {
+  line-height: 1rem;
 }
