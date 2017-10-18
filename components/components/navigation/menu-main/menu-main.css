@@ -14,15 +14,13 @@
 */
 
 .menu-main__toggle {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
   width: 40px;
   height: 40px;
   line-height: 1;
   padding: 0;
   border: none;
-  background: url('menu-icon.svg') no-repeat 0 center transparent;
+  text-align: left;
+  background-color: transparent;
 }
 .menu-main {
   margin: 0;
