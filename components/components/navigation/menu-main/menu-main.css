@@ -13,15 +13,6 @@
   Style guide: components.navigation.main_menu
 */
 
-.menu-main__toggle {
-  width: 40px;
-  height: 40px;
-  line-height: 1;
-  padding: 0;
-  border: none;
-  text-align: left;
-  background-color: transparent;
-}
 .menu-main {
   margin: 0;
   padding: 0;
@@ -43,6 +34,15 @@
    */
   max-height: 18.75rem;
   overflow-y: auto;
+}
+.menu-main__toggle {
+  width: 40px;
+  height: 40px;
+  line-height: 1;
+  padding: 0;
+  border: none;
+  text-align: left;
+  background-color: transparent;
 }
 .menu-main__item {
   margin-top: 0.8em;
@@ -69,15 +69,15 @@
 }
 
 @media screen and (min-width: 30em) {
-  .menu-main__toggle {
-    display: none;
-  }
   .menu-main {
     display:flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     max-height: initial;
     overflow: auto;
+  }
+  .menu-main__toggle {
+    display: none;
   }
   .menu-main__item + .menu-main__item {
     margin-left: 2.5em;
