@@ -9,21 +9,14 @@
 
   <h2 class="menu-main__title visually-hidden" id="block-umdrupal-main-menu-menu">Main navigation</h2>
 
-  <button type="button" name="menu_toggle" class="menu-main__toggle" aria-label="Toggle the menu">{% include 'menu-icon.svg' %}</button>
+  <button type="button" name="menu_toggle" class="menu-main__toggle" aria-label="Toggle the menu">{% include 'assets/menu-icon.svg' %}</button>
 
   <ul class="menu-main">
-    <li class="menu-main__item menu-main__item--active-trail">
-      <a href="/" data-drupal-link-system-path="<front>" class="menu-main__link is-active">Home</a>
-    </li>
-    <li class="menu-main__item">
-      <a href="/features" data-drupal-link-system-path="features" class="menu-main__link">Features</a>
-    </li>
-    <li class="menu-main__item">
-      <a href="/recipes" data-drupal-link-system-path="recipes" class="menu-main__link">Recipes</a>
-    </li>
-    <li class="menu-main__item">
-      <a href="/magazine" data-drupal-link-system-path="node/1" class="menu-main__link">Magazine</a>
-    </li>
+    {% for item in items %}
+      <li class="menu-main__item {{ item.itemclass }}">
+        <a href="{{ item.href }}" data-drupal-link-system-path="{{ item.data }}" class="menu-main__link {{ item.itemlinkclass }}">{{ text }}</a>
+      </li>
+    {% endfor %}
   </ul>
 
 </nav>
