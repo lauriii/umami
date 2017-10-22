@@ -8,18 +8,23 @@ var rename = require('gulp-rename');
 
 var options = {};
 
+// The root paths are used to construct all the other paths in this
+// configuration. The "project" root path is where this gulpfile.js is located.
 options.rootPath = {
+  // project     : __dirname + '/',
   components: __dirname + '/components/',
   styleGuide: __dirname + '/styleguide/'
 };
 
 options.styleGuide = {
   source: [options.rootPath.components],
-  builder: 'builder/twig',
+  builder: 'kss-custom-builder',
   namespace: 'umami',
   destination: options.rootPath.styleGuide,
   mask: /\.css/,
   css: ['assets/styles.css'],
+  // TODO This block is the source of {{ scripts|raw }} in index.twig.
+  // It should contain code which lits all js files used by styleguide elements.
   js: [],
   homepage: 'homepage.md',
   title: 'Umami Styleguide'
@@ -50,7 +55,7 @@ gulp.task('javascript', function() {
       path.dirname = '';
       return path;
     }))
-    .pipe(gulp.dest(options.rootPath.styleGuide + 'assets'));
+    .pipe(gulp.dest(options.rootPath.styleGuide + 'assets/js'));
 });
 
 gulp.task('default', function() {
