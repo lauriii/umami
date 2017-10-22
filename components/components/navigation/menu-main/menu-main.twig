@@ -14,7 +14,7 @@
   <ul class="menu-main">
     {% for item in items %}
       <li class="menu-main__item {{ item.itemclass }}">
-        <a href="{{ item.href }}" data-drupal-link-system-path="{{ item.data }}" class="menu-main__link {{ item.itemlinkclass }}">{{ text }}</a>
+        <a href="{{ item.href }}" data-drupal-link-system-path="{{ item.data }}" class="menu-main__link {{ item.itemlinkclass }}">{{ item.text }}</a>
       </li>
     {% endfor %}
   </ul>
