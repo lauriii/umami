@@ -5,7 +5,11 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var kss = require('kss');
 var rename = require('gulp-rename');
+var browserSync = require('browser-sync').create();
 
+var localUrl = require('./gulp-local-url.js');
+
+// Otions ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 var options = {};
 
 // The root paths are used to construct all the other paths in this
@@ -32,6 +36,12 @@ options.styleGuide = {
   title: 'Umami Styleguide'
 };
 
+// Set the URL used to access the Drupal website under development. This will
+// allow Browser Sync to serve the website and update CSS changes on the fly.
+options.drupalURL = localUrl.localUrl();
+// options.drupalURL = 'http://umdrupal.loc';
+
+// Gulp Tasks ------------------------------------------------------------------
 gulp.task('clean', function() {
   return del(['styleguide']);
 });
@@ -39,7 +49,10 @@ gulp.task('clean', function() {
 gulp.task('styles', function() {
   return gulp.src(options.rootPath.components + '**/*.css')
     .pipe(concat('styles.css'))
-    .pipe(gulp.dest(options.rootPath.styleGuide + 'assets'));
+    .pipe(gulp.dest(options.rootPath.styleGuide + 'assets'))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
 });
 
 gulp.task('styleguide', ['clean', 'styles'], function() {
@@ -64,13 +77,23 @@ gulp.task('javascript', function() {
     .pipe(gulp.dest(options.rootPath.styleGuide + 'assets/js'));
 });
 
+gulp.task('serve', function() {
+  if (!options.drupalURL) {
+    return Promise.resolve();
+  }
+  return browserSync.init({
+    proxy: options.drupalURL,
+    noOpen: false
+  });
+});
+
 gulp.task('default', function() {
   runSequence(['styleguide'], 'images', 'javascript');
 });
 
-gulp.task('watch', function() {
-  gulp.watch(options.rootPath.components + '**/*.twig', ['default']);
+gulp.task('watch', ['serve'], function() {
   gulp.watch(options.rootPath.components + '**/*.css', ['default']);
+  gulp.watch(options.rootPath.components + '**/*.twig', ['default']);
   gulp.watch(options.rootPath.components + '**/*.json', ['default']);
   gulp.watch(options.rootPath.components + '**/*.js', ['default']);
 });

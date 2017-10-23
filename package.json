@@ -9,6 +9,7 @@
     "run-sequence": "^2.2.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.18.13",
     "gulp-rename": "^1.2.2"
   }
 }
