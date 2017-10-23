@@ -9,9 +9,9 @@
 
   <h2 class="menu-main__title visually-hidden" id="block-umdrupal-main-menu-menu">Main navigation</h2>
 
-  <button type="button" name="menu_toggle" class="menu-main__toggle" aria-label="Toggle the menu">{% include 'assets/menu-icon.svg' %}</button>
+  <button type="button" name="menu_toggle" class="menu-main__toggle" data-drupal-selector="menu-main__toggle" aria-label="Toggle the menu">{% include 'assets/menu-icon.svg' %}</button>
 
-  <ul class="menu-main">
+  <ul class="menu-main" data-drupal-selector="menu-main" >
     {% for item in items %}
       <li class="menu-main__item {{ item.itemclass }}">
         <a href="{{ item.href }}" data-drupal-link-system-path="{{ item.data }}" class="menu-main__link {{ item.itemlinkclass }}">{{ item.text }}</a>
