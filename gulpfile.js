@@ -22,10 +22,12 @@ options.styleGuide = {
   namespace: 'umami',
   destination: options.rootPath.styleGuide,
   mask: /\.css/,
+  // This block is the source of {{ styles|raw }} in index.twig
   css: ['assets/styles.css'],
-  // TODO This block is the source of {{ scripts|raw }} in index.twig.
-  // It should contain code which lits all js files used by styleguide elements.
-  js: [],
+  // This block is the source of {{ scripts|raw }} in index.twig.
+  // TODO It should contain code which automatically lists all js files
+  // used by styleguide elements insteas of manually adding them one by one.
+  js: ['assets/js/menu-main.js'],
   homepage: 'homepage.md',
   title: 'Umami Styleguide'
 };
