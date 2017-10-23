@@ -35,14 +35,17 @@ options.styleGuide = {
 gulp.task('clean', function() {
   return del(['styleguide']);
 });
+
 gulp.task('styles', function() {
   return gulp.src(options.rootPath.components + '**/*.css')
     .pipe(concat('styles.css'))
     .pipe(gulp.dest(options.rootPath.styleGuide + 'assets'));
 });
+
 gulp.task('styleguide', ['clean', 'styles'], function() {
   return kss(options.styleGuide);
 });
+
 gulp.task('images', function() {
   gulp.src(options.rootPath.components + '**/assets/*{.png,.jpg,.svg}')
     .pipe(rename(function (path) {
@@ -51,6 +54,7 @@ gulp.task('images', function() {
     }))
     .pipe(gulp.dest(options.rootPath.styleGuide + 'assets/assets'));
 });
+
 gulp.task('javascript', function() {
   gulp.src(options.rootPath.components + '**/*.js')
     .pipe(rename(function (path) {
@@ -61,5 +65,12 @@ gulp.task('javascript', function() {
 });
 
 gulp.task('default', function() {
-  runSequence(['clean', 'styleguide'], 'images', 'javascript');
+  runSequence(['styleguide'], 'images', 'javascript');
+});
+
+gulp.task('watch', function() {
+  gulp.watch(options.rootPath.components + '**/*.twig', ['default']);
+  gulp.watch(options.rootPath.components + '**/*.css', ['default']);
+  gulp.watch(options.rootPath.components + '**/*.json', ['default']);
+  gulp.watch(options.rootPath.components + '**/*.js', ['default']);
 });
