@@ -46,9 +46,10 @@
 }
 .menu-main__item {
   margin-top: 0.8em;
+  text-align: center;
 }
 .menu-main__link {
-  display: block;
+  display: inline-block;
   padding-bottom: 0.15em;
   text-decoration: none;
   border-bottom: solid 0.15em transparent;
@@ -81,8 +82,5 @@
   }
   .menu-main__item + .menu-main__item {
     margin-left: 2.5em;
-  }
-  .menu-main__link {
-    display: inline-block;
   }
 }
