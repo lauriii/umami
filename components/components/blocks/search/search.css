@@ -26,6 +26,11 @@
   margin-right: 12px;
 }
 
+.search-icon svg {
+  width: 20px;
+  height: auto;
+}
+
 /* Search input */
 .form-search {
   width: 100%;
