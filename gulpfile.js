@@ -7,7 +7,8 @@ var kss = require('kss');
 var rename = require('gulp-rename');
 var browserSync = require('browser-sync').create();
 
-var localUrl = require('./gulp-local-url.js');
+// Local configuration file
+var localCnf = require('./gulp-config-local.js');
 
 // Otions ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 var options = {};
@@ -36,10 +37,10 @@ options.styleGuide = {
   title: 'Umami Styleguide'
 };
 
-// Set the URL used to access the Drupal website under development. This will
+// Sets the URL used to access the Drupal website under development. This will
 // allow Browser Sync to serve the website and update CSS changes on the fly.
-options.drupalURL = localUrl.localUrl();
-// options.drupalURL = 'http://umdrupal.loc';
+// Set your value in gulp-config-local.js.
+options.drupalURL = localCnf.localHost();
 
 // Gulp Tasks ------------------------------------------------------------------
 gulp.task('clean', function() {

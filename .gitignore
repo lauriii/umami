@@ -9,4 +9,4 @@ node_modules/
 ._*
 
 # Ignore browsersync local url setting file
-gulp-local-url.js
+gulp-config-local.js
