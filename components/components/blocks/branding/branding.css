@@ -20,3 +20,9 @@
   width: 100%;
   max-width: 205px;
 }
+
+.site-logo svg {
+  width: 100%;
+  max-width: 205px;
+  height: auto;
+}
