@@ -8,7 +8,7 @@
 
   This section presents the Main Menu of the website.
 
-  Markup: menu-main.html.twig
+  Markup: menu-main.twig
 
   Style guide: components.navigation.main_menu
 */
@@ -26,7 +26,7 @@
   color: #000;
   transition: max-height 0.5s ease-in;
 }
-.menu-main.is-active {
+.menu-main.menu-main--active {
   /**
    * An exact max-height value is must be set to make possible to animate the menu display.
    * It my not be much larger than the content because that would break the animation.
@@ -46,9 +46,10 @@
 }
 .menu-main__item {
   margin-top: 0.8em;
+  text-align: center;
 }
 .menu-main__link {
-  display: block;
+  display: inline-block;
   padding-bottom: 0.15em;
   text-decoration: none;
   border-bottom: solid 0.15em transparent;
@@ -81,8 +82,5 @@
   }
   .menu-main__item + .menu-main__item {
     margin-left: 2.5em;
-  }
-  .menu-main__link {
-    display: inline-block;
   }
 }

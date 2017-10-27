@@ -7,12 +7,12 @@
   'use strict';
   Drupal.behaviors.menutoggle = {
     attach: function (context, settings) {
-      var toggler = $('.menu-main__toggle');
-      var menu = $('.menu-main');
+      var toggler = $('[data-drupal-selector="menu-main__toggle"]');
+      var menu = $('[data-drupal-selector="menu-main"]');
 
       toggler.click(function toggle () {
-        toggler.toggleClass('is-active');
-        menu.toggleClass('is-active');
+        toggler.toggleClass('menu-main__toggle--active');
+        menu.toggleClass('menu-main--active');
         return false;
       });
     }
