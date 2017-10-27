@@ -61,7 +61,7 @@ gulp.task('styleguide', ['clean', 'styles'], function() {
 });
 
 gulp.task('images', function() {
-  gulp.src(options.rootPath.components + '**/assets/*{.png,.jpg,.svg}')
+  gulp.src(options.rootPath.components + '**/assets/*{.png,.jpg,.svg,.gif}')
     .pipe(rename(function (path) {
       path.dirname = '';
       return path;
