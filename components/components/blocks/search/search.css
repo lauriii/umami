@@ -6,9 +6,39 @@
 /*
   Search Block
 
-  .block-search - This is the default search block from Drupal core.
+  This is the default search block from Drupal core.
 
   Markup: search-block.html.twig
 
   Style guide: components.blocks.search
 */
+
+/* Search container div */
+.form-type-search {
+  display: flex;
+  align-items: center;
+}
+
+/* Search icon*/
+.search-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.search-icon svg {
+  width: 20px;
+  height: auto;
+}
+
+/* Search input */
+.form-search {
+  width: 100%;
+  max-width: 320px;
+  border: none;
+  font-size: 1rem;
+  color: #464646;
+}
+.form-search::placeholder {
+  opacity: 1;
+}

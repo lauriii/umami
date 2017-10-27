@@ -5,8 +5,11 @@
  */
 ?>
 
-<div id="block-branding" class="clearfix site-branding block block-system block-system-branding-block">
-  <a href="/" title="Home" rel="home" class="site-branding__logo">
-    <img src="logo.svg" alt="Home">
+<div id="block-umdrupal-branding" class="block block-system block-system-branding-block">
+  <a href="/" title="Home" rel="home" class="site-logo">
+    {% include '../../../../logo.svg' %}
   </a>
+  <div class="site-name visually-hidden">
+    <a href="/" title="Home" rel="home">Umami</a>
+  </div>
 </div>

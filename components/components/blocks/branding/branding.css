@@ -6,7 +6,7 @@
 /*
   Branding
 
-  .branding - This is the default branding block from Drupal core.
+  This is the branding block which contains the site logo.
 
   Weight: 1
 
@@ -14,3 +14,15 @@
 
   Style guide: components.blocks.branding
 */
+
+.site-logo {
+  display: inline-block;
+  width: 100%;
+  max-width: 205px;
+}
+
+.site-logo svg {
+  width: 100%;
+  max-width: 205px;
+  height: auto;
+}
