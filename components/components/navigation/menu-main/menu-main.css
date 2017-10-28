@@ -80,6 +80,9 @@
   .menu-main__toggle {
     display: none;
   }
+  .menu-main__item {
+    margin-top: 0;
+  }
   .menu-main__item + .menu-main__item {
     margin-left: 2.5em;
   }
