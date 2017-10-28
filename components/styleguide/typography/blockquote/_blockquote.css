@@ -15,7 +15,7 @@ blockquote {
 }
 
 blockquote > * {
-  font-family: 'Scope One';
+  font-family: 'Scope One', Georgia, serif;
   font-size: 1.266rem;
   line-height: 1.5;
 }
