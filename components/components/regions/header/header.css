@@ -9,9 +9,27 @@
 /*
   Region Header
 
-  .region--header - This presents the default markup for the 'Header' region.
+  This presents the default markup for the 'Header' region.
 
-  Markup: region--header.html.twig
+  Markup: header.twig
 
   Style guide: components.regions.header
 */
+
+.header {
+  border-bottom: 1px solid #F4F7F0;
+  padding: 10px 0;
+}
+
+.region-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 30em) {
+  .header {
+    border-top: 1px solid #F4F7F0;
+    padding: 14px 0;
+  }
+}
