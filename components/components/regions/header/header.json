@@ -1,3 +1,35 @@
 {
-  "content": "<div>LOGO</div><div>Menu</div>"
+  "content": "<div>LOGO</div><div>Menu</div>",
+  "items": [
+    {
+      "text": "Home",
+      "href": "#",
+      "data": "<front>",
+      "itemclass": "menu-main__item--active-trail",
+      "itemlinkclass": "is-active"
+    },
+    {
+      "text": "Features",
+      "href": "#",
+      "data": "features",
+      "itemclass": "",
+      "itemlinkclass": ""
+    },
+    {
+      "text": "Recipes",
+      "href": "#",
+      "data": "recipes",
+      "itemclass": "",
+      "itemlinkclass": ""
+    },
+    {
+      "text": "Magazine",
+      "href": "#",
+      "data": "node/1",
+      "itemclass": "",
+      "itemlinkclass": ""
+    }
+  ],
+  "class": ""
+
 }

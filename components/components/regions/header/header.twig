@@ -9,6 +9,21 @@
 
 <header class="header" role="banner">
   <div class="region region-header container">
-    {{ content }}
+    {% block content %}
+      {#
+        In our Drupal template, we need to replace these two include files
+        with {{ content }}, so we print whatever blocks are placed in that
+        region.
+
+        Also, I'm not happy with having to duplicate the content from the
+        menu-main.json file in our header.json file - we might need to look
+        at having a global data.json file.
+      #}
+      {% include '../../blocks/branding/branding.html.twig' %}
+      {% include '../../navigation/menu-main/menu-main.twig' with
+        "items": items
+      %}
+    {% endblock %}
+
   </div>
 </header>
