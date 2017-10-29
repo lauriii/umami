@@ -1,0 +1,16 @@
+/*
+  Input
+
+  Markup: input.twig
+
+  Style guide: components.form.input
+*/
+
+input {
+  height: 45px;
+  padding: 0 15px;
+  border: 2px solid #767775;
+  line-height: 45px;
+  font-size: 1rem;
+  color: #000;
+}
