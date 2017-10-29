@@ -21,19 +21,6 @@ body {
   margin: 0;
 }
 
-<<<<<<< HEAD
-=======
-input[type='submit'] {
-  background: #e84265;
-  border: 0;
-  border-radius: 3px;
-  color: #ffffff;
-  font-family: 'Scope One', Georgia, serif;
-  font-size: 1rem;
-  padding: .5rem 1rem;
-}
-
->>>>>>> master
 img {
   height: auto;
   max-width: 100%;
