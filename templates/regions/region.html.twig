@@ -18,8 +18,11 @@
     'region-' ~ region|clean_class,
   ]
 %}
-{% if content %}
-  <div{{ attributes.addClass(classes) }}>
-    {{ content }}
-  </div>
-{% endif %}
+
+<div class="layout-region ~ {{ region|clean_class }}">
+  {% if content %}
+    <div{{ attributes.addClass(classes) }}>
+      {{ content }}
+    </div>
+  {% endif %}
+</div>
