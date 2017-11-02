@@ -1,15 +1,15 @@
 global:
   version: VERSION
   css:
-    theme:
+    component:
       css/base.css: {}
-      css/components/regions/top/style.css: {}
-      css/components/regions/header/style.css: {}
-      css/components/regions/footer/style.css: {}
-      css/components/regions/bottom/style.css: {}
-      css/components/blocks/branding/style.css: {}
-      css/components/blocks/search/style.css: {}
-      css/components/navigation/menu--main/style.css: {}
+      css/components/regions/top/top.css: {}
+      css/components/regions/header/header.css: {}
+      css/components/regions/footer/footer.css: {}
+      css/components/regions/bottom/bottom.css: {}
+      css/components/blocks/branding/branding.css: {}
+      css/components/blocks/search/search.css: {}
+      css/components/navigation/menu-main/menu-main.css: {}
 
 webfonts:
   css:
@@ -19,19 +19,14 @@ webfonts:
 view-mode-highlighted-bottom:
   css:
     theme:
-      css/components/view-modes/node-highlighted-bottom/node-highlighted-bottom.css: {}
+      css/components/view-modes/highlighted-bottom/highlighted-bottom.css: {}
 
 view-mode-highlighted-small:
   css:
     theme:
-      css/components/view-modes/node-highlighted-small/node-highlighted-small.css: {}
+      css/components/view-modes/highlighted-small/highlighted-small.css: {}
 
 view-mode-highlighted-top:
   css:
     theme:
-      css/components/view-modes/node-highlighted-top/node-highlighted-top.css: {}
-
-list-articles:
-  css:
-    theme:
-      css/components/listing-pages/articles/style.css: {}
+      css/components/view-modes/highlighted-top/highlighted-top.css: {}
