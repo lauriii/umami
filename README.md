@@ -20,6 +20,12 @@ Build the styleguide
 
     ./node_modules/.bin/gulp
 
+## Using BrowserSync
+
+Find example.gulp-config-local.js and follow the instructions in it. After that
+
+      gulp watch
+
 ## Communication, discussions and help
 * Most communication happens on <a href="https://drupaltwig-slack.herokuapp.com/">Slack</a> in the <em>#out-of-the-box channel</em>. Feel free to join and ask for help.
 * There is a weekly meeting on Mondays 15:00h-16:00h UTC.

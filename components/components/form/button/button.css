@@ -1,0 +1,54 @@
+/*
+  Button
+
+  :hover and :active - Hover and active styling.
+
+  Markup: button.twig
+
+  Style guide: components.form.button
+*/
+
+button,
+.button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  display: inline-block;
+  height: 45px;
+  padding: 0 2rem;
+  border: 0;
+  border-radius: 4px;
+  background-color: #00836d;
+  color: #fff;
+  cursor: pointer;
+  line-height: 45px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Scope One', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  transition: background-color 0.5s ease;
+}
+button:hover,
+button:active,
+button:focus,
+.button:hover,
+.button:active,
+.button:focus {
+  background: #ff6138;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+}
+button[disabled]:hover,
+button[disabled]:active,
+button[disabled]:focus,
+button[disabled],
+.button[disabled]:hover,
+.button[disabled]:active,
+.button[disabled]:focus,
+.button[disabled] {
+  background: #767775;
+  color: #464646;
+  cursor: default;
+}
