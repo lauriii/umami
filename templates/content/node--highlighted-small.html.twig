@@ -86,27 +86,26 @@
 <article{{ attributes.addClass(classes) }}>
 
   <div{{ content_attributes.addClass('node__content') }}>
-    {{ content }}
+    {{ content.field_image }}
   </div>
 
-  <header class="node__header">
+  <div class="node__meta">
+
+    {{ content.field_difficulty }}
+
     {{ title_prefix }}
+
     {% if not page %}
-      <h2{{ title_attributes }}>
+      <h2{{ title_attributes.addClass('node__title') }}>
         <a href="{{ url }}" rel="bookmark">{{ label }}</a>
       </h2>
     {% endif %}
     {{ title_suffix }}
-  </header>
 
-  {% if display_submitted %}
-    <footer class="node__meta">
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('node__submitted') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
+    <div class="read-more">
+      <a href="{{ url }}">{{ 'View Recipe'|t }}</a>
+    </div>
+
+  </div>
 
 </article>
