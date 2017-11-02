@@ -10,6 +10,12 @@ global:
       css/components/blocks/branding/branding.css: {}
       css/components/blocks/search/search.css: {}
       css/components/navigation/menu-main/menu-main.css: {}
+      css/styleguide/typography/blockquote/blockquote.css: {}
+      css/styleguide/typography/headings/headings.css: {}
+      css/styleguide/typography/links/links.css: {}
+      css/styleguide/typography/ordered-lists/ordered-list.css: {}
+      css/styleguide/typography/paragraph/paragraph.css: {}
+      css/styleguide/typography/unordered-lists/unordered-list.css: {}
 
 webfonts:
   css:
