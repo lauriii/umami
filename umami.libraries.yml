@@ -10,6 +10,7 @@ global:
       components/components/blocks/branding/style.css: {}
       components/components/blocks/search/style.css: {}
       components/components/navigation/menu--main/style.css: {}
+      css/components/tabs.css: {}
 
 webfonts:
   css:
