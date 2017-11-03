@@ -3,16 +3,6 @@
  * This file is used to style the search block.
  */
 
-/*
-  Search Block
-
-  This is the default search block from Drupal core.
-
-  Markup: search-block.html.twig
-
-  Style guide: components.blocks.search
-*/
-
 /* Search container div */
 .form-type-search {
   display: flex;
