@@ -3,30 +3,60 @@
  * This file is used to style the 'highlighted-top' view mode.
  */
 
-/*
-  Highlighted Top
-
-  .node--view-mode-highlighted-top - This presents the 'Highlighted Top' view mode.
-
-  Markup: node--highlighted-top.html.twig
-
-  Style guide: components.view_modes.highlighted_top
-*/
-
-.node--view-mode-highlighted-top .node__header {
-  padding: 1rem;
+.node--view-mode-highlighted-top {
+  border: 1px solid #fcece7;
 }
 
-.node--view-mode-highlighted-top .node__header > h2 a {
-  color: #000000;
+.node--view-mode-highlighted-top .node__meta {
+  padding: 1.5rem;
+}
+
+.node--view-mode-highlighted-top .node__title {
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.node--view-mode-highlighted-top .field--name-title {
+  font-family: 'Scope One', Georgia, serif;
+  font-size: 1.424rem;
+}
+
+.node--view-mode-highlighted-top .node__title a {
+  color: #000;
   text-decoration: none;
 }
 
-.node--view-mode-highlighted-top .node__header > h2 a:focus,
-.node--view-mode-highlighted-top .node__header > h2 a:hover {
+.node--view-mode-highlighted-top .node__title a:focus,
+.node--view-mode-highlighted-top .node__title a:hover, {
+  color: #000;
+}
+
+.node--view-mode-highlighted-top a .field--name-title {
+  color: #000;
+  text-decoration: none;
+}
+
+.node--view-mode-highlighted-top .node__title a:focus,
+.node--view-mode-highlighted-top .node__title a:hover {
   text-decoration: underline;
 }
 
 .node--view-mode-highlighted-top .field--name-field-image img {
   width: 100%;
+}
+
+.node--view-mode-highlighted-top .field--name-field-difficulty {
+  color: #5f635d;
+  font-size: 0.889rem;
+  margin-bottom: 0.5rem;
+}
+
+.node--view-mode-highlighted-top .read-more a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.node--view-mode-highlighted-top .read-more a:focus,
+.node--view-mode-highlighted-top .read-more a:hover {
+  text-decoration: underline;
 }

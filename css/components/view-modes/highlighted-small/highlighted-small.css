@@ -3,16 +3,6 @@
  * This file is used to style the 'highlighted-small' view mode.
  */
 
-/*
-  Highlighted Small
-
-  This presents the 'Highlighted Small' view mode.
-
-  Markup: node--highlighted-small.html.twig
-
-  Style guide: components.view_modes.highlighted_small
-*/
-
 .node--view-mode-highlighted-small {
   border: 1px solid #fcece7;
 }
