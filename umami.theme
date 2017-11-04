@@ -10,3 +10,15 @@
 function umami_preprocess_views_view(&$variables) {
   $variables['#attached']['library'][] = 'umami/list-articles';
 }
+
+use Drupal\Core\Form\FormStateInterface;
+/**
+ * @param $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ * @param $form_id
+ */
+function umami_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form['#id'] == 'search-block-form') {
+    $form['actions']['submit']['#attributes']['class'][] = 'visually-hidden';
+  }
+}

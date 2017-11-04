@@ -5,7 +5,7 @@
 
 /* Search container div */
 div.form-type-search {
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
@@ -15,7 +15,6 @@ div.form-type-search {
   height: 20px;
   margin-right: 8px;
 }
-
 .search-icon svg {
   width: 20px;
   height: auto;
@@ -23,8 +22,7 @@ div.form-type-search {
 
 /* Search input */
 .form-search {
-  width: 100%;
-  max-width: 320px;
+  width: 320px;
   border: none;
   font-size: 1rem;
   color: #464646;
