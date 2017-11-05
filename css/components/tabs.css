@@ -3,7 +3,7 @@
  * Visual styles for tabs.
  */
 
-nav.tabs {
+.layout-tabs {
   background-color: #79bd8f;
 }
 ul.tabs {
