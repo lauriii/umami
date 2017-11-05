@@ -12,6 +12,7 @@ global:
       css/components/tabs.css: {}
       css/components/view-modes/node.css: {}
       css/components/navigation/menu-main/menu-main.css: {}
+      css/components/navigation/menu-account/menu-account.css: {}
       css/styleguide/typography/blockquote/blockquote.css: {}
       css/styleguide/typography/headings/headings.css: {}
       css/styleguide/typography/links/links.css: {}
