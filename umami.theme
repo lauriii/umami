@@ -5,6 +5,18 @@
  */
 
 /**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ *
+ * Adds body classes if certain regions have content.
+ */
+function umami_preprocess_html(&$variables) {
+  // Add a sidebar class if the sidebar has content in it.
+  if (!empty($variables['page']['sidebar'])) {
+    $variables['attributes']['class'][] = 'has-sidebar';
+  }
+}
+
+/**
  * Implements hook_preprocess_views_view().
  */
 function umami_preprocess_views_view(&$variables) {

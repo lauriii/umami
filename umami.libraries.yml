@@ -10,6 +10,7 @@ global:
       css/components/regions/footer/footer.css: {}
       css/components/regions/bottom/bottom.css: {}
       css/components/tabs.css: {}
+      css/components/view-modes/node.css: {}
       css/components/navigation/menu-main/menu-main.css: {}
       css/styleguide/typography/blockquote/blockquote.css: {}
       css/styleguide/typography/headings/headings.css: {}
@@ -17,6 +18,8 @@ global:
       css/styleguide/typography/ordered-lists/ordered-list.css: {}
       css/styleguide/typography/paragraph/paragraph.css: {}
       css/styleguide/typography/unordered-lists/unordered-list.css: {}
+    layout:
+      css/layout.css: {}
 
 webfonts:
   css:

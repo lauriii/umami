@@ -53,10 +53,36 @@
   {% endif %}
 
   {% if page.header|render|striptags|trim is not empty %}
-    {{ page.header }}
+    <div class="layout-header">
+      {{ page.header }}
+    </div>
   {% endif %}
 
-  <main role="main">
+  {% if page.breadcrumbs|render|striptags|trim is not empty %}
+    <div class="layout-breadcrumbs">
+      {{ page.breadcrumbs }}
+    </div>
+  {% endif %}
+
+  {% if page.highlighted|render|striptags|trim is not empty %}
+    <div class="layout-highlighted">
+      {{ page.highlighted }}
+    </div>
+  {% endif %}
+
+  {% if page.page_title|render|striptags|trim is not empty %}
+    <div class="layout-page-title">
+      {{ page.page_title }}
+    </div>
+  {% endif %}
+
+  {% if page.tabs|render|striptags|trim is not empty %}
+    <div class="layout-tabs">
+      {{ page.tabs }}
+    </div>
+  {% endif %}
+
+  <main role="main" class="main container">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">

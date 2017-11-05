@@ -3,16 +3,6 @@
  * This file is used to style the top region.
  */
 
-/*
-   Region Top
-
-   .region--top - This presents the default markup for the 'Top' region.
-
-   Markup: region--top.html.twig
-
-   Style guide: components.regions.top
-*/
-
 .layout-top {
-  
+  background: #fff;
 }
