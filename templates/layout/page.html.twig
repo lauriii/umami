@@ -70,15 +70,15 @@
     </div>
   {% endif %}
 
+  {% if page.tabs|render|striptags|trim is not empty %}
+  <div class="layout-tabs">
+    {{ page.tabs }}
+  </div>
+  {% endif %}
+
   {% if page.page_title|render|striptags|trim is not empty %}
     <div class="layout-page-title">
       {{ page.page_title }}
-    </div>
-  {% endif %}
-
-  {% if page.tabs|render|striptags|trim is not empty %}
-    <div class="layout-tabs">
-      {{ page.tabs }}
     </div>
   {% endif %}
 
