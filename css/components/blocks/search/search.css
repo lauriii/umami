@@ -23,8 +23,11 @@ div.form-type-search {
 /* Search input */
 .form-search {
   width: 320px;
+  height: auto;
+  padding: 0;
   border: none;
   font-size: 1rem;
+  line-height: normal;
   color: #464646;
 }
 .form-search::placeholder {
