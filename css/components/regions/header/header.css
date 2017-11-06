@@ -6,16 +6,6 @@
  * header items, such as a menu, which are styled by their own CSS files.
  */
 
-/*
-  Region Header
-
-  This presents the default markup for the 'Header' region.
-
-  Markup: header.twig
-
-  Style guide: components.regions.header
-*/
-
 .header {
   background: #fff;
   border-bottom: 1px solid #E6EEE0;

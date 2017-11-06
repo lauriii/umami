@@ -1,27 +1,4 @@
-/*
-  Banner
-
-  .banner--left - This is used for placing banner on the left
-  .banner--right - This is used for placing banner on the left
-
-  Weight: 1
-
-  Markup: banner.html.twig
-
-  Style guide: components.blocks.banner
-*/
-
-.banner {
-  background: deeppink;
-}
-.banner--left {
-  background: green;
-}
-
-.banner--right {
-  background: blue;
-}
-
-.banner:hover, .banner.pseudo-class-hover {
-  background: hotpink;
-}
+/**
+ * @file
+ * This file is used to style the banner block.
+ */

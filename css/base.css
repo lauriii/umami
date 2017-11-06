@@ -10,7 +10,18 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
-  margin-top: 0;
+  margin-top: 0; // This allows us to ensure that items side-by-side line up nicely.
+}
+
+a {
+  color: #00836D;
+  text-decoration: dashed underline;
+}
+
+a:hover,
+a:focus {
+  color: #CC2A00;
+  text-decoration: solid underline;
 }
 
 body {
@@ -22,22 +33,148 @@ body {
   margin: 0;
 }
 
+blockquote {
+  background: #f4f2e9;
+  margin-bottom: 1.28rem;
+  padding: 3rem;
+}
+
+blockquote > * {
+  font-family: 'Scope One', Georgia, serif;
+  font-size: 1.266rem;
+  line-height: 1.5;
+}
+
+button,
+.button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  display: inline-block;
+  height: 45px;
+  padding: 0 2rem;
+  border: 0;
+  border-radius: 4px;
+  background-color: #00836d;
+  color: #fff;
+  cursor: pointer;
+  line-height: 45px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Scope One', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  transition: background-color 0.5s ease;
+}
+button:hover,
+button:active,
+button:focus,
+.button:hover,
+.button:active,
+.button:focus {
+  background: #ff6138;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+}
+button[disabled]:hover,
+button[disabled]:active,
+button[disabled]:focus,
+button[disabled],
+.button[disabled]:hover,
+.button[disabled]:active,
+.button[disabled]:focus,
+.button[disabled] {
+  background: #767775;
+  color: #464646;
+  cursor: default;
+}
+
+h1, .alpha {
+  font-family: 'Scope One', Georgia, serif;
+  font-size: 2.369rem;
+  line-height: 1.2;
+  margin: 0 0 1.07rem 0;
+}
+
+h2, .beta {
+  font-family: 'Scope One', Georgia, serif;
+  font-size: 1.77rem;
+  line-height: 1.2;
+  margin: 0 0 0.7rem 0;
+}
+
+h3, .gamma {
+  font-family: 'Scope One', Georgia, serif;
+  font-size: 1.33rem;
+  line-height: 1.2;
+  margin: 0 0 0.96rem 0;
+}
+
+h4, .delta {
+  font-family: 'Scope One', Georgia, serif;
+  font-size: 1.33rem;
+  line-height: 1.2;
+  margin: 0 0 1.28rem 0;
+}
+
+h5, .epsilon {
+  font-family: 'Scope One', Georgia, serif;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  margin: 0 0 1.28rem 0;
+}
+
+h6, .zeta {
+  font-family: 'Scope One', Georgia, serif;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  margin: 0 0 1.28rem 0;
+}
+
 img {
   height: auto;
   max-width: 100%;
 }
 
-/* Utilities TODO Move them to a separate partial */
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px,1px,1px,1px);
-  overflow: hidden;
-  height: 1px;
-  width: 1px;
-  word-wrap: normal;
+input {
+  height: 45px;
+  padding: 0 15px;
+  margin: 0.25rem 0;
+  border: 2px solid #767775;
+  line-height: 45px;
+  font-size: 1rem;
+  color: #000;
 }
 
-/* TODO: Meybe we should find a better place/way to fix jumping lines. */
-#kss-node .kss-title__permalink-hash {
-  line-height: 1rem;
+label {
+  display: block;
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #464646;
+}
+
+ol {
+  margin-bottom: 1.28rem;
+}
+
+ol ol,
+ol ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+p {
+  margin-bottom: 1.28rem;
+}
+
+ul {
+  margin-bottom: 1.28rem;
+}
+
+ul ul,
+ul ol {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 }

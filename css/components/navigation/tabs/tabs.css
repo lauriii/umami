@@ -1,14 +1,35 @@
 /**
  * @file
- * This file is used to style the tabs.
+ * Visual styles for tabs.
  */
 
-/*
-  Tabs
-
-  This section presents the 'Tabs' for the website.
-
-  Markup: tabs.html.twig
-
-  Style guide: components.navigation.tabs
-*/
+.layout-tabs {
+  background-color: #79bd8f;
+}
+ul.tabs {
+  display: flex;
+  list-style: none;
+  margin: 0 0 0.5em;
+  padding: 0;
+}
+.tabs li {
+  margin: 0;
+  background-color: #e6eee0;
+}
+.tabs li.is-active {
+  background-color: #fff;
+}
+.tabs a {
+  display: block;
+  padding: 0.2em 1em;
+  background-color: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+.tabs a.is-active {
+  background-color: inherit;
+}
+.tabs a:focus,
+.tabs a:hover {
+  background-color: #fff;
+}

@@ -3,18 +3,6 @@
  * This file is used to style the branding block.
  */
 
-/*
-  Branding
-
-  This is the branding block which contains the site logo.
-
-  Weight: 1
-
-  Markup: branding.html.twig
-
-  Style guide: components.blocks.branding
-*/
-
 .site-logo {
   display: inline-block;
   width: 100%;

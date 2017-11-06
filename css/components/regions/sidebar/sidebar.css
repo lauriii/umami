@@ -6,13 +6,3 @@
  * sidebar items, such as a featured content item, which are styled by their own
  * CSS files.
  */
-
-/*
-  Region Sidebar
-
-  .region--sidebar - This presents the default markup for the 'Sidebar' region.
-
-  Markup: region--sidebar.html.twig
-
-  Style guide: components.regions.sidebar
-*/

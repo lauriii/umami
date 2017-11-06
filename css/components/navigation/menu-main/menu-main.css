@@ -3,16 +3,6 @@
  * This file is used to style the main menu.
  */
 
-/*
-  Main Menu
-
-  This section presents the Main Menu of the website.
-
-  Markup: menu-main.twig
-
-  Style guide: components.navigation.main_menu
-*/
-
 .menu-main {
   margin: 0;
   padding: 0;
