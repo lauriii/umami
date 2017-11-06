@@ -5,13 +5,14 @@ global:
       css/base.css: {}
       css/components/blocks/branding/branding.css: {}
       css/components/blocks/search/search.css: {}
-      css/components/regions/top/top.css: {}
-      css/components/regions/header/header.css: {}
-      css/components/regions/footer/footer.css: {}
+      css/components/navigation/menu-main/menu-main.css: {}
+      css/components/navigation/menu-account/menu-account.css: {}
       css/components/regions/bottom/bottom.css: {}
+      css/components/regions/footer/footer.css: {}
+      css/components/regions/header/header.css: {}
+      css/components/regions/top/top.css: {}
       css/components/tabs/tabs.css: {}
       css/components/view-modes/node.css: {}
-      css/components/navigation/menu-main/menu-main.css: {}
     layout:
       css/layout.css: {}
 

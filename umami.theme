@@ -4,8 +4,6 @@
  * Functions to support theming in the Umami theme.
  */
 
-use Drupal\Core\Form\FormStateInterface;
-
 /**
  * Implements hook_preprocess_HOOK() for HTML document templates.
  *
@@ -22,7 +20,18 @@ function umami_preprocess_html(&$variables) {
 }
 
 /**
- * Implements hook_form_alter().
+ * Implements hook_preprocess_views_view().
+ */
+function umami_preprocess_views_view(&$variables) {
+  $variables['#attached']['library'][] = 'umami/list-articles';
+}
+
+use Drupal\Core\Form\FormStateInterface;
+/**
+ * Implements hook_form_alter()
+ * @param $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ * @param $form_id
  */
 function umami_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   if ($form['#id'] == 'search-block-form') {
