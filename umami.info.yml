@@ -10,10 +10,10 @@ libraries:
 regions:
   top: Top
   header: Header
-  breadcrumbs: Breadcrumbs
   highlighted: Highlighted
-  page_title: Page Title
   tabs: Tabs
+  breadcrumbs: Breadcrumbs
+  page_title: Page Title
   content: Content
   sidebar: Sidebar
   footer: Footer
