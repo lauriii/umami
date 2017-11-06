@@ -15,7 +15,7 @@ global:
       css/components/regions/top/top.css: {}
       css/components/view-modes/node.css: {}
     layout:
-      css/layout.css: {}
+      css/layout/layout.css: {}
 
 webfonts:
   css:
