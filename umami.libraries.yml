@@ -18,6 +18,12 @@ global:
     layout:
       css/layout/layout.css: {}
 
+two-columns:
+  css:
+    layout:
+      css/layout/layout-2-col.css: {}
+
+
 webfonts:
   css:
     theme:
