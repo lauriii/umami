@@ -23,7 +23,7 @@ function umami_preprocess_html(&$variables) {
 }
 
 /**
- * Implements hook_form_alter()
+ * Implements hook_form_alter().
  */
 function umami_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   if ($form['#id'] == 'search-block-form') {
