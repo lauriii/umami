@@ -17,6 +17,8 @@ global:
       css/components/view-modes/node.css: {}
     layout:
       css/layout/layout.css: {}
+      css/layout/grid-3.css: {} # @TODO figure out when this should be applied and move to its own library
+      css/layout/grid-4.css: {} # @TODO figure out when this should be applied and move to its own library
 
 two-columns:
   css:
@@ -32,14 +34,14 @@ webfonts:
 view-mode-highlighted-bottom:
   css:
     theme:
-      css/components/view-modes/highlighted-bottom/highlighted-bottom.css: {}
+      css/components/content/highlighted-bottom/highlighted-bottom.css: {}
 
 view-mode-highlighted-small:
   css:
     theme:
-      css/components/view-modes/highlighted-small/highlighted-small.css: {}
+      css/components/content/highlighted-small/highlighted-small.css: {}
 
 view-mode-highlighted-top:
   css:
     theme:
-      css/components/view-modes/highlighted-top/highlighted-top.css: {}
+      css/components/content/highlighted-top/highlighted-top.css: {}
