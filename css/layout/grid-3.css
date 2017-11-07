@@ -2,3 +2,22 @@
  * @file
  * This file is used to create a 3 column grid layout.
  */
+
+@media screen and (min-width: 30em) {
+  .grid--3 .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -14px;
+  }
+  .grid--3 .views-row {
+    flex: 0 0 calc(50% - 28px);
+    margin: 0 10px 28px;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .grid--3 .views-row {
+    flex: 0 0 calc(33% - 28px);
+  }
+}
