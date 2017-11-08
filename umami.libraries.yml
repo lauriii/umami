@@ -19,6 +19,10 @@ global:
       css/layout/layout.css: {}
       css/layout/grid-3.css: {} # @TODO figure out when this should be applied and move to its own library
       css/layout/grid-4.css: {} # @TODO figure out when this should be applied and move to its own library
+  js:
+    js/components/navigation/menu-main/menu-main.js: {}
+  dependencies:
+    - core/jquery
 
 two-columns:
   css:
