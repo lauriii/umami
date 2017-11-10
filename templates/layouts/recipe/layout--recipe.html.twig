@@ -1,0 +1,56 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a one-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'layout',
+    'layout--recipe',
+  ]
+%}
+{% if content.top %}
+  <div {{ region_attributes.top.addClass('layout__region', 'layout__region--top') }}>
+    {{ content.top }}
+  </div>
+{% endif %}
+{% if content.middle_first or content.middle_second %}
+  <div class="layout__region--middle">
+{% endif %}
+{% if content.middle_first %}
+  <div {{ region_attributes.middle_first.addClass('layout__region', 'layout__region--middle-first') }}>
+    {{ content.middle_first }}
+  </div>
+{% endif %}
+{% if content.middle_second %}
+  <div {{ region_attributes.middle_second.addClass('layout__region', 'layout__region--middle-second') }}>
+    {{ content.middle_second }}
+  </div>
+{% endif %}
+{% if content.middle_first or content.middle_second %}
+  </div>
+{% endif %}
+{% if content.bottom_first or content.bottom_second %}
+  <div class="layout__region--bottom">
+    <h2>{{ "What you'll need and how to make this dish"|trans }}</h2>
+{% endif %}
+{% if content.bottom_first %}
+  <div {{ region_attributes.bottom_first.addClass('layout__region', 'layout__region--bottom-first') }}>
+    {{ content.bottom_first }}
+  </div>
+{% endif %}
+{% if content.bottom_second %}
+  <div {{ region_attributes.bottom_second.addClass('layout__region', 'layout__region--bottom-second') }}>
+    {{ content.bottom_second }}
+  </div>
+{% endif %}
+{% if content.bottom_first or content.bottom_second %}
+  </div>
+{% endif %}

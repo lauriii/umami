@@ -12,3 +12,123 @@
 
   Style guide: components.content_types.recipe
 */
+
+/* TODO: some of this could possibly be components / partials but lets get something to work with that's close */
+
+.page-node-type-recipe .title-main-wrapper {
+  background-color: #ffffff;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 38px;
+  padding: 2.369rem;
+}
+.page-node-type-recipe .layout__region--middle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 38px;
+  margin-bottom: 2.369rem;
+}
+.page-node-type-recipe .layout__region--middle .field__label {
+  font-family: "Open Sans", Verdana, sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 700;
+}
+.page-node-type-recipe .layout__region--middle-first,
+.page-node-type-recipe .layout__region--middle-second {
+  flex: 0 0 calc(50% - 16px);
+  flex: 0 0 calc(50% - 1rem);
+}
+
+/* Recipe meta */
+.page-node-type-recipe .layout__region--middle-second {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+}
+.page-node-type-recipe .layout__region--middle-second > .field {
+  flex: 0 0 40%;
+  text-align: center;
+  margin-bottom: 19px;
+  margin-bottom: 1.1845rem;
+}
+.page-node-type-recipe .layout__region--middle-second > .field.field--name-field-summary {
+  flex-basis: 90%;
+}
+.page-node-type-recipe .layout__region--middle-second svg {
+  height: 47px;
+}
+
+/* Recipe instructions */
+.page-node-type-recipe .layout__region--bottom {
+  background-color: #F4F2E9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.page-node-type-recipe .layout__region--bottom > h2 {
+  flex: 0 0 100%;
+  font-family: "Scope One", Georgia, serif;
+  font-size: 38px;
+  font-size: 2.369rem;
+  line-height: 1.2;
+  text-align: center;
+  padding: 45px;
+  padding: 2.8428rem;
+  margin: 0;
+}
+.page-node-type-recipe .layout__region--bottom-first {
+  flex: 0 0 33%;
+  padding: 0 38px 38px;
+  padding: 0 2.369rem 2.369rem;
+}
+.page-node-type-recipe .layout__region--bottom-second {
+  flex: 0 0 67%;
+  padding: 0 38px 38px;
+  padding: 0 2.369rem 2.369rem;
+}
+.page-node-type-recipe .layout__region--bottom .field__label {
+  font-family: "Scope One", Georgia, serif;
+  font-size: 28px;
+  font-size: 1.77rem;
+  line-height: 1.2;
+  padding: 0 0 10px 0;
+  padding: 0 0 0.6rem 0;
+  margin: 0 0 24px 0;
+  margin: 0 0 1.5rem 0;
+  border-bottom: 1px solid #EEC2CB;
+}
+.page-node-type-recipe .field--name-field-ingredients .field__item {
+  border-bottom: 1px solid #EEC2CB;
+  padding: 0 0 10px 0;
+  padding: 0 0 0.6rem 0;
+  margin: 0 0 10px 0;
+  margin: 0 0 0.6rem 0;
+}
+.page-node-type-recipe .field--name-field-recipe-instruction ol {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.page-node-type-recipe .field--name-field-recipe-instruction ol > li {
+  counter-increment: step-counter;
+  padding: 0 0 10px 40px;
+  padding: 0 0 0.6rem 2.5rem;
+  min-height: 24px;
+  min-height: 1.5rem;
+  list-style: none;
+  position: relative;
+}
+.page-node-type-recipe .field--name-field-recipe-instruction ol > li::before {
+  content: counter(step-counter);
+  color: #CC2A00;
+  font-size: 24px;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

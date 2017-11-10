@@ -13,7 +13,7 @@
   Style guide: components.listing_pages.articles
 */
 
-@media (min-width: 768px) {
+@media screen and (min-width: 48rem) { /* 768px */
   /*
     TODO: This is way too generic, but works for proof of concept.
           We need to come up with class names for our views.
@@ -22,7 +22,9 @@
     display: flex;
     flex-wrap: wrap;
   }
+}
 
+@media screen and (min-width: 48rem) { /* 768px */
   .view .views-row {
     flex: 0 0 calc(50% - 2rem);
     margin: 0 1rem 1rem;
