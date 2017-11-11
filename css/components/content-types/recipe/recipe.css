@@ -23,6 +23,7 @@
 }
 .page-node-type-recipe .layout__region--middle {
   display: flex;
+  display: -ms-flexbox;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 2.369em;
@@ -40,19 +41,26 @@
 }
 
 /* Recipe meta */
+.page-node-type-recipe .label-items {
+  display: inline-block;
+  margin-right: 1.5em;
+  font-size: 0.889rem;
+}
 .page-node-type-recipe .layout__region--middle-second {
   display: flex;
+  display: -ms-flexbox;
   flex-wrap: wrap;
   justify-content: center;
   align-self: center;
 }
-.page-node-type-recipe .layout__region--middle-second > .field {
+.page-node-type-recipe .layout__region--middle-second > .recipe-meta {
   flex: 0 0 40%;
   text-align: center;
   margin-bottom: 1.1845em;
 }
-.page-node-type-recipe .layout__region--middle-second > .field.field--name-field-summary {
+.page-node-type-recipe .layout__region--middle-second > .field--name-field-summary {
   flex-basis: 90%;
+  text-align: center;
 }
 .page-node-type-recipe .layout__region--middle-second svg {
   height: 47px;
@@ -62,6 +70,7 @@
 .page-node-type-recipe .layout__region--bottom {
   background-color: #F4F2E9;
   display: flex;
+  display: -ms-flexbox;
   flex-wrap: wrap;
   justify-content: space-between;
 }
