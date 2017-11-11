@@ -1,0 +1,22 @@
+/**
+ * @file
+ * This file is used to style the Views listing recipes
+ */
+.view-recipes .view-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.view-recipes article {
+  flex: 0 0 calc(25% - 1rem);
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.view-recipes article .node__meta {
+  flex-grow: 1;
+}
+.view-recipes article .read-more {
+  margin-top: auto;
+}

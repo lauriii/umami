@@ -1,0 +1,15 @@
+/**
+ * @file
+ * This file is used to style fields with class 'label-items', providing a global style for meta fields
+ */
+
+.label-items .field__label,
+.label-items .field__items,
+.label-items .field__item {
+  display: inline-block;
+}
+.label-items .field__label,
+.label-items .field__item {
+  margin-right: 0.6rem;
+  font-size: 0.889rem;
+}
