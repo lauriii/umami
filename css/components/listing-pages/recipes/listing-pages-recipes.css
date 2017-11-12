@@ -2,6 +2,10 @@
  * @file
  * This file is used to style the Views listing recipes
  */
+.path-recipes h1.page-title {
+  text-align: center;
+}
+
 .view-recipes .view-content {
   display: flex;
   flex-wrap: wrap;
