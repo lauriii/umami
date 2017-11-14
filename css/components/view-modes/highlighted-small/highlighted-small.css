@@ -7,17 +7,12 @@
   border: 1px solid #fcece7;
 }
 
-.node--view-mode-highlighted-small .node__meta,
-.node--view-mode-highlighted-small .read-more {
-  padding: 1rem 1.5rem 1.5rem 1.5rem;
-}
-
 .node--view-mode-highlighted-small .node__meta {
-  padding-bottom: 0;
+  padding: 1rem 1.5rem 0 1.5rem;
 }
 
 .node--view-mode-highlighted-small .read-more {
-  padding-top: 0;
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 .node--view-mode-highlighted-small .node__title {
