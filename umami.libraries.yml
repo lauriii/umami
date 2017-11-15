@@ -5,6 +5,8 @@ global:
       css/base.css: {}
       css/components/blocks/branding/branding.css: {}
       css/components/blocks/search/search.css: {}
+      css/components/fields/label-items.css: {}
+      css/components/listing-pages/recipes/listing-pages-recipes.css: {}
       css/components/regions/top/top.css: {}
       css/components/regions/header/header.css: {}
       css/components/regions/footer/footer.css: {}
