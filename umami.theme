@@ -23,6 +23,24 @@ function umami_preprocess_html(&$variables) {
 }
 
 /**
+ * Implements hook_preprocess_field
+ * @param $variables
+ * @param $hook
+ */
+function umami_preprocess_field(&$variables, $hook) {
+  $element = $variables['element'];
+  // Add class to label and items fields to be styled using the meta styles.
+  if (isset($element['#field_name'])) {
+    if (
+      $element['#field_name'] == 'field_recipe_category' ||
+      $element['#field_name'] == 'field_tags' ||
+      $element['#field_name'] == 'field_difficulty') {
+      $variables['attributes']['class'] = 'label-items';
+    }
+  }
+}
+
+/**
  * Implements hook_form_alter().
  */
 function umami_form_alter(&$form, FormStateInterface $form_state, $form_id) {
