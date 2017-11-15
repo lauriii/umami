@@ -6,6 +6,13 @@ global:
       css/components/blocks/branding/branding.css: {}
       css/components/blocks/search/search.css: {}
       css/components/content/node.css: {}
+      css/components/content-types/recipe/recipe.css: {}
+      css/components/fields/label-items.css: {}
+      css/components/regions/top/top.css: {}
+      css/components/regions/header/header.css: {}
+      css/components/regions/footer/footer.css: {}
+      css/components/regions/bottom/bottom.css: {}
+      css/components/tabs.css: {}
       css/components/navigation/menu-main/menu-main.css: {}
       css/components/navigation/menu-account/menu-account.css: {}
       css/components/navigation/more-link/more-link.css: {}
