@@ -10,6 +10,6 @@
 }
 .label-items .field__label,
 .label-items .field__item {
-  margin: 0 0.6rem 1.5rem 0;
-
+  margin-right: 0.6rem;
+  font-size: 0.889rem;
 }
