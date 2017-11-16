@@ -21,8 +21,6 @@ global:
       css/layout/grid-3.css: {} # @TODO figure out when this should be applied and move to its own library
       css/layout/grid-4.css: {} # @TODO figure out when this should be applied and move to its own library
       css/layout/layout.css: {}
-      css/layout/layout-1-col.css: {}
-      css/layout/layout-2-col.css: {}
   js:
     js/components/navigation/menu-main/menu-main.js: {}
   dependencies:
