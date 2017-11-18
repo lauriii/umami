@@ -33,6 +33,10 @@
   line-height: 1.5;
   margin: 0;
   font-weight: 700;
+  width: 100%;
+}
+.page-node-type-recipe .layout__region--middle .field__item {
+  width: 100%;
 }
 .page-node-type-recipe .layout__region--middle-first,
 .page-node-type-recipe .layout__region--middle-second {
@@ -40,9 +44,11 @@
 }
 
 /* Recipe meta */
-.page-node-type-recipe .label-items {
+.page-node-type-recipe .layout__region--top .label-items {
   display: inline-block;
-  margin-right: 1.5em;
+  margin: 0 1.5em 1.2em 0;
+}
+.page-node-type-recipe .label-items {
   font-size: 0.889rem;
 }
 .page-node-type-recipe .layout__region--middle-second {
