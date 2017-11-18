@@ -2,3 +2,36 @@
  * @file
  * This file is used to style the bottom region.
  */
+
+.layout-bottom {
+  background: #fff;
+  padding: 2rem 1rem;
+}
+
+.umami-disclaimer,
+.umami-copyright {
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 0.93rem;
+}
+
+@media screen and (min-width: 30em) {
+  .layout-bottom {
+    padding: 4rem 0;
+  }
+
+  .umami-disclaimer {
+    float: left;
+    display: block;
+    max-width: 40%;
+    text-align: left;
+  }
+
+  .umami-copyright {
+    float: right;
+    display: block;
+    max-width: 30%;
+    text-align: right;
+  }
+}
