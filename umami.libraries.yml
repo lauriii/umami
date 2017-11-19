@@ -4,11 +4,13 @@ global:
     component:
       css/base.css: {}
       css/components/blocks/branding/branding.css: {}
+      css/components/blocks/footer-promo/footer-promo.css: {}
       css/components/blocks/search/search.css: {}
       css/components/content/node.css: {}
       css/components/content-types/recipe/recipe.css: {}
       css/components/fields/label-items.css: {}
       css/components/listing-pages/recipes/listing-pages-recipes.css: {}
+      css/components/navigation/menu-footer/menu-footer.css: {}
       css/components/navigation/menu-main/menu-main.css: {}
       css/components/navigation/menu-account/menu-account.css: {}
       css/components/navigation/tabs/tabs.css: {}
