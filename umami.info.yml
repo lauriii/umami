@@ -12,6 +12,7 @@ regions:
   header: Header
   highlighted: Highlighted
   tabs: Tabs
+  banner_top: Banner Top
   breadcrumbs: Breadcrumbs
   page_title: Page Title
   content: Content
