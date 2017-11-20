@@ -26,6 +26,7 @@ global:
   js:
     js/components/navigation/menu-main/menu-main.js: {}
   dependencies:
+    - core/drupal
     - core/jquery
 
 two-columns:
