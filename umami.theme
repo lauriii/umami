@@ -48,3 +48,17 @@ function umami_form_alter(&$form, FormStateInterface $form_state, $form_id) {
     $form['actions']['submit']['#attributes']['class'][] = 'visually-hidden';
   }
 }
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for form templates.
+ * @param array $suggestions
+ * @param array $variables
+ *
+ * https://www.drupal.org/forum/support/theme-development/2016-05-12/theming-custom-block-types
+ */
+function umami_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  // Block suggestions for custom block bundles.
+  if (isset($variables['elements']['content']['#block_content'])) {
+    array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
+  }
+}

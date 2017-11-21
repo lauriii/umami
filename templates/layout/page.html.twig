@@ -70,6 +70,12 @@
   </div>
   {% endif %}
 
+  {% if page.banner_top|render|striptags|trim is not empty %}
+    <div class="layout-banner-top">
+      {{ page.banner_top }}
+    </div>
+  {% endif %}
+
   {% if page.breadcrumbs|render|striptags|trim is not empty %}
   <div class="layout-breadcrumbs">
     {{ page.breadcrumbs }}
