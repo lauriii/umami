@@ -54,30 +54,3 @@
   font-size: 0.889rem;
   margin-bottom: 0.5rem;
 }
-
-.node--view-mode-highlighted-small .read-more a {
-  text-decoration: none;
-  text-transform: uppercase;
-  display: inline-block;
-  position: relative;
-  padding-right: 20px;
-}
-
-.node--view-mode-highlighted-small .read-more a:focus,
-.node--view-mode-highlighted-small .read-more a:hover {
-  text-decoration: underline;
-}
-
-.node--view-mode-highlighted-small .read-more a:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 14px;
-  height: 14px;
-  margin-top: -7px;
-  background-image: url('../../../../images/svg/pointer.svg');
-  background-repeat: none;
-  background-position: 0 0;
-  background-size: contain;
-}
