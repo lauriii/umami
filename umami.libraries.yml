@@ -30,6 +30,11 @@ global:
     - core/drupal
     - core/jquery
 
+more-link:
+  css:
+    theme:
+      css/components/navigation/more-link/more-link.css: { weight: -10 }
+
 two-columns:
   css:
     layout:
@@ -45,13 +50,19 @@ view-mode-highlighted-bottom:
   css:
     theme:
       css/components/content/highlighted-bottom/highlighted-bottom.css: {}
+  dependencies:
+    - umami/more-link
 
 view-mode-highlighted-small:
   css:
     theme:
       css/components/content/highlighted-small/highlighted-small.css: {}
+  dependencies:
+    - umami/more-link
 
 view-mode-highlighted-top:
   css:
     theme:
       css/components/content/highlighted-top/highlighted-top.css: {}
+  dependencies:
+    - umami/more-link

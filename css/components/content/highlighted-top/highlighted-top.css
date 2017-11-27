@@ -50,13 +50,3 @@
   font-size: 0.889rem;
   margin-bottom: 0.5rem;
 }
-
-.node--view-mode-highlighted-top .read-more a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.node--view-mode-highlighted-top .read-more a:focus,
-.node--view-mode-highlighted-top .read-more a:hover {
-  text-decoration: underline;
-}

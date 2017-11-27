@@ -2,3 +2,30 @@
  * @file
  * This file is used to style the more link.
  */
+
+.read-more a {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.read-more a:focus,
+.read-more a:hover {
+  text-decoration: underline;
+}
+
+.read-more a::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
+  content: '';
+  background-image: url('../../../../images/svg/pointer.svg');
+  background-repeat: none;
+  background-position: 0 0;
+  background-size: contain;
+}
