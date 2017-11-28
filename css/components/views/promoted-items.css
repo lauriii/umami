@@ -1,0 +1,33 @@
+/**
+ * @file
+ * This file is used to style the 'Promoted Items' view.
+ */
+
+@media screen and (min-width: 30em) {
+  .view-promoted-items--single > .view-content .views-row {
+    margin-bottom: 28px;
+  }
+  .view-promoted-items--double .view-content {
+    display: flex;
+    margin: 0 -14px;
+  }
+  .view-promoted-items--double .views-row {
+    margin: 0 14px;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .view-promoted-items--single {
+    display: flex;
+  }
+  .view-promoted-items--single > .view-content {
+    flex: 0 0 50%;
+    margin-right: 14px;
+  }
+  .view-promoted-items--single > .view-content .views-row {
+    margin-bottom: 0;
+  }
+  .view-promoted-items--single > .attachment-after {
+    margin-left: 14px;
+  }
+}

@@ -70,36 +70,44 @@
   </div>
   {% endif %}
 
+  {% if page.banner_top|render|striptags|trim is not empty %}
+    <div class="layout-banner-top">
+      {{ page.banner_top }}
+    </div>
+  {% endif %}
+
   {% if page.breadcrumbs|render|striptags|trim is not empty %}
   <div class="layout-breadcrumbs">
     {{ page.breadcrumbs }}
   </div>
   {% endif %}
 
-  <div class="title-main-wrapper">
+  {% if page.page_title|render|striptags|trim is not empty %}
+    <div class="layout-page-title">
+      {% if front_page %}
+        <div class="is-front text-align-center">
+          {{ page.page_title }}
+        </div>
+        {% else %}
+          {{ page.page_title }}
+      {% endif %}
+    </div>
+  {% endif %}
 
-    {% if page.page_title|render|striptags|trim is not empty %}
-      <div class="layout-page-title">
-        {{ page.page_title }}
-      </div>
+  <main role="main" class="main container">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    <div class="layout-content">
+      {{ page.content }}
+    </div>{# /.layout-content #}
+
+    {% if page.sidebar|render|striptags|trim is not empty %}
+      <aside class="layout-sidebar" role="complementary">
+        {{ page.sidebar }}
+      </aside>
     {% endif %}
 
-    <main role="main" class="main container">
-      <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-      <div class="layout-content">
-        {{ page.content }}
-      </div>{# /.layout-content #}
-
-      {% if page.sidebar|render|striptags|trim is not empty %}
-        <aside class="layout-sidebar" role="complementary">
-          {{ page.sidebar }}
-        </aside>
-      {% endif %}
-
     </main>
-
-  </div>
 
   {% if page.footer|render|striptags|trim is not empty %}
     {{ page.footer }}

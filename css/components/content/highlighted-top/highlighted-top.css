@@ -5,6 +5,7 @@
 
 .node--view-mode-highlighted-top {
   border: 1px solid #fcece7;
+  width: 100%;
 }
 
 .node--view-mode-highlighted-top .node__meta {
@@ -49,14 +50,4 @@
   color: #5f635d;
   font-size: 0.889rem;
   margin-bottom: 0.5rem;
-}
-
-.node--view-mode-highlighted-top .read-more a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.node--view-mode-highlighted-top .read-more a:focus,
-.node--view-mode-highlighted-top .read-more a:hover {
-  text-decoration: underline;
 }

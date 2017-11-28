@@ -1,0 +1,20 @@
+/**
+ * @file
+ * This file is used to style the 'Frontpage' view.
+ */
+
+.view-frontpage .view-header {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 30em) {
+  .view-frontpage .view-header {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .view-frontpage .view-header {
+    margin-bottom: 4rem;
+  }
+}

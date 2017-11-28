@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override to display a menu.
+ * Theme override to display the main menu.
  *
  * Available variables:
  * - menu_name: The machine name of the menu.
@@ -18,6 +18,15 @@
  *   - in_active_trail: TRUE if the link is in the active trail.
  */
 #}
+
+{#
+  @TODO extend menu.html.twig instead of duplicating it.
+#}
+
+<button type="button" name="menu_toggle" class="menu-main__toggle"
+data-drupal-selector="menu-main__toggle" aria-label="Toggle the menu">
+  {% include active_theme_path() ~ '/images/svg/menu-icon.svg' %}
+</button>
 
 {% import _self as menus %}
 
@@ -46,7 +55,7 @@
   %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass(menu_classes) }}> {# 1. #}
+      <ul{{ attributes.addClass(menu_classes).setAttribute('data-drupal-selector','menu-main') }}> {# 1. #}
     {% else %}
       <ul{{ attributes.removeClass(menu_classes).addClass(submenu_classes) }}> {# 1. #}
     {% endif %}
