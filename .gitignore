@@ -1,12 +1,6 @@
-node_modules/
-/styleguide
-
 # Ignore the folder created by PhpStorm
 .idea/*
 
 # Ignore OSX generated files
 .DS_Store
 ._*
-
-# Ignore browsersync local url setting file
-gulp-config-local.js
