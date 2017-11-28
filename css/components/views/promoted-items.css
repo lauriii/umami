@@ -12,6 +12,7 @@
     margin: 0 -14px;
   }
   .view-promoted-items--double .views-row {
+    display: flex;
     margin: 0 14px;
   }
 }
