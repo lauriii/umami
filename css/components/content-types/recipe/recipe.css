@@ -17,6 +17,7 @@
 
 .page-node-type-recipe .title-main-wrapper {
   background-color: #ffffff;
+  border: 1px solid #fcece7;
   margin: 0 auto;
   max-width: 1200px;
   padding: 2.369em;
@@ -72,7 +73,8 @@
 
 /* Recipe instructions */
 .page-node-type-recipe .layout__region--bottom {
-  background-color: #F4F2E9;
+  background-color: #f4f2e9;
+  border: 1px solid #e6eee0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
