@@ -83,6 +83,7 @@
   flex: 0 0 100%;
   font-family: 'Scope One', Georgia, serif;
   font-size: 2.369rem;
+  font-weight: 400;
   line-height: 1.2;
   text-align: center;
   padding: 1.2em;
@@ -99,6 +100,7 @@
 .page-node-type-recipe .layout__region--bottom .field__label {
   font-family: 'Scope One', Georgia, serif;
   font-size: 1.77rem;
+  font-weight: 400;
   line-height: 1.2;
   padding: 0 0 0.6em 0;
   margin: 0 0 1.5em 0;

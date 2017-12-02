@@ -22,6 +22,7 @@
 .block-banner-block .field--name-field-title {
   font-family: 'Scope One', Georgia, serif;
   font-size: 1.424rem;
+  font-weight: 400;
   margin: 0 0 1.07em 0;
 }
 
@@ -41,6 +42,7 @@
   text-decoration: none;
   font-family: 'Scope One', Georgia, serif;
   font-size: 1.2rem;
+  font-weight: 400;
   font-weight: normal;
   transition: background-color 0.5s ease;
 }

@@ -20,6 +20,7 @@
 .node--view-mode-highlighted-bottom .field--name-title {
   font-family: 'Scope One', Georgia, serif;
   font-size: 1.424rem;
+  font-weight: 400;
 }
 
 .node--view-mode-highlighted-bottom .node__title a {
