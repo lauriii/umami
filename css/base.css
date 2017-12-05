@@ -94,10 +94,16 @@ button[disabled],
 
 h1, .alpha {
   font-family: 'Scope One', Georgia, serif;
-  font-size: 2.369rem;
+  font-size: 1.424rem; /* +3 based on 1.125 modular scale (major second) */
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 1.07rem 0;
+}
+/* Large */
+@media screen and (min-width: 60rem) { /* 960px */
+  h1, .alpha {
+    font-size: 2.369rem;
+  }
 }
 
 /*
@@ -110,10 +116,16 @@ h1, .alpha {
 
 h2, .beta {
   font-family: 'Scope One', Georgia, serif;
-  font-size: 1.77rem;
+  font-size: 1.266rem;  /* +2 based on 1.125 modular scale (major second) */
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 0.7rem 0;
+}
+/* Large */
+@media screen and (min-width: 60rem) { /* 960px */
+  h2, .beta {
+    font-size: 1.77rem;
+  }
 }
 
 h3, .gamma {

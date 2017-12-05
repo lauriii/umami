@@ -13,3 +13,6 @@
   margin-right: 0.6rem;
   font-size: 0.889rem;
 }
+.label-items .field__label {
+  font-weight: normal;
+}
