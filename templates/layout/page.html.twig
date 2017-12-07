@@ -82,8 +82,7 @@
   </div>
   {% endif %}
 
-  <div class="title-main-wrapper">
-
+  {% if not node %}
     {% if page.page_title|render|striptags|trim is not empty %}
       <div class="layout-page-title">
         {% if is_front %}
@@ -95,22 +94,22 @@
         {% endif %}
       </div>
     {% endif %}
+  {% endif %}
 
-    <main role="main" class="main container">
-      <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+  <main role="main" class="main container">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-      <div class="layout-content">
-        {{ page.content }}
-      </div>{# /.layout-content #}
+    <div class="layout-content">
+      {{ page.content }}
+    </div>{# /.layout-content #}
 
-      {% if page.sidebar|render|striptags|trim is not empty %}
-        <aside class="layout-sidebar" role="complementary">
-          {{ page.sidebar }}
-        </aside>
-      {% endif %}
+    {% if page.sidebar|render|striptags|trim is not empty %}
+      <aside class="layout-sidebar" role="complementary">
+        {{ page.sidebar }}
+      </aside>
+    {% endif %}
 
-    </main>
-  </div>
+  </main>
 
   {% if page.footer|render|striptags|trim is not empty %}
     {{ page.footer }}
