@@ -15,33 +15,6 @@
 
 /* TODO: some of this could possibly be components / partials but lets get something to work with that's close */
 
-.page-node-type-recipe .title-main-wrapper {
-  background-color: #ffffff;
-  border: 1px solid #fcece7;
-  margin: 0 auto 2.369em;
-  max-width: 1200px;
-  padding: 1.266em 0;
-}
-/* Large */
-@media screen and (min-width: 60rem) { /* 960px */
-  .page-node-type-recipe .title-main-wrapper {
-    padding: 2.369em;
-  }
-}
-
-.page-node-type-recipe .layout-page-title,
-.page-node-type-recipe .layout__region--top,
-.page-node-type-recipe .layout__region--middle-second {
-  padding: 0 1.266em;
-}
-/* Large */
-@media screen and (min-width: 60rem) { /* 960px */
-  .page-node-type-recipe .layout-page-title,
-  .page-node-type-recipe .layout__region--top {
-    padding: 0;
-  }
-}
-
 .page-node-type-recipe .layout__region--top {
   margin-bottom: 1.2em;
 }
@@ -176,6 +149,7 @@
 .page-node-type-recipe .layout__region--bottom {
   background-color: #f4f2e9;
   border: 1px solid #e6eee0;
+  margin: 0 -1.266em;
 }
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */
@@ -183,6 +157,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0;
   }
 }
 .page-node-type-recipe .layout__region--bottom > h2 {

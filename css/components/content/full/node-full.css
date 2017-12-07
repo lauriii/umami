@@ -2,3 +2,17 @@
  * @file
  * This file is used to style the 'full' view mode.
  */
+ .node.node--view-mode-full {
+  background-color: #ffffff;
+  border: 1px solid #fcece7;
+  margin: 0 auto 2.369em;
+  /* TODO: do we want this max-width on <main>? */
+  max-width: 1200px;
+  padding: 1.266em;
+ }
+ /* Large */
+ @media screen and (min-width: 60rem) { /* 960px */
+  .node.node--view-mode-full  {
+    padding: 2.369em;
+  }
+ }

@@ -8,6 +8,7 @@ global:
       css/components/blocks/footer-promo/footer-promo.css: {}
       css/components/blocks/search/search.css: {}
       css/components/content/node.css: {}
+      css/components/content/full/node-full.css: {}
       css/components/content-types/recipe/recipe.css: {}
       css/components/fields/label-items.css: {}
       css/components/views/promoted-items.css: {}
