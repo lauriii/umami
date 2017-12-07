@@ -29,18 +29,14 @@
 }
 
 .node--view-mode-highlighted-bottom .node__title a:focus,
-.node--view-mode-highlighted-bottom .node__title a:hover, {
+.node--view-mode-highlighted-bottom .node__title a:hover {
   color: #000;
+  text-decoration: underline;
 }
 
 .node--view-mode-highlighted-bottom a .field--name-title {
   color: #000;
   text-decoration: none;
-}
-
-.node--view-mode-highlighted-bottom .node__title a:focus,
-.node--view-mode-highlighted-bottom .node__title a:hover {
-  text-decoration: underline;
 }
 
 .node--view-mode-highlighted-bottom .field--name-field-image img {

@@ -35,6 +35,7 @@
 .node--view-mode-highlighted-small .node__title a:focus,
 .node--view-mode-highlighted-small .node__title a:hover {
   color: #000;
+  text-decoration: underline;
 }
 
 .node--view-mode-highlighted-small a .field--name-title {
@@ -42,12 +43,8 @@
   text-decoration: none;
 }
 
-.node--view-mode-highlighted-small .node__title a:focus,
-.node--view-mode-highlighted-small .node__title a:hover {
-  text-decoration: underline;
-}
-
 .node--view-mode-highlighted-small .field--name-field-image img {
+  display: block;
   width: 100%;
 }
 

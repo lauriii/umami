@@ -28,7 +28,7 @@ To work on the theme find it in /themes/contrib/umami
 ### Updating the Umami Demo and Umami theme:
 Once you have the Umami Build installer running, you will want to keep it up to date. Follow these steps to update:
 If you are working on the installation profile, export any config from Drupal that you need to keep since following this process will delete and install a new version of the database
-If you have uncommitted changes in your local branches for the profile or the theme commit or stash them. You could also be working on local branches other than dev or master, these should not be affected by the update 
+If you have uncommitted changes in your local branches for the profile or the theme commit or stash them. You could also be working on local branches other than dev or master, these should not be affected by the update
 * Change directory to the umami-build directory
 * Get the latest changes for umami_build:
 * `git pull`
@@ -42,9 +42,9 @@ If you have uncommitted changes in your local branches for the profile or the th
 * Most communication happens on <a href="https://drupaltwig-slack.herokuapp.com/">Slack</a> in the <em>#out-of-the-box channel</em>. Feel free to join and ask for help.
 * There is a weekly meeting on Mondays 15:00h-16:00h UTC. [Notes.](https://docs.google.com/document/d/1mF2C3K7HGg5rFv7E3UpmGcobSjDQLo18TH3BLN4ZWRo/edit#)
 
-##Standard css
+## Standard css
 
-###Breakpoints
+### Breakpoints
 
 **Formatting**
 

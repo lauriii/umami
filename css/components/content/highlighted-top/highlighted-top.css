@@ -31,6 +31,7 @@
 .node--view-mode-highlighted-top .node__title a:focus,
 .node--view-mode-highlighted-top .node__title a:hover, {
   color: #000;
+  text-decoration: underline;
 }
 
 .node--view-mode-highlighted-top a .field--name-title {
@@ -38,12 +39,8 @@
   text-decoration: none;
 }
 
-.node--view-mode-highlighted-top .node__title a:focus,
-.node--view-mode-highlighted-top .node__title a:hover {
-  text-decoration: underline;
-}
-
 .node--view-mode-highlighted-top .field--name-field-image img {
+  display: block;
   width: 100%;
 }
 
