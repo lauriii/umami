@@ -37,6 +37,11 @@ more-link:
   css:
     theme:
       css/components/navigation/more-link/more-link.css: { weight: -10 }
+      
+quicklinks:
+  css:
+    theme:
+      css/components/blocks/quicklinks/quicklinks.css: {}
 
 two-columns:
   css:
