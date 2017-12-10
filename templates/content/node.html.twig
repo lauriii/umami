@@ -80,14 +80,24 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
+{% set created_date = node.getCreatedTime|format_date('umami_dates') %}
 {{ attach_library('classy/node') }}
+
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
   {% if page %}
+  <header>
     <h1 class="page-title">
       {{ label }}
     </h1>
+    {% if display_submitted %}
+    <div{{ author_attributes.addClass('node__submitted') }}>
+      {% trans %}<span class="by-author">by {{ author_name }}</span> {{ created_date }}{% endtrans %}
+      {{ metadata }}
+    </div>
+    {% endif %}
+  </header>
   {% else %}
     <h2{{ title_attributes }}>
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
