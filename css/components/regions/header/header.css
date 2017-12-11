@@ -18,8 +18,5 @@
 }
 
 @media screen and (min-width: 30em) {
-  .header {
-    border-top: 1px solid #E6EEE0;
-    padding: 2.5rem 0;
-  }
+
 }
