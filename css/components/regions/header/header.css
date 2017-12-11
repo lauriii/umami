@@ -8,14 +8,13 @@
 
 .layout-header {
   background: #fff;
-  padding: 1rem 0;
+  padding: 0;
 }
 
 .region-header {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px auto;
-  padding: 0 20px;
+  align-items: center;
 }
 
 .block-system-branding-block {
