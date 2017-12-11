@@ -53,9 +53,9 @@
   {% endif %}
 
   {% if page.header|render|striptags|trim is not empty %}
-    <div class="layout-header">
+    <header class="layout-header" role="banner">
       {{ page.header }}
-    </div>
+    </header>
   {% endif %}
 
   {% if page.highlighted|render|striptags|trim is not empty %}

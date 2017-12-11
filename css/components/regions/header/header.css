@@ -6,7 +6,7 @@
  * header items, such as a menu, which are styled by their own CSS files.
  */
 
-.header {
+.layout-header {
   background: #fff;
   padding: 1rem 0;
 }

@@ -20,10 +20,9 @@
   ]
 %}
 
-<header class="header" role="banner">
-  {% if content %}
-    <div{{ attributes.addClass(classes) }}>
-      {{ content }}
-    </div>
-  {% endif %}
-</header>
+
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    {{ content }}
+  </div>
+{% endif %}
