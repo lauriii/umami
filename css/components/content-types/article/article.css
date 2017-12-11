@@ -1,0 +1,48 @@
+/**
+ * @file
+ * This file is used to style the article using the 'full' view mode.
+ */
+
+/*
+  Article
+
+  .node--type-article - This presents the rendering of an individual article
+
+  Markup: node--article--full.html.twig
+
+  Style guide: components.content_types.article
+*/
+.page-node-type-article .node.node--view-mode-full header {
+  padding-right: 0;
+}
+/* Large */
+@media screen and (min-width: 60rem) { /* 960px */
+  /* Squished on right */
+  .page-node-type-article .node.node--view-mode-full header {
+    padding-right: 2.748em;
+  }
+}
+
+.page-node-type-article .node.node--view-mode-full .node__content {
+  /* Squished on left and right at larger screen sizes */
+  padding: 0;
+}
+/* Large */
+@media screen and (min-width: 60rem) { /* 960px */
+  .page-node-type-article .node.node--view-mode-full .node__content {
+    /* left indent: (~2 gutters) 3.126em + (~1.5 columns) 7.107em */
+    padding: 0 2.748em 2.369em 10.233em;
+  }
+}
+
+.page-node-type-article .node.node--view-mode-full .field--name-field-image {
+  margin-left: 0;
+}
+/* Large */
+@media screen and (min-width: 60rem) { /* 960px */
+  .page-node-type-article .node.node--view-mode-full .field--name-field-image {
+    /* Pull the image */
+    /* TODO: Too fragile? */
+    margin-left: -12.602em;
+  }
+}
