@@ -12,11 +12,78 @@
 }
 
 .region-header {
-  align-items: center;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  padding: 0 20px;
 }
 
-@media screen and (min-width: 30em) {
+.block-system-branding-block {
+  flex: 0 1 40%;
+  order: 2;
+  text-align: center;
+}
+.menu {
+  list-style-type: none;
+}
+.menu__trigger {
+  flex: 0 1 30%;
+  order: 1;
+  background-color: orange;
+}
+.menu--main {
+  order: 4;
+  flex: 0 1 100%;
+  text-align: center;
+}
+.search__icon {
+  flex: 0 1 30%;
+  order: 3;
+  text-align: right;
+  background-color: lightblue;
+}
+.search-block-form {
+  display: none;
+}
+.menu--account {
+  display: none;
+}
 
+@media screen and (min-width: 50em) {
+  .block-system-branding-block {
+    flex: 0 1 50%;
+    order: 3;
+    text-align: left;
+  }
+  .menu__trigger {
+    display: none;
+  }
+  .menu--main {
+    order: 4;
+    flex: 0 1 50%;
+    text-align: right;
+  }
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .menu__item + .menu__item {
+    margin-left: 1em;
+  }
+  .search__icon {
+    display: none;
+  }
+  .search-block-form {
+    flex: 0 1 50%;
+    order: 1;
+    display: block;
+    border-bottom: 1px solid #E6EEE0;
+  }
+  .menu--account {
+    flex: 0 1 50%;
+    order: 2;
+    display: block;
+    border-bottom: 1px solid #E6EEE0;
+    text-align: right;
+  }
 }
