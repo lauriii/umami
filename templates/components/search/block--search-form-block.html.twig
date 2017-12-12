@@ -33,6 +33,13 @@
     'container-inline',
   ]
 %}
+
+<div class="search__iconwrap">
+  <a class="search__link" href="/search">
+      {% include active_theme_path() ~ '/images/svg/search.svg' %}
+  </a>
+</div>
+
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}

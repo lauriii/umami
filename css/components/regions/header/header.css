@@ -22,21 +22,22 @@
   order: 2;
   text-align: center;
 }
-.menu__trigger {
+.menu-main__togglewrap {
   flex: 0 1 30%;
   order: 1;
-  background-color: orange;
+  padding-left: 1rem;
 }
 .menu-main__wrapper {
   order: 4;
   flex: 0 1 100%;
   text-align: center;
 }
-.search__icon {
+.search__iconwrap {
   flex: 0 1 30%;
   order: 3;
-  text-align: right;
-  background-color: lightblue;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
 }
 .search-block-form {
   display: none;
@@ -52,7 +53,7 @@
     margin: 2.5rem 0;
     text-align: left;
   }
-  .menu__trigger {
+  .menu-main__togglewrap {
     display: none;
   }
   .menu-main__wrapper {
@@ -64,7 +65,7 @@
     display: flex;
     justify-content: flex-end;
   }
-  .search__icon {
+  .search__iconwrap {
     display: none;
   }
   .search-block-form {
