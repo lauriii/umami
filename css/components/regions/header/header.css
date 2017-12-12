@@ -22,15 +22,12 @@
   order: 2;
   text-align: center;
 }
-.menu {
-  list-style-type: none;
-}
 .menu__trigger {
   flex: 0 1 30%;
   order: 1;
   background-color: orange;
 }
-.menu--main {
+.menu-main__wrapper {
   order: 4;
   flex: 0 1 100%;
   text-align: center;
@@ -58,17 +55,14 @@
   .menu__trigger {
     display: none;
   }
-  .menu--main {
+  .menu-main__wrapper {
     order: 4;
     flex: 0 1 50%;
     text-align: right;
   }
-  .menu {
+  .menu-main {
     display: flex;
     justify-content: flex-end;
-  }
-  .menu__item + .menu__item {
-    margin-left: 1em;
   }
   .search__icon {
     display: none;
