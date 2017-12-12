@@ -44,14 +44,6 @@
 #}
 <div class="layout-container">
 
-  {% if page.top|render|striptags|trim is not empty %}
-    <section class="layout-top">
-      <div class="container">
-        {{ page.top }}
-      </div>
-    </section>
-  {% endif %}
-
   {% if page.header|render|striptags|trim is not empty %}
     <header class="layout-header" role="banner">
       {{ page.header }}

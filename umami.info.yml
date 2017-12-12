@@ -8,7 +8,6 @@ libraries:
   - umami/webfonts
 
 regions:
-  top: Top
   header: Header
   highlighted: Highlighted
   tabs: Tabs
