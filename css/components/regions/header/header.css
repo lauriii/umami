@@ -15,6 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding: 0.75rem 0;
 }
 
 .block-system-branding-block {
@@ -47,8 +48,12 @@
 }
 
 @media screen and (min-width: 50em) {
+  .region-header {
+    padding: 0;
+  }
+
   .block-system-branding-block {
-    flex: 0 1 50%;
+    flex: 0 1 220px;
     order: 3;
     margin: 2.5rem 0;
     text-align: left;
@@ -58,7 +63,7 @@
   }
   .menu-main__wrapper {
     order: 4;
-    flex: 0 1 50%;
+    flex: 0 1 calc(100% - 220px);
     text-align: right;
   }
   .menu-main {
