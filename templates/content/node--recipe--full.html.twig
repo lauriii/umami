@@ -85,9 +85,19 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 
   {{ title_prefix }}
   {% if page %}
-  <h1 class="page-title">
-    {{ label }}
-  </h1>
+  <header>
+    <h1 class="page-title">
+      {{ label }}
+    </h1>
+    {% if display_submitted %}
+    <div{{ author_attributes.addClass('node__submitted') }}>
+      {% trans %}<span class="by-author">by {{ author_name }}</span> {{ created_date }}{% endtrans %}
+      {{ metadata }}
+    </div>
+    {% endif %}
+    {{ content.field_recipe_category }}
+    {{ content.field_tags }}
+  </header>
   {% else %}
   <h2{{ title_attributes }}>
     <a href="{{ url }}" rel="bookmark">{{ label }}</a>
@@ -95,22 +105,8 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   {% endif %}
   {{ title_suffix }}
 
-  {% if display_submitted %}
-  <footer class="node__meta">
-    {{ author_picture }}
-    <div{{ author_attributes.addClass('node__submitted') }}>
-      {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-      {{ metadata }}
-    </div>
-  </footer>
-  {% endif %}
-
+  {# TODO: If the above <header> tag is the right approach, change middle to top since we no longer have a top #}
   <div{{ content_attributes.addClass('node__content') }}>
-    {# todo: Class names through this section based on experimental field layout module classes #}
-    <div class="layout__region layout__region--top">
-      {{ content.field_recipe_category }}
-      {{ content.field_tags }}
-    </div>
     <div class="layout__region--middle">
       <div class="layout__region layout__region--middle-first">
         {# placholder image whilst we theme #}

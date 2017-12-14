@@ -5,8 +5,9 @@
 
 .menu-account {
   display: inline-flex;
-  margin: 0;
+  margin: 1.25rem 0;
   padding: 0;
+  line-height: 1.5;
   list-style-type: none;
 }
 .menu-account__item + .menu-account__item {

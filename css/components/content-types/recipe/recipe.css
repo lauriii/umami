@@ -15,9 +15,17 @@
 
 /* TODO: some of this could possibly be components / partials but lets get something to work with that's close */
 
-.page-node-type-recipe .layout__region--top {
-  margin-bottom: 1.2em;
+.page-node-type-recipe .node.node--view-mode-full .field--name-field-recipe-category {
+  flex: 0 0 100%;
 }
+/* Large */
+@media screen and (min-width: 60rem) { /* 960px */
+ .page-node-type-recipe .node.node--view-mode-full .field--name-field-recipe-category {
+   flex: 0 1 auto;
+   margin-right: 1em;
+ }
+}
+
 .page-node-type-recipe .layout__region--middle {
   margin-bottom: 2.369em;
 }
@@ -30,12 +38,10 @@
   }
 }
 
-.page-node-type-recipe .layout__region--middle .field--name-field-image {
-  margin-bottom: 2.369em;
-}
+/* Override the recipe's img margin-bottom on larger displays */
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */
-  .page-node-type-recipe .layout__region--middle .field--name-field-image {
+  .page-node-type-recipe .layout__region--middle .field--name-field-image img {
     margin-bottom: 0;
   }
 }
@@ -46,17 +52,6 @@
 }
 
 /* Recipe meta */
-.page-node-type-recipe .layout__region--top .label-items {
-  margin: 0;
-}
-/* Large */
-@media screen and (min-width: 60rem) { /* 960px */
-  .page-node-type-recipe .layout__region--top .label-items {
-    display: inline-block;
-    margin: 0 1.5em 0 0;
-  }
-}
-
 .page-node-type-recipe .layout__region--middle-second {
   display: flex;
   flex-direction: column;
@@ -219,7 +214,7 @@
 }
 
 .page-node-type-recipe .field--name-field-ingredients .field__item {
-  border-bottom: 1px solid #EEC2CB;
+  border-bottom: 1px solid #eec2cb;
   padding: 0 0 0.6em 0;
   margin: 0 0 0.6em 0;
 }
@@ -237,7 +232,7 @@
 }
 .page-node-type-recipe .field--name-field-recipe-instruction ol > li::before {
   content: counter(step-counter);
-  color: #CC2A00;
+  color: #cc2a00;
   font-size: 1.5rem;
   position: absolute;
   top: 0;

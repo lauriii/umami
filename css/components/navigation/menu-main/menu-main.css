@@ -32,8 +32,15 @@
   line-height: 1;
   padding: 0;
   border: none;
+  border-radius: 0;
   text-align: left;
   background-color: transparent;
+}
+.menu-main__toggle:hover {
+  background-color: transparent;
+}
+.menu-main__toggle svg {
+  display: block;
 }
 .menu-main__item {
   margin-top: 0.8em;
@@ -60,7 +67,7 @@
   border-bottom-color: #ff6138;
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50em) {
   .menu-main {
     display:flex;
     justify-content: flex-end;
@@ -73,6 +80,7 @@
   }
   .menu-main__item {
     margin-top: 0;
+    margin-bottom: 0;
   }
   .menu-main__item + .menu-main__item {
     margin-left: 2.5em;

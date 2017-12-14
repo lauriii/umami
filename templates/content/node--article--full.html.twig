@@ -82,7 +82,6 @@
 %}
 {% set created_date = node.getCreatedTime|format_date('umami_dates') %}
 {{ attach_library('classy/node') }}
-
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
@@ -96,6 +95,7 @@
       {% trans %}<span class="by-author">by {{ author_name }}</span> {{ created_date }}{% endtrans %}
       {{ metadata }}
     </div>
+    {{ content.field_tags }}
     {% endif %}
   </header>
   {% else %}
@@ -105,18 +105,10 @@
   {% endif %}
   {{ title_suffix }}
 
-  {% if display_submitted %}
-    <footer class="node__meta">
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('node__submitted') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
+
 
   <div{{ content_attributes.addClass('node__content') }}>
-    {{ content }}
+    {{ content|without('field_tags') }}
   </div>
 
 </article>

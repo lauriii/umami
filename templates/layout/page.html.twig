@@ -44,18 +44,10 @@
 #}
 <div class="layout-container">
 
-  {% if page.top|render|striptags|trim is not empty %}
-    <section class="layout-top">
-      <div class="container">
-        {{ page.top }}
-      </div>
-    </section>
-  {% endif %}
-
   {% if page.header|render|striptags|trim is not empty %}
-    <div class="layout-header">
+    <header class="layout-header" role="banner">
       {{ page.header }}
-    </div>
+    </header>
   {% endif %}
 
   {% if page.highlighted|render|striptags|trim is not empty %}
@@ -97,9 +89,9 @@
   {% endif %}
 
   <main role="main" class="main container">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">
+      <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
       {{ page.content }}
     </div>{# /.layout-content #}
 

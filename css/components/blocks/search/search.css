@@ -8,14 +8,28 @@ div.form-type-search {
   display: inline-flex;
   align-items: center;
 }
+/* Search icon for mobile */
+.search__link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.search__link svg {
+  display: block;
+  width: 26px;
+  height: auto;
+}
 
-/* Search icon*/
+/* Search icon in form */
 .search-icon {
   width: 20px;
   height: 20px;
   margin-right: 8px;
 }
 .search-icon svg {
+  display: block;
   width: 20px;
   height: auto;
 }
