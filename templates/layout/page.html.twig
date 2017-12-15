@@ -46,19 +46,25 @@
 
   {% if page.header|render|striptags|trim is not empty %}
     <header class="layout-header" role="banner">
-      {{ page.header }}
+      <div class="container">
+        {{ page.header }}
+      </div>
     </header>
   {% endif %}
 
   {% if page.highlighted|render|striptags|trim is not empty %}
     <div class="layout-highlighted">
-      {{ page.highlighted }}
+      <div class="container">
+        {{ page.highlighted }}
+      </div>
     </div>
   {% endif %}
 
   {% if page.tabs|render|striptags|trim is not empty %}
   <div class="layout-tabs">
-    {{ page.tabs }}
+    <div class="container">
+      {{ page.tabs }}
+    </div>
   </div>
   {% endif %}
 
@@ -70,7 +76,9 @@
 
   {% if page.breadcrumbs|render|striptags|trim is not empty %}
   <div class="layout-breadcrumbs">
-    {{ page.breadcrumbs }}
+    <div class="container">
+      {{ page.breadcrumbs }}
+    </div>
   </div>
   {% endif %}
 
@@ -78,11 +86,13 @@
     {% if page.page_title|render|striptags|trim is not empty %}
       <div class="layout-page-title">
         {% if is_front %}
-          <div class="is-front text-align-center">
+          <div class="is-front text-align-center container">
             {{ page.page_title }}
           </div>
           {% else %}
+          <div class="container">
             {{ page.page_title }}
+          </div>
         {% endif %}
       </div>
     {% endif %}
@@ -104,12 +114,20 @@
   </main>
 
   {% if page.footer|render|striptags|trim is not empty %}
-    {{ page.footer }}
+  <div class="layout-footer">
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        {{ page.footer }}
+      </div>
+    </footer>
+  </div>
   {% endif %}
 
   {% if page.bottom|render|striptags|trim is not empty %}
     <div class="layout-bottom">
-      {{ page.bottom }}
+      <div class="container">
+        {{ page.bottom }}
+      </div>
     </div>
   {% endif %}
 
