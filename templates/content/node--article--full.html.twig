@@ -95,8 +95,8 @@
       {% trans %}<span class="by-author">by {{ author_name }}</span> {{ created_date }}{% endtrans %}
       {{ metadata }}
     </div>
-    {{ content.field_tags }}
     {% endif %}
+    {{ content.field_tags }}
   </header>
   {% else %}
     <h2{{ title_attributes }}>
