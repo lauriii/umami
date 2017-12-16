@@ -26,10 +26,11 @@
 .node--view-mode-highlighted-top .node__title a {
   color: #000;
   text-decoration: none;
+  background-color: inherit;
 }
 
 .node--view-mode-highlighted-top .node__title a:focus,
-.node--view-mode-highlighted-top .node__title a:hover, {
+.node--view-mode-highlighted-top .node__title a:hover {
   color: #000;
   text-decoration: underline;
 }

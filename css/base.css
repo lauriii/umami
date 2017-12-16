@@ -15,17 +15,16 @@ html {
 
 a {
   color: #00836D;
-  text-decoration: dashed underline;
 }
 
 a:hover,
 a:focus {
-  color: #CC2A00;
-  text-decoration: solid underline;
+  background-color: #e6eee0;
+  color: #cc2a00;
 }
 
 body {
-  background: #FBF5EE;
+  background: #fbf5ee;
   color: #464646;
   font-family: 'Open Sans', Verdana, sans-serif;
   font-size: 1rem;

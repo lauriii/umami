@@ -3,10 +3,11 @@
  * This file is used to style the branding block.
  */
 
-.site-logo {
+a.site-logo {
   display: inline-block;
   width: 100%;
   max-width: 205px;
+  background-color: inherit;
 }
 
 .site-logo svg {
