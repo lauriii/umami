@@ -92,3 +92,17 @@ If an element needs a custom breakpoint use it.
 
 }
 ```
+
+###Font sizes
+
+**Modular scale sizes**
+
+- -2 = `0.79em`
+- -1 = `0.889rem`
+- 0 = `1rem`
+- 1 = `1.125rem`
+- 2 = `1.266rem`
+- 3 = `1.424rem`
+- 4 = `1.602rem`
+- 5 = `1.802rem`
+- 6 = `2.027rem`
