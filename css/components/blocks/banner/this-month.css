@@ -1,0 +1,166 @@
+/**
+ * @file
+ * This file is used to style the 'this month' block.
+ * It does use some classes from banner.css
+ */
+
+.block-this-month-block {
+  background: white;
+  padding-top: 56.25%;
+  background-size: auto 56.25vw;
+  background-position: top left;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/* Medium */
+@media screen and (min-width: 48rem) { /* 768px */
+  .block-this-month-block {
+    padding-top: 0;
+    background-size: cover;
+    background-position: left center;
+  }
+}
+
+.block-this-month-block .block-inner {
+  
+}
+/* Medium */
+@media screen and (min-width: 48rem) { /* 768px */
+  .block-this-month-block .block-inner {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 1rem;
+    min-height: 35vw;
+  }
+}
+
+
+
+.block-this-month-block .field--name-field-cover-image {
+  position: absolute;
+  top: 10vw;
+  left: 10vw;
+  z-index: 1;
+  transform: rotate(-11deg);
+  max-width: 50vw;
+  box-shadow: 0px 0px 1px 1px rgba(255,255,255,0.66);
+}
+/* Medium */
+@media screen and (min-width: 48rem) { /* 768px */
+  .block-this-month-block .field--name-field-cover-image {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+}
+.block-this-month-block .field--name-field-cover-image img {
+  display: block;
+}
+
+.block-this-month-block .summary {
+  z-index: 2;
+  position: relative;
+  background: #FBF5EE;
+  padding: 1.5rem;
+  text-align: center;
+}
+/* Medium */
+@media screen and (min-width: 48rem) { /* 768px */
+  .block-this-month-block .summary {
+    background: transparent;
+    color: #FFF;
+    text-align: left;
+    max-width: 500px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.block-this-month-block .field--name-field-title {
+  font-family: 'Scope One', Georgia, serif;
+  font-size: 2.027rem;
+  line-height: 1.125em;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.block-this-month-block .summary p {
+  font-family: 'Scope One', Georgia, serif;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.block-this-month-block .summary ul {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  /* The font-size 0 gets rid of the extra margin added by the li being inlined */
+  font-size: 0;
+}
+
+.block-this-month-block .summary li {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+/* Medium */
+@media screen and (min-width: 48rem) { /* 768px */
+  .block-this-month-block .summary li {
+    display: inline;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.125rem;
+  }
+  /* Add the green circle before the list items... */
+  .block-this-month-block .summary li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0.75rem; /* half the line height */
+    left: 7px;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    background: #77BD8B;
+    border-radius: 3px;
+  }
+  /* ...except the first one */
+  .block-this-month-block .summary li:first-child {
+    padding-left: 0;
+  }
+  .block-this-month-block .summary li:first-child::before {
+    display: none;
+  }
+}
+
+/* Same as `.block-banner-block .field--name-field-content-link a` */
+.block-this-month-block .summary a {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  border: 0;
+  border-radius: 4px;
+  background-color: #E84265;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Scope One', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-weight: normal;
+  transition: background-color 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
