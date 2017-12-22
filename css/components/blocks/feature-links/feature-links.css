@@ -1,0 +1,94 @@
+.block-feature-links {
+  background: #FFF;
+  text-align: center;
+  padding: 1.5rem 3rem;
+}
+/* Medium */
+@media screen and (min-width: 48rem) { /* 768px */
+  .block-feature-links {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.block-feature-links .block-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Small */
+@media screen and (min-width: 30rem) { /* 480px */
+  .block-feature-links .block-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+
+.feature-link {
+  padding: 2rem 0;
+}
+/* Small */
+@media screen and (min-width: 30rem) { /* 480px */
+  .feature-link {
+    width: 50%;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .feature-link:nth-child(odd) {
+    border-right: 1px solid #E5F0E0;
+  }
+}
+/* Medium */
+@media screen and (min-width: 48rem) { /* 768px */
+  .feature-link {
+    width: 25%;
+    border-right: 1px solid #E5F0E0;
+  }
+  .feature-link:last-child {
+    border-right: none;
+  }
+}
+/* Large */
+@media screen and (min-width: 60rem) { /* 960px */
+  .feature-link {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+
+.feature-link + .feature-link {
+  border-top: 1px solid #E5F0E0;
+}
+/* Small */
+@media screen and (min-width: 30rem) { /* 480px */
+  .feature-link + .feature-link {
+    border-top: none;
+  }
+}
+
+/* Icon styles, either an image or svg */
+.feature-link img, 
+.feature-link svg
+{
+  width: auto;
+  height: 47px;
+  margin-bottom: 0.889rem;
+}
+
+.feature-link .field--name-field-link-label {
+  font-family: 'Scope One', Georgia, serif;
+  font-size: 1.266rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.feature-link .field--name-field-link-link a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.feature-link .field--name-field-link-link a::after {
+  content: " >";
+}
