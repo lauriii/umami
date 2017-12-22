@@ -8,6 +8,9 @@
 }
 
 @media screen and (min-width: 30em) {
+  .grid--4 {
+    overflow-x: hidden;
+  }
   .grid--4 .view-content {
     display: flex;
     flex-wrap: wrap;
