@@ -69,7 +69,6 @@
 
 .page-node-type-recipe .layout__region--middle-second > .recipe-meta {
   display: flex;
-  flex: 0 0 100%;
   flex-direction: row;
   justify-content: flex-start;
   margin-bottom: 1em;
