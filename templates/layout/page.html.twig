@@ -52,13 +52,7 @@
     </header>
   {% endif %}
 
-  {% if page.highlighted|render|striptags|trim is not empty %}
-    <div class="layout-highlighted">
-      <div class="container">
-        {{ page.highlighted }}
-      </div>
-    </div>
-  {% endif %}
+  {{ page.highlighted }}
 
   {% if page.tabs|render|striptags|trim is not empty %}
   <div class="layout-tabs">
