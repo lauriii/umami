@@ -39,10 +39,19 @@ blockquote {
 }
 
 blockquote > * {
+  color: #000;
   font-family: 'Scope One', Georgia, serif;
   font-size: 1.266rem;
   font-weight: 400;
   line-height: 1.5;
+}
+blockquote a {
+  /* Tweak default link colour to improve contrast for accessibility */
+  color: #057d6d;
+}
+blockquote a:hover,
+blockquote a:focus {
+  background-color: #fdfcf9;
 }
 
 button,
@@ -51,14 +60,12 @@ button,
 [type='reset'],
 [type='submit'] {
   display: inline-block;
-  height: 45px;
-  padding: 0 2rem;
-  border: 0;
+  padding: 0.4em 1.5em;
+  border: 3px solid #00836d;
   border-radius: 4px;
   background-color: #00836d;
   color: #fff;
   cursor: pointer;
-  line-height: 45px;
   text-align: center;
   text-decoration: none;
   font-family: 'Scope One', Georgia, serif;
@@ -73,8 +80,9 @@ button:focus,
 .button:hover,
 .button:active,
 .button:focus {
-  background: #ff6138;
-  color: #fff;
+  background-color: #e6eee0;
+  border: 3px solid #00836d;
+  color: #000000;
   text-decoration: none;
   transition: background-color 0.5s ease;
 }
@@ -165,11 +173,9 @@ img {
 }
 
 input {
-  height: 45px;
-  padding: 0 15px;
+  padding: 0.8em 0.4em;
   margin: 0.25rem 0;
   border: 2px solid #767775;
-  line-height: 45px;
   font-size: 1rem;
   color: #000;
 }
