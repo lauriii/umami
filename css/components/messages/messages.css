@@ -6,7 +6,6 @@
 .messages {
   padding: 15px 20px 15px 20px;
   color: inherit;
-  background: no-repeat 10px 17px;  /* LTR */
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -17,20 +16,26 @@
 .messages + .messages {
   margin-top: 1.538em;
 }
-/* See .color-success in Seven's colors.css */
+.messages .messages__content {
+  background: no-repeat 0 center;
+}
 .messages--status {
   background-color: #e6eee0;
-  background-image: url(../../../../misc/icons/73b355/check.svg);
 }
-/* See .color-warning in Seven's colors.css */
+.messages--status .messages__content {
+  background-image: url(/core/misc/icons/73b355/check.svg);
+}
 .messages--warning {
   background-color: #fcf1d4;
-  background-image: url(../../../../misc/icons/e29700/warning.svg);
 }
-/* See .color-error in Seven's colors.css */
+.messages--warning .messages__content {
+  background-image: url(/core/misc/icons/e29700/warning.svg);
+}
 .messages--error {
   background-color: #f9e6eb;
-  background-image: url(../../../../misc/icons/e32700/error.svg);
+}
+.messages--error .messages__content {
+  background-image: url(/core/misc/icons/e32700/error.svg);
 }
 .messages--error p.error {
   color: inherit;
@@ -42,6 +47,9 @@
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.messages__item {
+  margin-left: 24px;
 }
 .messages__item + .messages__item {
   margin-top: 0.769em;
