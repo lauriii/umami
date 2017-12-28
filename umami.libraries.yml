@@ -35,11 +35,16 @@ global:
     - core/drupal
     - core/jquery
 
+messages:
+  css:
+    component:
+      css/components/messages/messages.css: { weight: -10 }
+
 more-link:
   css:
     theme:
       css/components/navigation/more-link/more-link.css: { weight: -10 }
-      
+
 quicklinks:
   css:
     theme:
