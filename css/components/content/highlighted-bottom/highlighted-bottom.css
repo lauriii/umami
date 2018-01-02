@@ -24,6 +24,7 @@
 }
 
 .node--view-mode-highlighted-bottom .node__title a {
+  background-color: inherit;
   color: #000;
   text-decoration: none;
 }

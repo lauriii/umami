@@ -4,6 +4,7 @@
  */
 
 .read-more a {
+  background-color: inherit;
   position: relative;
   display: inline-block;
   padding-right: 20px;

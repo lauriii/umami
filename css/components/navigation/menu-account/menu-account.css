@@ -13,7 +13,8 @@
 .menu-account__item + .menu-account__item {
   margin-left: 1em;
 }
-.menu-account__link {
+a.menu-account__link {
   color: inherit;
   text-decoration: none;
+  background-color: inherit;
 }
