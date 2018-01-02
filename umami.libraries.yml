@@ -13,7 +13,6 @@ global:
       css/components/content-types/recipe/recipe.css: {}
       css/components/fields/label-items.css: {}
       css/components/fields/node-submitted.css: {}
-      css/components/messages/messages.css: {}
       css/components/views/promoted-items.css: {}
       css/components/views/frontpage.css: {}
       css/components/navigation/menu-footer/menu-footer.css: {}
