@@ -30,8 +30,8 @@
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */
   .page-node-type-article .node.node--view-mode-full .node__content {
-    /* left indent: (~2 gutters) 3.126em + (~1.5 columns) 7.107em */
-    padding: 0 2.748em 2.369em 10.233em;
+    padding-bottom: 2.369em;
+    padding-right: 2.748em;
   }
 }
 
@@ -41,8 +41,18 @@
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */
   .page-node-type-article .node.node--view-mode-full .field--name-field-image {
-    /* Pull the image */
-    /* TODO: Too fragile? */
-    margin-left: -12.602em;
+    /* Pull the image, matches padding on .node.node--view-mode-full */
+    margin-left: -2.369em;
+  }
+}
+
+.page-node-type-article .node.node--view-mode-full .field--name-field-image + .field--name-body {
+  
+}
+/* Large */
+@media screen and (min-width: 60rem) { /* 960px */
+  .page-node-type-article .node.node--view-mode-full .field--name-field-image + .field--name-body {
+    /* left indent: (~2 gutters) 3.126em + (~1.5 columns) 7.107em */
+    padding-left: 10.233em;
   }
 }
