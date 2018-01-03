@@ -5,6 +5,7 @@
 
 .grid--4 .views-row {
   margin-bottom: 28px;
+  padding: 0 14px;
 }
 
 @media screen and (min-width: 30em) {
@@ -14,19 +15,27 @@
   .grid--4 .view-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 -14px;
+    margin: 0;
   }
 
   .grid--4 .views-row {
     display: flex;
     flex: 0 0 calc(50% - 28px);
-    margin: 0 10px 28px;
+    margin: 0 14px 28px;
+    padding: 0;
   }
 }
 
 @media screen and (min-width: 60em) {
   .grid--4 .views-row {
     flex: 0 0 calc(25% - 28px);
+  }
+}
+
+/* 77em == the max width of .container + 1em either side */
+@media screen and (min-width: 77em) {
+  .grid--4 .view-content {
+    margin-left: -14px;
+    margin-left: -14px;
   }
 }

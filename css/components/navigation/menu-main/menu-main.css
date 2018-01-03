@@ -46,7 +46,7 @@
   margin-top: 0.8em;
   text-align: center;
 }
-a.menu-main__link {
+.menu-main__link {
   background-color: inherit;
   display: inline-block;
   padding-bottom: 0.15em;
@@ -55,20 +55,21 @@ a.menu-main__link {
   color: inherit;
   transition: all 0.2s;
 }
-a.menu-main__link:hover,
-a.menu-main__link.is-active:hover,
-a.menu-main__link:focus {
+.menu-main__link:hover,
+.menu-main__link.is-active:hover,
+.menu-main__link:focus {
+  background-color: inherit;
   text-decoration: none;
   border-bottom-color: rgba(255, 97, 56, 0.3);
   color: #ff6138;
 }
-a.menu-main__link:active,
-a.menu-main__link.is-active {
+.menu-main__link:active,
+.menu-main__link.is-active {
   text-decoration: none;
   border-bottom-color: #ff6138;
 }
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 48em) {
   .menu-main {
     display:flex;
     justify-content: flex-end;

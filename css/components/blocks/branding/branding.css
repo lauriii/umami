@@ -3,10 +3,13 @@
  * This file is used to style the branding block.
  */
 
-a.site-logo {
+.site-logo {
   display: inline-block;
   width: 100%;
   max-width: 205px;
+  background-color: inherit;
+}
+.site-logo:hover {
   background-color: inherit;
 }
 
