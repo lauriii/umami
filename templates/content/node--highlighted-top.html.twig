@@ -86,14 +86,7 @@
 <article{{ attributes.addClass(classes) }}>
 
   <div{{ content_attributes.addClass('node__content') }}>
-    {# placholder image whilst we theme #}
-    {% if not node.field_image[0] %}
-    <div class="field field--name-field-image field--type-image field--label-hidden field__item">
-      <img src="/themes/contrib/umami/images/jpg/placeholder--umami-carrots-med.jpg" width="800" height="533" alt="Umami placeholder - Carrots" typeof="foaf:Image">
-    </div>
-    {% else %}
     {{ content.field_image }}
-    {% endif %}
   </div>
 
   <div class="node__meta">

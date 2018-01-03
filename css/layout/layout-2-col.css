@@ -3,7 +3,7 @@
  * This file is used to create the layout when the theme has 2 columns.
  */
 .layout-sidebar {
-  margin: 0 1.184em;
+  margin: 0 1.562rem;
 }
 
 @media screen and (min-width: 60em) {
@@ -12,12 +12,8 @@
     justify-content: space-between;
   }
 
-  .two-columns .layout-content {
-    flex: 0 0 74.41%;
-  }
-
   .layout-sidebar {
-    flex: 0 0 23.41%;
-    margin: 0;
+    min-width: 300px;
+    width: 25%;
   }
 }
