@@ -6,6 +6,8 @@
 .node--view-mode-highlighted-small {
   border: 1px solid #fcece7;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .node--view-mode-highlighted-small .node__meta {
@@ -14,6 +16,13 @@
 
 .node--view-mode-highlighted-small .read-more {
   padding: 0 1.5rem 1.5rem 1.5rem;
+}
+/* When in a grid align the read more links to the bottom */
+.grid--2 .node--view-mode-highlighted-small .read-more,
+.grid--3 .node--view-mode-highlighted-small .read-more,
+.grid--4 .node--view-mode-highlighted-small .read-more
+{
+  margin-top: auto;
 }
 
 .node--view-mode-highlighted-small .node__title {
