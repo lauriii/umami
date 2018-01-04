@@ -3,7 +3,7 @@
  * This file is used to style the 'Articles Aside' view.
  */
 
-.block-views-blockarticles-aside-block-1 > h2 {
+.block-views-blockarticles-aside-block-1 > .block__title {
   margin: 0 0 1.562rem;
 }
 
