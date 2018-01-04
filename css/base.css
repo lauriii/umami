@@ -16,7 +16,6 @@ html {
 a {
   color: #00836D;
 }
-
 a:hover,
 a:focus {
   background-color: #e6eee0;
@@ -37,7 +36,6 @@ blockquote {
   margin-bottom: 1.28rem;
   padding: 3rem;
 }
-
 blockquote > * {
   color: #000;
   font-family: 'Scope One', Georgia, serif;
@@ -191,23 +189,20 @@ label {
 ol {
   margin-bottom: 1.28rem;
 }
-
 ol ol,
 ol ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+ul {
+  margin-bottom: 1.28rem;
+}
+ul ul,
+ul ol {
   margin-top: 0rem;
   margin-bottom: 0rem;
 }
 
 p {
   margin-bottom: 1.28rem;
-}
-
-ul {
-  margin-bottom: 1.28rem;
-}
-
-ul ul,
-ul ol {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
 }
