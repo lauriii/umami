@@ -19,7 +19,7 @@
 }
 .menu-main.menu-main--active {
   /**
-   * An exact max-height value is must be set to make possible to animate the menu display.
+   * An exact max-height value must be set to make possible to animate the menu display.
    * It my not be much larger than the content because that would break the animation.
    * See: https://css-tricks.com/using-css-transitions-auto-dimensions/
    */
