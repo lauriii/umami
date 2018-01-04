@@ -28,9 +28,6 @@
   }
 }
 
-.view-promoted-items--single > .view-content {
-
-}
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */
   .view-promoted-items--single > .view-content {
@@ -57,10 +54,6 @@
   }
 }
 
-
-.view-promoted-items--single > .view-content .views-row .node {
-  
-}
 /* Custom */
 @media screen and (min-width: 40rem) { /* 640px */
   .view-promoted-items--single > .view-content .views-row .node {
@@ -74,9 +67,6 @@
   }
 }
 
-.view-promoted-items--single > .view-content .views-row .node__content {
-  
-}
 /* Custom */
 @media screen and (min-width: 40rem) { /* 640px */
   .view-promoted-items--single > .view-content .views-row .node__content {
@@ -84,15 +74,6 @@
   }
 }
 
-.view-promoted-items--single > .view-content .views-row .node__meta {
-  
-}
-/* Custom */
-@media screen and (min-width: 40rem) { /* 640px */
-  .view-promoted-items--single > .view-content .views-row .node__meta {
-    flex: 1 0 50%;
-  }
-}
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */
   .view-promoted-items--single > .view-content .views-row .node__meta {
@@ -100,9 +81,6 @@
   }
 }
 
-.view-promoted-items--single > .attachment-after {
-  
-}
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */
   .view-promoted-items--single > .attachment-after {
@@ -111,9 +89,6 @@
   }
 }
 
-.view-promoted-items--single .attachment-after .views-element-container {
-  
-}
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */
   .view-promoted-items--single .attachment-after .views-element-container {
@@ -121,9 +96,6 @@
   }
 }
 
-.view-promoted-items--single .attachment-after .view-promoted-items--double {
-  
-}
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */
   .view-promoted-items--single .attachment-after .view-promoted-items--double {
@@ -131,9 +103,6 @@
   }
 }
 
-.view-promoted-items--double {
-  
-}
 /* Small */
 @media screen and (min-width: 30rem) { /* 480px */
   .view-promoted-items--double {
@@ -141,9 +110,6 @@
   }
 }
 
-.view-promoted-items--double .view-content {
-  
-}
 /* Small */
 @media screen and (min-width: 30rem) { /* 480px */
   .view-promoted-items--double .view-content {
@@ -152,9 +118,6 @@
   }
 }
 
-.view-promoted-items--double .views-row {
-  
-}
 /* Small */
 @media screen and (min-width: 30rem) { /* 480px */
   .view-promoted-items--double .views-row {
@@ -163,5 +126,3 @@
     width: calc(50% - 28px);
   }
 }
-
-
