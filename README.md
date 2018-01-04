@@ -18,7 +18,7 @@ To install the Umami Demo locally, you can use the Umami Build installer. This i
 #### Here are the steps to install
 * `git clone https://github.com/gareth-fivemile/umami-build.git`
 * `cd umami-build`
-* `composer instal`
+* `composer install`
 * `cd web`
 * Install the Umami Demo (change to your email address): `drush si demo_umami --account-pass=admin --account-name=admin --account-mail="your-email@example.com"`
 * Install the sample content (temporarily a second manual step): `drush en demo_umami_content -y`
