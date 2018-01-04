@@ -10,9 +10,6 @@
   background: #fff;
   padding: 0;
 }
-@media screen and (min-width: 48em) {
-  
-}
 
 .region-header {
   display: flex;
@@ -54,7 +51,7 @@
 @media screen and (min-width: 48em) {
   .menu-main__togglewrap {
     display: none;
-  }  
+  }
 }
 
 .menu-main__wrapper {
@@ -70,9 +67,6 @@
   }
 }
 
-.menu-main {
-
-}
 @media screen and (min-width: 48em) {
   .menu-main {
     display: flex;
