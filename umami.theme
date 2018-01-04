@@ -41,6 +41,13 @@ function umami_preprocess_field(&$variables, $hook) {
 }
 
 /**
+ * Implements hook_preprocess_block().
+ */
+function umami_preprocess_block(&$vars) {
+  $vars['title_attributes']['class'][] = 'block__title';
+}
+
+/**
  * Implements hook_form_alter().
  */
 function umami_form_alter(&$form, FormStateInterface $form_state, $form_id) {
