@@ -23,19 +23,19 @@
   font-weight: 400;
 }
 
-.node--view-mode-highlighted-bottom .node__title a {
+.node--view-mode-highlighted-bottom .node__title .node__link {
   background-color: inherit;
   color: #000;
   text-decoration: none;
 }
 
-.node--view-mode-highlighted-bottom .node__title a:focus,
-.node--view-mode-highlighted-bottom .node__title a:hover {
+.node--view-mode-highlighted-bottom .node__title .node__link:focus,
+.node--view-mode-highlighted-bottom .node__title .node__link:hover {
   color: #000;
   text-decoration: underline;
 }
 
-.node--view-mode-highlighted-bottom a .field--name-title {
+.node--view-mode-highlighted-bottom .node__link .field--name-title {
   color: #000;
   text-decoration: none;
 }
