@@ -23,9 +23,7 @@ function umami_preprocess_html(&$variables) {
 }
 
 /**
- * Implements hook_preprocess_field
- * @param $variables
- * @param $hook
+ * Implements hook_preprocess_field().
  */
 function umami_preprocess_field(&$variables, $hook) {
   $element = $variables['element'];
@@ -58,8 +56,6 @@ function umami_form_alter(&$form, FormStateInterface $form_state, $form_id) {
 
 /**
  * Implements hook_theme_suggestions_HOOK_alter() for form templates.
- * @param array $suggestions
- * @param array $variables
  *
  * https://www.drupal.org/forum/support/theme-development/2016-05-12/theming-custom-block-types
  */
