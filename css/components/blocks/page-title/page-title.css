@@ -1,0 +1,17 @@
+/**
+ * @file
+ * This file is used to style the page title block.
+ *
+ * Note: This only styles the page title block itself. We do not use this block
+ * node pages (the titles are printed in the node.html.twig template), so
+ * styling for that will be in other files such as full.css.
+ */
+
+.is-front .block-page-title-block {
+  margin: 3rem 0 1rem;
+}
+
+.block-page-title-block {
+  margin: 3rem 0;
+  text-align: center;
+}

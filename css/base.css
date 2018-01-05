@@ -111,14 +111,6 @@ h1, .alpha {
   }
 }
 
-/*
-  @TODO - is this okay for targetting the page title on the homepage? Do we
-  to look at maybe adding a class or something instead?
-*/
-.is-front h1 {
-  margin: 3rem 0 1rem;
-}
-
 h2, .beta {
   font-family: 'Scope One', Georgia, serif;
   font-size: 1.266rem;  /* +2 based on 1.125 modular scale (major second) */
