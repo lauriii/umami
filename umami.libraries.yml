@@ -25,6 +25,7 @@ global:
     js/components/navigation/menu-main/menu-main.js: {}
   dependencies:
     - core/jquery
+    - core/jquery.once
 
 two-columns:
   css:
