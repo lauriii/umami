@@ -7,7 +7,7 @@
   'use strict';
   Drupal.behaviors.menutoggle = {
     attach: function (context, settings) {
-      var toggler = $('[data-drupal-selector="menu-main__toggle"]');
+      var toggler = $('[data-drupal-selector="menu-main__toggle"]').once('menutoggle');
       var menu = $('[data-drupal-selector="menu-main"]');
 
       toggler.click(function toggle () {
