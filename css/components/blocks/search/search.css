@@ -12,7 +12,7 @@
 div.form-type-search { /* Qualified selector to override CSS of Stable */
   display: inline-flex;
   align-items: center;
-  min-width: 20em;
+  min-width: 18em;
 }
 /* Search icon for mobile */
 .search__link {
