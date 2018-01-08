@@ -3,6 +3,10 @@
  * This file is used to style the search block.
  */
 
+.search-block-form form {
+  display: flex;
+}
+
 /* Search container div */
 div.form-type-search {
   display: inline-flex;
@@ -22,26 +26,17 @@ div.form-type-search {
   height: auto;
 }
 
-/* Search icon in form */
-.search-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-.search-icon svg {
-  display: block;
-  width: 20px;
-  height: auto;
-}
-
 /* Search input */
 .form-search {
-  width: 320px;
+  width: auto;
   height: auto;
-  padding: 0;
-  border: none;
+  padding: 0.5em 0.25em 0.5em 2.25em;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px 0 0 3px;
   font-size: 1rem;
   line-height: normal;
+  background: url(../../../../images/svg/search.svg) no-repeat 0.5em center #fff;
+  background-size: 1.5em;
   color: #464646;
 }
 .form-search::placeholder {
