@@ -26,7 +26,7 @@
   margin-top: -7px;
   content: '';
   background-image: url('../../../../images/svg/pointer.svg');
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
 }

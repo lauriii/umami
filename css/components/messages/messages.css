@@ -37,7 +37,7 @@
 .messages--error .messages__content {
   background-image: url(/core/misc/icons/e32700/error.svg);
 }
-.messages--error p.error {
+.messages--error .error {
   color: inherit;
 }
 .messages a {

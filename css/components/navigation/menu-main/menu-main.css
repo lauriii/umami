@@ -4,17 +4,16 @@
  */
 
 .menu-main {
+  color: #000;
   margin: 0;
-  padding: 0;
-  max-height: 0;
-  overflow: hidden;
   list-style-type: none;
   font-family: 'Scope One', Georgia, serif;
-  font-weight: normal;
   font-size: 1.266rem;
   font-weight: 400;
   line-height: 1.2;
-  color: #000;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
   transition: max-height 0.5s ease-in;
 }
 .menu-main.menu-main--active {
