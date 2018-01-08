@@ -4,8 +4,6 @@
  * Functions to support theming in the Umami theme.
  */
 
-use Drupal\Core\Form\FormStateInterface;
-
 /**
  * Implements hook_preprocess_HOOK() for HTML document templates.
  *
@@ -43,15 +41,6 @@ function umami_preprocess_field(&$variables, $hook) {
  */
 function umami_preprocess_block(&$vars) {
   $vars['title_attributes']['class'][] = 'block__title';
-}
-
-/**
- * Implements hook_form_alter().
- */
-function umami_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  if ($form['#id'] == 'search-block-form') {
-    $form['actions']['submit']['#attributes']['class'][] = 'visually-hidden';
-  }
 }
 
 /**

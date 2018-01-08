@@ -15,7 +15,4 @@
   set placeholder_text = 'Search by keyword, ingredient, dish'
 %}
 
-<span class="search-icon">
-  {% include active_theme_path() ~ '/images/svg/search.svg' %}
-</span>
 <input{{ attributes.setAttribute('placeholder', placeholder_text) }} />{{ children }}
