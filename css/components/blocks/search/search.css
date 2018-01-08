@@ -5,12 +5,14 @@
 
 .search-block-form form {
   display: flex;
+  align-items: center;
 }
 
 /* Search container div */
-div.form-type-search {
+div.form-type-search { /* Qualified selector to override CSS of Stable */
   display: inline-flex;
   align-items: center;
+  min-width: 20em;
 }
 /* Search icon for mobile */
 .search__link {
@@ -28,10 +30,11 @@ div.form-type-search {
 
 /* Search input */
 .form-search {
-  width: auto;
+  width: 100%;
   height: auto;
   padding: 0.5em 0.25em 0.5em 2.25em;
   border: 1px solid #dbdbdb;
+  border-right: none;
   border-radius: 3px 0 0 3px;
   font-size: 1rem;
   line-height: normal;
@@ -41,4 +44,20 @@ div.form-type-search {
 }
 .form-search::placeholder {
   opacity: 1;
+}
+input.form-search {
+  box-sizing: border-box; /* Override normalize.css */
+}
+
+/* Search submit */
+.form-actions {
+  display: inline-flex;
+}
+.form-submit {
+  padding: 0.5em 1.25em;
+  border: 1px solid #dbdbdb;
+  border-radius: 0 3px 3px 0;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #000;
 }
