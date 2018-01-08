@@ -21,6 +21,9 @@ div.form-type-search { /* Qualified selector to override CSS of Stable */
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  /* Centres the icon when focused/hovered */
+  padding-right: 7px;
+  margin-right: -7px;
 }
 .search__link svg {
   display: block;
