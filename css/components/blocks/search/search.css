@@ -3,10 +3,16 @@
  * This file is used to style the search block.
  */
 
+.search-block-form form {
+  display: flex;
+  align-items: center;
+}
+
 /* Search container div */
-div.form-type-search {
+div.form-type-search { /* Qualified selector to override CSS of Stable */
   display: inline-flex;
   align-items: center;
+  min-width: 18em;
 }
 /* Search icon for mobile */
 .search__link {
@@ -22,28 +28,36 @@ div.form-type-search {
   height: auto;
 }
 
-/* Search icon in form */
-.search-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-.search-icon svg {
-  display: block;
-  width: 20px;
-  height: auto;
-}
-
 /* Search input */
 .form-search {
-  width: 320px;
+  width: 100%;
   height: auto;
-  padding: 0;
-  border: none;
-  font-size: 1rem;
+  padding: 0.5em 0.25em 0.5em 2.25em;
+  border: 1px solid #dbdbdb;
+  border-right: none;
+  border-radius: 3px 0 0 3px;
+  font-size: 0.875rem; /* 14px */
   line-height: normal;
+  background: url(../../../../images/svg/search.svg) no-repeat 0.5em center #fff;
+  background-size: 1.5em;
   color: #464646;
 }
 .form-search::placeholder {
   opacity: 1;
+}
+input.form-search {
+  box-sizing: border-box; /* Override normalize.css */
+}
+
+/* Search submit */
+.form-actions {
+  display: inline-flex;
+}
+.form-submit {
+  padding: 0.6em 1.25em 0.4em;
+  border: 1px solid #dbdbdb;
+  border-radius: 0 3px 3px 0;
+  font-size: 0.875rem;
+  background-color: #fff;
+  color: #000;
 }
