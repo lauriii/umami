@@ -36,7 +36,7 @@ div.form-type-search { /* Qualified selector to override CSS of Stable */
   border: 1px solid #dbdbdb;
   border-right: none;
   border-radius: 3px 0 0 3px;
-  font-size: 1rem;
+  font-size: 0.875rem; /* 14px */
   line-height: normal;
   background: url(../../../../images/svg/search.svg) no-repeat 0.5em center #fff;
   background-size: 1.5em;
@@ -54,10 +54,10 @@ input.form-search {
   display: inline-flex;
 }
 .form-submit {
-  padding: 0.5em 1.25em;
+  padding: 0.6em 1.25em 0.4em;
   border: 1px solid #dbdbdb;
   border-radius: 0 3px 3px 0;
-  font-size: 1rem;
+  font-size: 0.875rem;
   background-color: #fff;
   color: #000;
 }
