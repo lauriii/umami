@@ -8,12 +8,6 @@
   align-items: center;
 }
 
-/* Search container div */
-div.form-type-search { /* Qualified selector to override CSS of Stable */
-  display: inline-flex;
-  align-items: center;
-  min-width: 18em;
-}
 /* Search icon for mobile */
 .search__link {
   width: 40px;
@@ -30,7 +24,7 @@ div.form-type-search { /* Qualified selector to override CSS of Stable */
 
 /* Search input */
 .form-search {
-  width: 100%;
+  width: 20.5em;
   height: auto;
   padding: 0.5em 0.25em 0.5em 2.25em;
   border: 1px solid #dbdbdb;
@@ -45,8 +39,8 @@ div.form-type-search { /* Qualified selector to override CSS of Stable */
 .form-search::placeholder {
   opacity: 1;
 }
-input.form-search {
-  box-sizing: border-box; /* Override normalize.css */
+.form-type-search .form-search {
+  box-sizing: border-box; /* Override input[type="search"] of normalize.css */
 }
 
 /* Search submit */
