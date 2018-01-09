@@ -11,7 +11,7 @@
 .label-items .field__label,
 .label-items .field__items,
 .label-items .field__item {
-  display: inline-block;
+  display: inline;
 }
 
 .label-items .field__label,

@@ -21,15 +21,16 @@ global:
       css/components/navigation/menu-main/menu-main.css: {}
       css/components/navigation/menu-account/menu-account.css: {}
       css/components/navigation/tabs/tabs.css: {}
+      css/components/navigation/breadcrumbs/breadcrumbs.css: {}
       css/components/regions/bottom/bottom.css: {}
       css/components/regions/footer/footer.css: {}
       css/components/regions/header/header.css: {}
       css/components/regions/sidebar/sidebar.css: {}
       css/components/regions/top/top.css: {}
     layout:
-      css/layout/grid-2.css: {} # @TODO figure out when this should be applied and move to its own library
-      css/layout/grid-3.css: {} # @TODO figure out when this should be applied and move to its own library
-      css/layout/grid-4.css: {} # @TODO figure out when this should be applied and move to its own library
+      css/layout/grid-2.css: {}
+      css/layout/grid-3.css: {}
+      css/layout/grid-4.css: {}
       css/layout/layout.css: {}
   js:
     js/components/navigation/menu-main/menu-main.js: {}

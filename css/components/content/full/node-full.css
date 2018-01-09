@@ -54,6 +54,7 @@
 }
 
 /* TODO: How do we want to handle margin-bottom on images for content area? */
+/* TODO: This is too generic - we need to set it to the specific field (body?) */
 .node--view-mode-full img {
   margin-bottom: 1.184rem;
 }

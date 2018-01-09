@@ -97,7 +97,7 @@ button[disabled],
   cursor: default;
 }
 
-h1, .alpha {
+h1 {
   font-family: 'Scope One', Georgia, serif;
   font-size: 1.424rem; /* +3 based on 1.125 modular scale (major second) */
   font-weight: 400;
@@ -106,12 +106,12 @@ h1, .alpha {
 }
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */
-  h1, .alpha {
+  h1 {
     font-size: 2.369rem;
   }
 }
 
-h2, .beta {
+h2 {
   font-family: 'Scope One', Georgia, serif;
   font-size: 1.266rem;  /* +2 based on 1.125 modular scale (major second) */
   font-weight: 400;
@@ -120,12 +120,12 @@ h2, .beta {
 }
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */
-  h2, .beta {
+  h2 {
     font-size: 1.77rem;
   }
 }
 
-h3, .gamma {
+h3 {
   font-family: 'Scope One', Georgia, serif;
   font-size: 1.125rem;/* +1 based on 1.125 modular scale (major second) */
   font-weight: 400;
@@ -134,12 +134,12 @@ h3, .gamma {
 }
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */
-  h3, .gamma {
+  h3 {
     font-size: 1.5rem;
   }
 }
 
-h4, .delta {
+h4 {
   font-family: 'Scope One', Georgia, serif;
   font-size: 1rem;
   font-weight: 400;
@@ -148,12 +148,12 @@ h4, .delta {
 }
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */
-  h4, .delta {
+  h4 {
     font-size: 1.33rem;
   }
 }
 
-h5, .epsilon {
+h5 {
   font-family: 'Scope One', Georgia, serif;
   font-size: 0.889rem; /* -1 based on 1.125 modular scale (major second) */
   font-weight: 700;
@@ -162,13 +162,13 @@ h5, .epsilon {
 }
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */
-  h5, .epsilon {
+  h5 {
     font-size: 1.25rem;
     font-weight: 400;
   }
 }
 
-h6, .zeta {
+h6 {
   font-family: 'Scope One', Georgia, serif;
   font-size: 0.79rem; /* -1 based on 1.125 modular scale (major second) */
   font-weight: 700;
@@ -177,7 +177,7 @@ h6, .zeta {
 }
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */
-  h6, .zeta {
+  h6 {
     font-size: 1rem;
     font-weight: 400;
   }
@@ -194,7 +194,7 @@ input {
   margin: 0.25rem 0;
   min-width: 100%;
   font-size: 1rem;
-  padding: 0.8em 0.4em;
+  padding: 0.8rem 0.4rem;
 }
 
 label {
@@ -210,16 +210,16 @@ ol {
 }
 ol ol,
 ol ul {
-  margin-bottom: 0rem;
-  margin-top: 0rem;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 ul {
   margin-bottom: 1.28rem;
 }
 ul ul,
 ul ol {
-  margin-bottom: 0rem;
-  margin-top: 0rem;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 p {
