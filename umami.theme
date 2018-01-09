@@ -46,8 +46,6 @@ function umami_preprocess_block(&$vars) {
 
 /**
  * Implements hook_theme_suggestions_HOOK_alter() for form templates.
- *
- * https://www.drupal.org/forum/support/theme-development/2016-05-12/theming-custom-block-types
  */
 function umami_theme_suggestions_block_alter(array &$suggestions, array $variables) {
   // Block suggestions for custom block bundles.
@@ -66,4 +64,6 @@ function umami_preprocess_breadcrumb(&$variables) {
   if ($route = $request->attributes->get(\Symfony\Cmf\Component\Routing\RouteObjectInterface::ROUTE_OBJECT)) {
     $variables['current_page_title'] = \Drupal::service('title_resolver')->getTitle($request, $route);
   }
+  // Don't cache breadcrumbs (to prevent incorrect breadcrumbs on some pages).
+  $variables['#cache']['contexts'][] = 'url';
 }
