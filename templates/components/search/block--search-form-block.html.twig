@@ -35,11 +35,7 @@
 %}
 
 <div class="search__iconwrap">
-  {#
-  @TODO Use path() in the href value definition.
-  See: https://github.com/lauriii/umami/issues/150
-  #}
-  <a class="search__link" title="{{ 'Go to the search page'|t }}" href="/search">
+  <a class="search__link" title="{{ 'Go to the search page'|t }}" href="{{ path('search.view') }}">
     {% include active_theme_path() ~ '/images/svg/search.svg' %}
   </a>
 </div>
