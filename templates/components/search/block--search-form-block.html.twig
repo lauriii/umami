@@ -35,7 +35,10 @@
 %}
 
 <div class="search__iconwrap">
-  {# @TODO Should we use url() or path() (preference for path() says Lauriii) in the href value definition? #}
+  {#
+  @TODO Use path() in the href value definition.
+  See: https://github.com/lauriii/umami/issues/150
+  #}
   <a class="search__link" title="{{ 'Go to the search page'|t }}" href="/search">
     {% include active_theme_path() ~ '/images/svg/search.svg' %}
   </a>
