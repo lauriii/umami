@@ -66,6 +66,8 @@ function umami_preprocess_breadcrumb(&$variables) {
   if ($route = $request->attributes->get(RouteObjectInterface)) {
     $variables['current_page_title'] = \Drupal::service('title_resolver')->getTitle($request, $route);
   }
-  // Don't cache breadcrumbs (to prevent incorrect breadcrumbs on some pages).
+  // Since we are printing the 'Current Page Title', we don't cache breadcrumbs.
+  // If we do, then we might end up with something like Home >> Articles on the
+  // Recipes page, which should read Home >> Recipes.
   $variables['#cache']['contexts'][] = 'url';
 }
