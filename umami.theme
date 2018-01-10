@@ -5,6 +5,8 @@
  * Functions to support theming in the Umami theme.
  */
 
+use Symfony\Cmf\Component\Routing\RouteObjectInterface;
+
 /**
  * Implements hook_preprocess_HOOK() for HTML document templates.
  *
@@ -61,7 +63,7 @@ function umami_preprocess_breadcrumb(&$variables) {
   // We are creating a variable for the Current Page Title, to allow us to print
   // it after the breadcrumbs loop has run.
   $request = \Drupal::request();
-  if ($route = $request->attributes->get(\Symfony\Cmf\Component\Routing\RouteObjectInterface::ROUTE_OBJECT)) {
+  if ($route = $request->attributes->get(RouteObjectInterface)) {
     $variables['current_page_title'] = \Drupal::service('title_resolver')->getTitle($request, $route);
   }
   // Don't cache breadcrumbs (to prevent incorrect breadcrumbs on some pages).
