@@ -63,7 +63,7 @@ function umami_preprocess_breadcrumb(&$variables) {
   // We are creating a variable for the Current Page Title, to allow us to print
   // it after the breadcrumbs loop has run.
   $request = \Drupal::request();
-  if ($route = $request->attributes->get(RouteObjectInterface)) {
+  if ($route = $request->attributes->get(RouteObjectInterface::ROUTE_OBJECT)) {
     $variables['current_page_title'] = \Drupal::service('title_resolver')->getTitle($request, $route);
   }
   // Since we are printing the 'Current Page Title', we don't cache breadcrumbs.

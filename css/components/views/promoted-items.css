@@ -3,7 +3,6 @@
  * This file is used to style the 'Promoted Items' view.
  */
 
-
 .view-promoted-items--single {
   padding: 1rem 14px 2rem;
 }
@@ -53,7 +52,6 @@
     margin-bottom: 0;
   }
 }
-
 
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */

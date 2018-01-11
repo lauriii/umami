@@ -17,11 +17,13 @@
   align-items: center;
   padding: 0.75rem 0;
 }
+
 @media screen and (min-width: 48em) {
   .region-header {
     padding: 0 1rem;
   }
 }
+
 /* 77em == the max width of .container + 1em either side */
 @media screen and (min-width: 77em) {
   .region-header {
@@ -34,6 +36,7 @@
   order: 2;
   text-align: center;
 }
+
 @media screen and (min-width: 48em) {
   .block-system-branding-block {
     flex: 0 1 220px;
@@ -48,6 +51,7 @@
   order: 1;
   padding-left: 1rem;
 }
+
 @media screen and (min-width: 48em) {
   .menu-main__togglewrap {
     display: none;
@@ -59,6 +63,7 @@
   flex: 0 1 100%;
   text-align: center;
 }
+
 @media screen and (min-width: 48em) {
   .menu-main__wrapper {
     order: 4;
@@ -74,7 +79,6 @@
   }
 }
 
-
 .search__iconwrap {
   flex: 0 1 30%;
   order: 3;
@@ -82,6 +86,7 @@
   justify-content: flex-end;
   padding-right: 1rem;
 }
+
 @media screen and (min-width: 48em) {
   .search__iconwrap {
     display: none;
@@ -91,6 +96,7 @@
 .search-block-form {
   display: none;
 }
+
 @media screen and (min-width: 48em) {
   .search-block-form {
     flex: 0 1 50%;
@@ -103,6 +109,7 @@
 .menu--account {
   display: none;
 }
+
 @media screen and (min-width: 48em) {
   .menu--account {
     flex: 0 1 50%;

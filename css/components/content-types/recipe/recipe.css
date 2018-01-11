@@ -8,10 +8,10 @@
 }
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */
- .node--type-recipe.node--view-mode-full .field--name-field-recipe-category {
-   flex: 0 1 auto;
-   margin-right: 1em;
- }
+  .node--type-recipe.node--view-mode-full .field--name-field-recipe-category {
+    flex: 0 1 auto;
+    margin-right: 1em;
+  }
 }
 
 .node--type-recipe.node--view-mode-full .layout__region--middle {

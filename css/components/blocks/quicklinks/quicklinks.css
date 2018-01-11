@@ -6,6 +6,7 @@
 .quicklinks {
   background-color: #fff;
 }
+
 @media screen and (min-width: 60rem) { /* 960px */
   .quicklinks {
     padding: 2rem 0;
