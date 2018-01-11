@@ -89,3 +89,36 @@
     margin-left: 2.5em;
   }
 }
+
+.menu-main__togglewrap {
+  flex: 0 1 30%;
+  order: 1;
+  padding-left: 1rem;
+}
+
+@media screen and (min-width: 48em) {
+  .menu-main__togglewrap {
+    display: none;
+  }
+}
+
+.menu-main__wrapper {
+  order: 4;
+  flex: 0 1 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 48em) {
+  .menu-main__wrapper {
+    order: 4;
+    flex: 0 1 calc(100% - 220px);
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .menu-main {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
