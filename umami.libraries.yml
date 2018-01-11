@@ -9,6 +9,7 @@ global:
       css/components/blocks/footer-promo/footer-promo.css: {}
       css/components/blocks/search/search.css: {}
       css/components/blocks/articles-aside/articles-aside.css: {}
+      css/components/forms/contact.css: {}
       css/components/content/node.css: {}
       css/components/content/full/node-full.css: {}
       css/components/content-types/article/article.css: {}
