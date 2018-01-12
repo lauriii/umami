@@ -9,62 +9,55 @@
 */
 .search-form {
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
   flex-wrap: wrap;
   margin: 0 0 1rem;
 }
 
-.search-form #edit-basic, 
-.search-form #edit-advanced
-{
-  background: white;
-  border-radius: 6px;
+.search-form #edit-basic {
+  background: #fff;
+  border: 1px solid #fcece7;
+  padding: 1.28rem;
   margin: 0 1rem 1rem 0;
-  padding: 1ex;
+}
+.search-form #edit-basic {
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
 }
-.search-form #edit-basic:focus-within, 
-.search-form #edit-advanced:focus-within
-{
-  box-shadow: 0 0 2px #f96138;
-}
-
 .search-form .form-type-search {
   margin: 0;
   padding: 0;
 }
 .search-form .form-type-search label {
-  margin: 0;
-  padding: 0 1ex;
-}
-.search-form .form-type-search input {
-  margin: 0;
+  display: inline-block;
+  margin: 0 0 1ex;
   padding: 0;
 }
-.search-form .form-type-search input:focus {
-  outline: none; /* removing due to the :focus-within above */
-}
-
 .search-form .button {
-  margin: 0;
-  padding: 0;
+  min-width: 0;
+  position: relative;
+  z-index: 1;
+}
+.search-form #edit-basic .button {
+  width: 80px;
+  height: 35px;
+  margin-left: -80px;
 }
 
-.search-form .button:active, 
-.search-form .button:hover, 
-.search-form .button:focus
-{
-  /* resetting due to the :focus-within above */
-  background-color: #00836d;
-  color: #fff;
+.search-form .search-help-link {
+  padding: 1.28rem;
+  margin: 0 1rem 1rem 0;
 }
 
-
+.search-form #edit-advanced {
+  background: #fff;
+  border: 1px solid #fcece7;
+  padding: 1.28rem;
+  margin: 0 1rem 1rem 0;
+}
 .search-form .search-advanced {
   width: 100%;
 }
-
 .search-form .search-advanced .details-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -76,7 +69,16 @@
   margin: 0 0 1rem;
   padding: 1rem;
 }
+.search-form .search-advanced .action {
+  width: 100%;
+}
 
+.search-form .search-advanced .form-text {
+  margin: 0;
+  padding: 0.5em 2.25em 0.5em 2.25em;
+  border: 1px solid #dbdbdb;
+  min-width: calc(100% - 80px);
+}
 
 /*
   Search results
@@ -97,7 +99,7 @@
 .search-results li {
   background: #fff;
   border: 1px solid #fcece7;
-  padding: 1rem;
+  padding: 1.28rem;
   margin: 0 0 1rem 0;
 }
 
