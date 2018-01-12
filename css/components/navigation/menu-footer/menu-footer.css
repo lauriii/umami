@@ -16,16 +16,16 @@
   list-style: none;
 }
 
-.menu-footer a {
+.menu-footer .menu-footer__link {
   background-color: transparent;
   text-decoration: none;
   font-weight: bold;
   color: #ffffff;
 }
 
-.menu-footer a:active,
-.menu-footer a:focus,
-.menu-footer a:hover {
+.menu-footer .menu-footer__link:active,
+.menu-footer .menu-footer__link:focus,
+.menu-footer .menu-footer__link:hover {
   background-color: transparent;
   text-decoration: underline;
 }
