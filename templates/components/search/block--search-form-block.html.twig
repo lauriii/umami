@@ -35,8 +35,7 @@
 %}
 
 <div class="search__iconwrap">
-  {# @TODO Should we use url() or path() in the href value definition? #}
-  <a class="search__link" title="{{ 'Go to the search page'|t }}" href="/search">
+  <a class="search__link" title="{{ 'Go to the search page'|t }}" href="{{ path('search.view') }}">
     {% include active_theme_path() ~ '/images/svg/search.svg' %}
   </a>
 </div>

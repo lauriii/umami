@@ -1,0 +1,16 @@
+/**
+ * @file
+ * This file is used to style the contact form.
+ */
+
+.contact-form {
+  margin: auto;
+  max-width: 600px;
+}
+.contact-form .form-item-copy {
+  margin-bottom: 0;
+}
+.contact-form .form-item-copy .form-checkbox {
+  margin: 0 5px 0 0;
+  min-width: auto;
+}

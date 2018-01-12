@@ -64,10 +64,6 @@
  *   is an administrator.
  *
  * @see template_preprocess_node()
- *
- * @todo Remove the id attribute (or make it a class), because if that gets
- *   rendered twice on a page this is invalid CSS for example: two lists
- *   in different view modes.
  */
 #}
 {%
@@ -97,13 +93,13 @@
 
     {% if not page %}
       <h2{{ title_attributes.addClass('node__title') }}>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        <a class="node__link" href="{{ url }}" rel="bookmark">{{ label }}</a>
       </h2>
     {% endif %}
     {{ title_suffix }}
 
     <div class="read-more">
-      <a href="{{ url }}">{{ 'View Recipe'|t }}</a>
+      <a href="{{ url }}">{{ 'View'|t }} {{ node.bundle }}</a>
     </div>
 
   </div>

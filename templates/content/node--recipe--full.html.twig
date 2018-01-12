@@ -64,10 +64,6 @@
  *   is an administrator.
  *
  * @see template_preprocess_node()
- *
- * @todo Remove the id attribute (or make it a class), because if that gets
- *   rendered twice on a page this is invalid CSS for example: two lists
- *   in different view modes.
  */
 #}
 {%
@@ -84,39 +80,26 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
-  {% if page %}
-  <header>
-    <h1 class="page-title">
-      {{ label }}
-    </h1>
-    {% if display_submitted %}
-    <div{{ author_attributes.addClass('node__submitted') }}>
-      {% trans %}<span class="by-author">by {{ author_name }}</span> {{ created_date }}{% endtrans %}
-      {{ metadata }}
-    </div>
-    {% endif %}
-    {{ content.field_recipe_category }}
-    {{ content.field_tags }}
-  </header>
-  {% else %}
-  <h2{{ title_attributes }}>
-    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-  </h2>
-  {% endif %}
+    <header class="node__header">
+      <h1 class="page-title">
+        {{ label }}
+      </h1>
+      {% if display_submitted %}
+      <div{{ author_attributes.addClass('node__submitted') }}>
+        {% trans %}<span class="by-author">by {{ author_name }}</span> {{ created_date }}{% endtrans %}
+        {{ metadata }}
+      </div>
+      {% endif %}
+      {{ content.field_recipe_category }}
+      {{ content.field_tags }}
+    </header>
   {{ title_suffix }}
 
   {# TODO: If the above <header> tag is the right approach, change middle to top since we no longer have a top #}
   <div{{ content_attributes.addClass('node__content') }}>
     <div class="layout__region--middle">
       <div class="layout__region layout__region--middle-first">
-        {# placholder image whilst we theme #}
-        {% if not node.field_image[0] %}
-          <div class="field field--name-field-image field--type-image field--label-hidden field__item">
-            <img src="/themes/contrib/umami/images/jpg/placeholder--umami-carrots-med.jpg" width="800" height="533" alt="Umami placeholder - Carrots" typeof="foaf:Image">
-          </div>
-          {% else %}
         {{ content.field_image }}
-        {% endif %}
       </div>
       <div class="layout__region layout__region--middle-second">
         <div class="recipe-meta">
@@ -139,7 +122,7 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
       </div>
     </div>
     <div class="layout__region--bottom">
-      <h2>{{ "What you'll need and how to make this dish"|trans }}</h2>
+      <h2>{{ "What you'll need and how to make this dish"|t }}</h2>
       <div class="layout__region layout__region--bottom-first">
         {{ content.field_ingredients }}
       </div>

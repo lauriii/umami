@@ -64,10 +64,6 @@
  *   is an administrator.
  *
  * @see template_preprocess_node()
- *
- * @todo Remove the id attribute (or make it a class), because if that gets
- *   rendered twice on a page this is invalid CSS for example: two lists
- *   in different view modes.
  */
 #}
 {%
@@ -86,14 +82,7 @@
 <article{{ attributes.addClass(classes) }}>
 
   <div{{ content_attributes.addClass('node__content') }}>
-    {# placholder image whilst we theme #}
-    {% if not node.field_image[0] %}
-    <div class="field field--name-field-image field--type-image field--label-hidden field__item">
-      <img src="/themes/contrib/umami/images/jpg/placeholder--umami-carrots-med.jpg" width="800" height="533" alt="Umami placeholder - Carrots" typeof="foaf:Image">
-    </div>
-    {% else %}
     {{ content.field_image }}
-    {% endif %}
   </div>
 
   <div class="node__meta">
@@ -103,14 +92,14 @@
     {{ title_prefix }}
     {% if not page %}
       <h2{{ title_attributes.addClass('node__title') }}>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        <a class="node__link" href="{{ url }}" rel="bookmark">{{ label }}</a>
       </h2>
     {% endif %}
     {{ title_suffix }}
 
   </div>
   <div class="read-more">
-    <a href="{{ url }}">{{ 'View Recipe'|t }}</a>
+    <a href="{{ url }}">{{ 'View'|t }} {{ node.bundle }}</a>
   </div>
 
 </article>

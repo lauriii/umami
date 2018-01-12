@@ -35,6 +35,6 @@
 @media screen and (min-width: 77em) {
   .grid--3 .view-content {
     margin-left: -14px;
-    margin-left: -14px;
+    margin-right: -14px;
   }
 }

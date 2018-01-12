@@ -4,22 +4,21 @@
  */
 
 .menu-main {
+  color: #000;
   margin: 0;
-  padding: 0;
-  max-height: 0;
-  overflow: hidden;
   list-style-type: none;
   font-family: 'Scope One', Georgia, serif;
-  font-weight: normal;
   font-size: 1.266rem;
   font-weight: 400;
   line-height: 1.2;
-  color: #000;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
   transition: max-height 0.5s ease-in;
 }
 .menu-main.menu-main--active {
   /**
-   * An exact max-height value is must be set to make possible to animate the menu display.
+   * An exact max-height value must be set to make possible to animate the menu display.
    * It my not be much larger than the content because that would break the animation.
    * See: https://css-tricks.com/using-css-transitions-auto-dimensions/
    */
@@ -27,11 +26,13 @@
   overflow-y: auto;
 }
 .menu-main__toggle {
-  width: 40px;
-  height: 40px;
+  width: 41px;
+  height: 41px;
   line-height: 1;
-  padding: 0;
-  border: none;
+  /* the padding, margin & transparent border means the hamburger doesn't move on focus/hover */
+  padding: 0 6px;
+  margin-left: -9px;
+  border: 3px solid transparent;
   border-radius: 0;
   text-align: left;
   background-color: transparent;
@@ -46,7 +47,7 @@
   margin-top: 0.8em;
   text-align: center;
 }
-a.menu-main__link {
+.menu-main__link {
   background-color: inherit;
   display: inline-block;
   padding-bottom: 0.15em;
@@ -55,22 +56,23 @@ a.menu-main__link {
   color: inherit;
   transition: all 0.2s;
 }
-a.menu-main__link:hover,
-a.menu-main__link.is-active:hover,
-a.menu-main__link:focus {
+.menu-main__link:hover,
+.menu-main__link.is-active:hover,
+.menu-main__link:focus {
+  background-color: inherit;
   text-decoration: none;
   border-bottom-color: rgba(255, 97, 56, 0.3);
   color: #ff6138;
 }
-a.menu-main__link:active,
-a.menu-main__link.is-active {
+.menu-main__link:active,
+.menu-main__link.is-active {
   text-decoration: none;
   border-bottom-color: #ff6138;
 }
 
 @media screen and (min-width: 48em) {
   .menu-main {
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     max-height: initial;
@@ -85,5 +87,38 @@ a.menu-main__link.is-active {
   }
   .menu-main__item + .menu-main__item {
     margin-left: 2.5em;
+  }
+}
+
+.menu-main__togglewrap {
+  flex: 0 1 30%;
+  order: 1;
+  padding-left: 1rem;
+}
+
+@media screen and (min-width: 48em) {
+  .menu-main__togglewrap {
+    display: none;
+  }
+}
+
+.menu-main__wrapper {
+  order: 4;
+  flex: 0 1 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 48em) {
+  .menu-main__wrapper {
+    order: 4;
+    flex: 0 1 calc(100% - 220px);
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .menu-main {
+    display: flex;
+    justify-content: flex-end;
   }
 }
