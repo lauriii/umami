@@ -15,11 +15,13 @@ html {
 
 a {
   color: #00836D;
+  text-decoration: underline;
 }
 a:hover,
 a:focus {
   background-color: #e6eee0;
   color: #444444;
+  text-decoration: none;
 }
 
 body {
