@@ -62,14 +62,12 @@
   }
 }
 
-/* TODO: How do we want to handle margin-bottom on images for content area? */
-/* TODO: This is too generic - we need to set it to the specific field (body?) */
-.node--view-mode-full img {
+.node--view-mode-full .field--name-field-image {
   margin-bottom: 1.184rem;
 }
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */
-  .node--view-mode-full img {
+  .node--view-mode-full .field--name-field-image {
     margin-bottom: 2.369rem;
   }
 }
