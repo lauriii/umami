@@ -3,7 +3,7 @@
  * This file is used to style the more link.
  */
 
-.read-more a {
+.read-more .read-more__link {
   background-color: inherit;
   position: relative;
   display: inline-block;
@@ -12,12 +12,12 @@
   text-transform: uppercase;
 }
 
-.read-more a:focus,
-.read-more a:hover {
+.read-more .read-more__link:focus,
+.read-more .read-more__link:hover {
   text-decoration: underline;
 }
 
-.read-more a::before {
+.read-more .read-more__link:before {
   position: absolute;
   top: 50%;
   right: 0;
