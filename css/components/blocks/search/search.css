@@ -22,7 +22,7 @@
   margin-bottom: 1.2rem;
 }
 
-.search__iconwrap {
+.search-iconwrap {
   flex: 0 1 30%;
   order: 3;
   display: flex;
@@ -31,13 +31,13 @@
 }
 
 @media screen and (min-width: 48em) {
-  .search__iconwrap {
+  .search-iconwrap {
     display: none;
   }
 }
 
 /* Search icon for mobile */
-.search__link {
+.search-link {
   width: 40px;
   height: 40px;
   display: flex;
@@ -47,7 +47,7 @@
   padding-right: 7px;
   margin-right: -7px;
 }
-.search__link svg {
+.search-link svg {
   display: block;
   width: 26px;
   height: auto;
@@ -93,7 +93,7 @@
   position: relative;
   z-index: 1;
 }
-.search-block-form .form-submit, 
+.search-block-form .form-submit,
 .search-form .form-submit
 {
   /* Take off the border radius on the left side as it bumps into the search field */
