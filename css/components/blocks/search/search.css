@@ -94,8 +94,7 @@
   z-index: 1;
 }
 .search-block-form .form-submit,
-.search-form .form-submit
-{
+.search-form .form-submit {
   /* Take off the border radius on the left side as it bumps into the search field */
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
