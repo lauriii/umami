@@ -79,6 +79,13 @@ view-mode-highlighted-small:
   dependencies:
     - umami/more-link
 
+view-mode-highlighted-medium:
+  css:
+    theme:
+      css/components/content/highlighted-medium/highlighted-medium.css: {}
+  dependencies:
+    - umami/more-link
+
 view-mode-highlighted-top:
   css:
     theme:
