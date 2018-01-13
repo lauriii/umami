@@ -40,11 +40,8 @@
   ]
 %}
 
-<div class="menu-main__togglewrap">
-  <button type="button" name="menu_toggle" class="menu-main__toggle"
-    data-drupal-selector="menu-main__toggle" aria-label="Toggle the menu">
-    {% include active_theme_path() ~ '/images/svg/menu-icon.svg' %}
-  </button>
+<div class="menu-main-togglewrap">
+  <button type="button" name="menu_toggle" class="menu-main-toggle" data-drupal-selector="menu-main-toggle" aria-label="Toggle the menu">{% include active_theme_path() ~ '/images/svg/menu-icon.svg' %}</button>
 </div>
 
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
