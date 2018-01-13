@@ -34,7 +34,7 @@
     'cover-image',
   ]
 %}
-{# TODO: todo: Discuss this approach of inline image plus background image #}
+
 <div{{ attributes.addClass(classes) }} style="background-image: url({{ file_url(content.field_banner_image.0['#item'].entity.uri.value) }})">
   <div class="block-inner">
     {{ title_prefix }}
