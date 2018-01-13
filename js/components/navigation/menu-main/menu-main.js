@@ -6,11 +6,11 @@
 **/
 
 (function () {
-  var toggler = document.querySelector('[data-drupal-selector="menu-main__toggle"]');
+  var toggler = document.querySelector('[data-drupal-selector="menu-main-toggle"]');
   var menu = document.querySelector('[data-drupal-selector="menu-main"]');
 
   function toggleMenu() {
-    toggler.classList.toggle('menu-main__toggle--active');
+    toggler.classList.toggle('menu-main-toggle--active');
     menu.classList.toggle('menu-main--active');
     return false;
   }
