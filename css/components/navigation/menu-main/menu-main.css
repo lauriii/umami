@@ -16,7 +16,7 @@
   padding: 0;
   transition: max-height 0.5s ease-in;
 }
-.menu-main.menu-main--active {
+.menu-main--active {
   /**
    * An exact max-height value must be set to make possible to animate the menu display.
    * It my not be much larger than the content because that would break the animation.

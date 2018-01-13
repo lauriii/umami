@@ -16,7 +16,7 @@
 .messages + .messages {
   margin-top: 1.538em;
 }
-.messages .messages__content {
+.messages__content {
   background: no-repeat 0 center;
 }
 .messages--status {
