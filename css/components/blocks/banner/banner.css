@@ -10,7 +10,6 @@
 }
 
 .block-banner-block {
-  /* todo: Discuss this approach of inline image plus background image */
   background-size: 0 0;
   background-position: 0 0;
 }
