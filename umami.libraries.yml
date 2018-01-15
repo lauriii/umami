@@ -17,7 +17,6 @@ global:
       css/components/content-types/recipe/recipe.css: {}
       css/components/fields/label-items.css: {}
       css/components/forms/buttons.css: {}
-      css/components/fields/node-submitted.css: {}
       css/components/views/promoted-items.css: {}
       css/components/views/frontpage.css: {}
       css/components/navigation/menu-footer/menu-footer.css: {}
@@ -29,8 +28,6 @@ global:
       css/components/regions/bottom/bottom.css: {}
       css/components/regions/footer/footer.css: {}
       css/components/regions/header/header.css: {}
-      css/components/regions/sidebar/sidebar.css: {}
-      css/components/regions/top/top.css: {}
     layout:
       css/layout/grid-2.css: {}
       css/layout/grid-3.css: {}
