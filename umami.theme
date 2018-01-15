@@ -64,7 +64,6 @@ function umami_preprocess_breadcrumb(&$variables) {
   // it after the breadcrumbs loop has run.
   $request = \Drupal::request();
   if ($route = $request->attributes->get(RouteObjectInterface::ROUTE_OBJECT)) {
-    // @todo:
     // Search page titles aren't resolved using the title_resolver service - it
     // will always return 'Search' instead of 'Search for [term]', which would
     // give us a breadcrumb of Home >> Search >> Search.
@@ -79,6 +78,6 @@ function umami_preprocess_breadcrumb(&$variables) {
   }
   // Since we are printing the 'Current Page Title', set the cache to match
   // the URL cache. If we don't, then we might end up with something like
-  // "Home >> Articles" on the Recipes page, which should read "Home >> Recipes".
+  // "Home > Articles" on the Recipes page, which should read "Home > Recipes".
   $variables['#cache']['contexts'][] = 'url';
 }
