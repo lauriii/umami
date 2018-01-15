@@ -64,7 +64,18 @@ function umami_preprocess_breadcrumb(&$variables) {
   // it after the breadcrumbs loop has run.
   $request = \Drupal::request();
   if ($route = $request->attributes->get(RouteObjectInterface::ROUTE_OBJECT)) {
-    $variables['current_page_title'] = \Drupal::service('title_resolver')->getTitle($request, $route);
+    // @todo:
+    // Search page titles aren't resolved using the title_resolver service - it
+    // will always return 'Search' instead of 'Search for [term]', which would
+    // give us a breadcrumb of Home >> Search >> Search.
+    // @see https://www.drupal.org/project/drupal/issues/2359901
+    // @see https://www.drupal.org/project/drupal/issues/2403359
+    if (($entity = $request->attributes->get('entity')) && $entity->getEntityType()->id() == 'search_page') {
+      $variables['current_page_title'] = $entity->getPlugin()->suggestedTitle();
+    }
+    else {
+      $variables['current_page_title'] = \Drupal::service('title_resolver')->getTitle($request, $route);
+    }
   }
   // Since we are printing the 'Current Page Title', set the cache to match
   // the URL cache. If we don't, then we might end up with something like
